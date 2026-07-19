@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BestRAG — 企业知识库接入</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+      colors: {
+        brand: { 50:'#f0f5ff', 100:'#e0ebff', 500:'#4f6ef7', 600:'#3b54e0', 700:'#2b3fc7' }
+      }
+    }
+  }
+}
+</script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  .drop-zone { transition: all 0.25s ease; }
+  .drop-zone.drag-over { transform: scale(1.02); }
+  .toast-in { animation: slideUp 0.35s ease-out; }
+  @keyframes slideUp { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
+  .progress-bar { animation: pulse 1.8s ease-in-out infinite; }
+  @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.5; } }
+</style>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen font-sans antialiased">
+
+<!-- 背景装饰 -->
+<div class="fixed inset-0 pointer-events-none overflow-hidden">
+  <div class="absolute -top-40 -right-40 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl"></div>
+  <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-cyan-500/8 rounded-full blur-3xl"></div>
+</div>
+
+<!-- 主容器 -->
+<main class="relative max-w-2xl mx-auto px-4 py-12 sm:py-20">
+
+  <!-- 头部 -->
+  <header class="text-center mb-10">
+    <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">
+      <span class="bg-gradient-to-r from-brand-400 to-cyan-400 bg-clip-text text-transparent">BestRAG</span>
+    </h1>
+    <p class="mt-3 text-gray-400 text-sm sm:text-base">将文档拖入此处，自动接入企业知识库</p>
+  </header>
+
+  <!-- 上传区域 -->
+  <div id="drop-zone"
+       class="drop-zone relative border-2 border-dashed border-gray-700 rounded-2xl p-10 sm:p-14 text-center cursor-pointer
+              hover:border-brand-500/60 hover:bg-gray-900/60 bg-gray-900/30">
+    <input type="file" id="file-input" class="hidden" multiple>
+    <div id="zone-icon" class="text-5xl mb-4">📁</div>
+    <p class="text-gray-300 font-medium text-lg">拖拽文件到此处，或 <span class="text-brand-400 underline underline-offset-2">点击选择</span></p>
+    <p class="text-gray-500 text-sm mt-2">支持 PDF、Office、Markdown、图片等任意格式</p>
+  </div>
+
+  <!-- 待上传列表 -->
+  <div id="pending-list" class="mt-6 space-y-3 hidden"></div>
+
+  <!-- 上传进度 -->
+  <div id="progress-area" class="mt-6 hidden">
+    <div class="flex items-center gap-3 text-gray-400 text-sm">
+      <svg class="animate-spin w-4 h-4 text-brand-400" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" class="opacity-25"/><path d="M4 12a8 8 0 018-8" stroke="currentColor" stroke-width="4" class="opacity-75"/></svg>
+      <span id="progress-text">正在上传...</span>
+    </div>
+    <div class="mt-3 w-full bg-gray-800 rounded-full h-1.5 overflow-hidden">
+      <div id="progress-fill" class="bg-gradient-to-r from-brand-500 to-cyan-500 h-full rounded-full progress-bar" style="width:60%"></div>
+    </div>
+  </div>
+
+  <!-- 结果区 -->
+  <div id="results" class="mt-8 space-y-4"></div>
+
+</main>
+
+<script>
+// ---- 状态 ----
+const API = '/ingress/upload';
+const pendingFiles = [];
+
+// ---- DOM ----
+const dropZone = document.getElementById('drop-zone');
+const fileInput = document.getElementById('file-input');
+const pendingList = document.getElementById('pending-list');
+const progressArea = document.getElementById('progress-area');
+const progressText = document.getElementById('progress-text');
+const progressFill = document.getElementById('progress-fill');
+const resultsEl = document.getElementById('results');
+const zoneIcon = document.getElementById('zone-icon');
+
+// ---- 事件绑定 ----
+dropZone.addEventListener('click', () => fileInput.click());
+dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('drag-over', 'border-brand-500', 'bg-gray-900/60'); });
+dropZone.addEventListener('dragleave', () => dropZone.classList.remove('drag-over', 'border-brand-500', 'bg-gray-900/60'));
+dropZone.addEventListener('drop', e => {
+  e.preventDefault();
+  dropZone.classList.remove('drag-over', 'border-brand-500', 'bg-gray-900/60');
+  addFiles(e.dataTransfer.files);
+});
+fileInput.addEventListener('change', () => addFiles(fileInput.files));
+
+// ---- 添加文件到待上传队列 ----
+function addFiles(fileList) {
+  for (const f of fileList) { pendingFiles.push(f); }
+  renderPending();
+  if (pendingFiles.length) uploadAll();
+}
+
+function renderPending() {
+  pendingList.innerHTML = pendingFiles.map((f, i) => `
+    <div class="flex items-center justify-between bg-gray-900/60 border border-gray-800 rounded-xl px-4 py-3 toast-in">
+      <div class="flex items-center gap-3 min-w-0">
+        <span class="text-xl">${iconFor(f.name)}</span>
+        <span class="text-gray-200 truncate text-sm">${f.name}</span>
+        <span class="text-gray-500 text-xs shrink-0">${humanSize(f.size)}</span>
+      </div>
+      <button onclick="removeFile(${i})" class="text-gray-600 hover:text-red-400 text-lg leading-none ml-2">&times;</button>
+    </div>
+  `).join('');
+  pendingList.classList.toggle('hidden', pendingFiles.length === 0);
+}
+
+function removeFile(i) { pendingFiles.splice(i, 1); renderPending(); }
+
+// ---- 逐个上传 ----
+async function uploadAll() {
+  progressArea.classList.remove('hidden');
+  const total = pendingFiles.length;
+  let done = 0;
+
+  for (let i = pendingFiles.length - 1; i >= 0; i--) {
+    const f = pendingFiles[i];
+    progressText.textContent = `正在上传 (${done + 1}/${done + pendingFiles.length}) — ${f.name}`;
+    progressFill.style.width = `${(done / total) * 100}%`;
+
+    try {
+      const form = new FormData();
+      form.append('file', f);
+      const resp = await fetch(API, { method: 'POST', body: form });
+      const data = await resp.json();
+      if (resp.ok) {
+        addResult(data, 'success');
+      } else {
+        addResult({ filename: f.name, error: data.detail || '上传失败' }, 'error');
+      }
+    } catch (err) {
+      addResult({ filename: f.name, error: err.message }, 'error');
+    }
+    pendingFiles.splice(i, 1);
+    done++;
+  }
+
+  progressArea.classList.add('hidden');
+  renderPending();
+}
+
+function addResult(data, type) {
+  const card = document.createElement('div');
+  card.className = 'bg-gray-900/60 border rounded-2xl p-6 toast-in ' +
+    (type === 'success' ? 'border-gray-800' : 'border-red-900/50');
+  card.innerHTML = type === 'success' ? successHTML(data) : errorHTML(data);
+  resultsEl.prepend(card);
+}
+
+// ---- 结果卡片 ----
+function successHTML(d) {
+  return `
+    <div class="flex items-center justify-between mb-4">
+      <div class="flex items-center gap-3 min-w-0">
+        <span class="text-2xl">${iconFor(d.filename)}</span>
+        <span class="text-gray-100 font-semibold truncate text-lg">${d.filename}</span>
+      </div>
+      <span class="flex items-center gap-1.5 text-emerald-400 text-sm font-medium px-2.5 py-1 bg-emerald-500/10 rounded-full shrink-0 ml-3">
+        <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+        导入成功
+      </span>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
+      ${kv('ID', d.id?.slice(0,8) + '...')}
+      ${kv('类型', d.mime)}
+      ${kv('大小', humanSize(d.size))}
+      ${kv('来源', d.source)}
+    </div>
+    <div class="mt-3 pt-3 border-t border-gray-800 text-xs text-gray-500 font-mono truncate" title="${d.checksum}">
+      SHA256: ${d.checksum}
+    </div>`;
+}
+
+function errorHTML(d) {
+  return `<div class="flex items-center gap-3"><span class="text-xl">❌</span><span class="text-gray-200 font-medium">${d.filename}</span><span class="text-red-400 text-sm ml-auto">${d.error}</span></div>`;
+}
+
+function kv(label, val) {
+  return `<div class="bg-gray-950/60 rounded-lg px-3 py-2"><span class="text-gray-500 block">${label}</span><span class="text-gray-200 font-mono block truncate mt-0.5">${val || '-'}</span></div>`;
+}
+
+// ---- 工具函数 ----
+function humanSize(n) {
+  for (const u of ['B','KB','MB','GB']) { if (n < 1024) return `${n.toFixed(1)} ${u}`; n /= 1024; }
+  return `${n.toFixed(1)} TB`;
+}
+
+function iconFor(name) {
+  const ext = name.split('.').pop()?.toLowerCase();
+  const map = { pdf:'📄', doc:'📝', docx:'📝', xls:'📊', xlsx:'📊', ppt:'📽️', pptx:'📽️',
+    md:'📋', txt:'📃', json:'📦', xml:'📦', csv:'📊', png:'🖼️', jpg:'🖼️', jpeg:'🖼️',
+    gif:'🖼️', svg:'🖼️', mp4:'🎬', mp3:'🎵', zip:'📦', rar:'📦', py:'🐍', js:'📜', ts:'📜' };
+  return map[ext] || '📎';
+}
+</script>
+</body>
+</html>
