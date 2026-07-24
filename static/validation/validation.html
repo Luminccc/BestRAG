@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Developer Validation Center — BestRAG</title>
+<link rel="stylesheet" href="/static/tailwind.min.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  .drop-zone { transition: all 0.25s ease; }
+  .drop-zone.drag-over { transform: scale(1.02); border-color: #4f6ef7 !important; background: rgba(79,110,247,0.08) !important; }
+  .toast-in { animation: slideUp 0.35s ease-out; }
+  @keyframes slideUp { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
+  .spin { animation: spin 0.8s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .section-card { transition: border-color 0.2s ease; }
+  .section-card:hover { border-color: rgba(79,110,247,0.3); }
+</style>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen font-sans antialiased">
+
+<!-- 背景 -->
+<div class="fixed inset-0 pointer-events-none overflow-hidden">
+  <div class="absolute -top-40 -right-40 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl"></div>
+  <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-cyan-500/8 rounded-full blur-3xl"></div>
+</div>
+
+<!-- 主容器 -->
+<main class="relative max-w-4xl mx-auto px-4 py-8 sm:py-12">
+
+  <!-- 头部 -->
+  <header class="text-center mb-10">
+    <div class="flex items-center justify-center gap-2 mb-2">
+      <span class="text-2xl">🔧</span>
+      <h1 class="text-2xl sm:text-3xl font-bold tracking-tight">
+        <span class="bg-gradient-to-r from-brand-400 to-cyan-400 bg-clip-text text-transparent">Developer Validation Center</span>
+      </h1>
+    </div>
+    <p class="text-gray-500 text-sm">验证 Document Pipeline 完整性 — 上传文件或输入路径，点击验证</p>
+  </header>
+
+  <!-- 面包屑导航 -->
+  <div class="flex items-center gap-2 text-xs text-gray-600 mb-6">
+    <a href="/static/index.html" class="hover:text-brand-400 transition">BestRAG</a>
+    <span>/</span>
+    <span class="text-gray-400">Developer Center</span>
+  </div>
+
+  <!-- ===== Section 1: 上传信息 ===== -->
+  <section class="section-card bg-gray-900/30 border border-gray-800 rounded-2xl p-6 mb-6">
+    <h2 class="text-sm font-semibold text-gray-300 mb-4 flex items-center gap-2">
+      <span>📤</span> Upload Information
+    </h2>
+
+    <!-- 上传方式切换 -->
+    <div class="flex gap-4 mb-4 text-xs" id="mode-tabs">
+      <label class="flex items-center gap-2 cursor-pointer">
+        <input type="radio" name="input-mode" value="upload" checked class="accent-brand-500"
+               onchange="document.getElementById('upload-mode').classList.remove('hidden'); document.getElementById('manual-mode').classList.add('hidden')">
+        <span class="text-gray-300">上传文件</span>
+      </label>
+      <label class="flex items-center gap-2 cursor-pointer">
+        <input type="radio" name="input-mode" value="manual" class="accent-brand-500"
+               onchange="document.getElementById('upload-mode').classList.add('hidden'); document.getElementById('manual-mode').classList.remove('hidden')">
+        <span class="text-gray-300">手动输入路径</span>
+      </label>
+    </div>
+
+    <!-- 上传模式 -->
+    <div id="upload-mode">
+      <div id="upload-zone"
+           class="drop-zone border-2 border-dashed border-gray-700 rounded-xl p-8 text-center cursor-pointer
+                  hover:border-brand-500/60 hover:bg-gray-900/60 bg-gray-900/40">
+        <input type="file" id="file-input" class="hidden">
+        <div class="text-4xl mb-3">📁</div>
+        <p class="text-gray-300 font-medium">拖拽文件到此处，或 <span class="text-brand-400 underline underline-offset-2">点击选择</span></p>
+        <p class="text-gray-500 text-xs mt-1">上传后自动填充 path，可直接进入验证</p>
+      </div>
+      <p id="upload-status" class="text-xs text-gray-500 mt-2"></p>
+    </div>
+
+    <!-- 手动模式 -->
+    <div id="manual-mode" class="hidden">
+      <div class="flex gap-2">
+        <input id="path-input" type="text"
+               class="flex-1 bg-gray-900/60 border border-gray-700 rounded-xl px-4 py-2.5 text-sm text-gray-100
+                      placeholder:text-gray-500 focus:outline-none focus:border-brand-500/60"
+               placeholder="输入文件路径，如 /workspace/upload/abc.pdf">
+        <button id="use-path-btn"
+                class="px-5 py-2.5 bg-brand-600 hover:bg-brand-500 text-white text-sm font-medium rounded-xl transition whitespace-nowrap">
+          确认路径
+        </button>
+      </div>
+    </div>
+
+    <!-- 当前文件信息 -->
+    <div id="upload-info" class="hidden mt-4"></div>
+  </section>
+
+  <!-- ===== Section 2: Document 验证操作 ===== -->
+  <section class="section-card bg-gray-900/30 border border-gray-800 rounded-2xl p-6 mb-6">
+    <h2 class="text-sm font-semibold text-gray-300 mb-4 flex items-center gap-2">
+      <span>📄</span> Document Validation
+    </h2>
+
+    <div class="flex flex-wrap items-center gap-3 mb-3">
+      <button id="validate-btn"
+              class="px-6 py-2.5 bg-brand-600 hover:bg-brand-500 text-white text-sm font-medium rounded-xl transition">
+        Validate Document
+      </button>
+      <button id="regression-btn"
+              class="px-6 py-2.5 bg-gray-800 hover:bg-gray-700 text-gray-200 text-sm font-medium rounded-xl border border-gray-700 transition">
+        Run Full Regression
+      </button>
+
+      <!-- 加载中 -->
+      <div id="loading" class="hidden flex items-center gap-2 text-xs text-gray-400 ml-2">
+        <svg class="spin w-4 h-4 text-brand-400" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" class="opacity-25"/>
+          <path d="M4 12a8 8 0 018-8" stroke="currentColor" stroke-width="4" class="opacity-75"/>
+        </svg>
+        <span>处理中...</span>
+      </div>
+    </div>
+
+    <p id="validate-status" class="text-xs text-gray-500"></p>
+
+    <!-- 当前文件路径 -->
+    <div id="current-path" class="text-xs text-gray-600 font-mono mt-2 hidden"></div>
+  </section>
+
+  <!-- ===== Section 3: Processor 验证操作 ===== -->
+  <section class="section-card bg-gray-900/30 border border-gray-800 rounded-2xl p-6 mb-6">
+    <h2 class="text-sm font-semibold text-gray-300 mb-4 flex items-center gap-2">
+      <span>⚙️</span> Processor Validation
+    </h2>
+
+    <div class="flex flex-wrap items-center gap-3 mb-3">
+      <button id="cleaner-btn"
+              class="px-6 py-2.5 bg-cyan-600 hover:bg-cyan-500 text-white text-sm font-medium rounded-xl transition">
+        Validate Cleaner
+      </button>
+
+      <!-- Cleaner 加载中 -->
+      <div id="cleaner-loading" class="hidden flex items-center gap-2 text-xs text-gray-400 ml-2">
+        <svg class="spin w-4 h-4 text-cyan-400" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" class="opacity-25"/>
+          <path d="M4 12a8 8 0 018-8" stroke="currentColor" stroke-width="4" class="opacity-75"/>
+        </svg>
+        <span>清洗中...</span>
+      </div>
+    </div>
+
+    <p id="cleaner-status" class="text-xs text-gray-500"></p>
+
+    <!-- Chunker -->
+    <div class="border-t border-gray-800 mt-4 pt-4">
+      <div class="flex flex-wrap items-center gap-3 mb-3">
+        <select id="strategy-select"
+                class="bg-gray-900/60 border border-gray-700 rounded-lg px-3 py-2 text-sm text-gray-200 focus:outline-none focus:border-brand-500/60">
+          <option value="recursive">Strategy: recursive</option>
+          <option value="fixed">Strategy: fixed</option>
+        </select>
+        <button id="chunker-btn"
+                class="px-6 py-2.5 bg-teal-600 hover:bg-teal-500 text-white text-sm font-medium rounded-xl transition">
+          Validate Chunker
+        </button>
+
+        <!-- Chunker 加载中 -->
+        <div id="chunker-loading" class="hidden flex items-center gap-2 text-xs text-gray-400 ml-2">
+          <svg class="spin w-4 h-4 text-teal-400" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" class="opacity-25"/>
+            <path d="M4 12a8 8 0 018-8" stroke="currentColor" stroke-width="4" class="opacity-75"/>
+          </svg>
+          <span>切分中...</span>
+        </div>
+      </div>
+      <p id="chunker-status" class="text-xs text-gray-500"></p>
+    </div>
+
+    <!-- Transformer -->
+    <div class="border-t border-gray-800 mt-4 pt-4">
+      <div class="flex flex-wrap items-center gap-3 mb-3">
+        <button id="transformer-btn"
+                class="px-6 py-2.5 bg-violet-600 hover:bg-violet-500 text-white text-sm font-medium rounded-xl transition">
+          Validate Transformer
+        </button>
+        <div id="transformer-loading" class="hidden flex items-center gap-2 text-xs text-gray-400 ml-2">
+          <svg class="spin w-4 h-4 text-violet-400" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" class="opacity-25"/>
+            <path d="M4 12a8 8 0 018-8" stroke="currentColor" stroke-width="4" class="opacity-75"/>
+          </svg>
+          <span>转换中...</span>
+        </div>
+      </div>
+      <p id="transformer-status" class="text-xs text-gray-500"></p>
+    </div>
+
+    <!-- Pipeline -->
+    <div class="border-t border-gray-800 mt-4 pt-4">
+      <div class="flex flex-wrap items-center gap-3 mb-3">
+        <select id="pipeline-strategy"
+                class="bg-gray-900/60 border border-gray-700 rounded-lg px-3 py-2 text-sm text-gray-200 focus:outline-none focus:border-brand-500/60">
+          <option value="recursive">Strategy: recursive</option>
+          <option value="fixed">Strategy: fixed</option>
+        </select>
+        <button id="pipeline-btn"
+                class="px-6 py-2.5 bg-amber-600 hover:bg-amber-500 text-white text-sm font-medium rounded-xl transition">
+          Run Pipeline
+        </button>
+        <div id="pipeline-loading" class="hidden flex items-center gap-2 text-xs text-gray-400 ml-2">
+          <svg class="spin w-4 h-4 text-amber-400" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" class="opacity-25"/>
+            <path d="M4 12a8 8 0 018-8" stroke="currentColor" stroke-width="4" class="opacity-75"/>
+          </svg>
+          <span>管线处理中...</span>
+        </div>
+      </div>
+      <p id="pipeline-status" class="text-xs text-gray-500"></p>
+    </div>
+  </section>
+
+  <!-- ===== Section 4: 验证结果 ===== -->
+  <section class="section-card bg-gray-900/30 border border-gray-800 rounded-2xl p-6">
+    <h2 class="text-sm font-semibold text-gray-300 mb-4 flex items-center gap-2">
+      <span>📋</span> Validation Result
+    </h2>
+
+    <!-- 空状态 -->
+    <div id="result-empty" class="text-center py-10 text-gray-500 text-sm">
+      <span class="text-4xl block mb-2">🔍</span>
+      上传文件或输入路径，点击验证按钮查看结果
+    </div>
+
+    <!-- 结果容器 -->
+    <div id="result-area"></div>
+  </section>
+
+  <!-- 底部 -->
+  <footer class="mt-10 text-center text-xs text-gray-600">
+    BestRAG Developer Tool — 仅限开发环境使用
+  </footer>
+
+</main>
+
+<script src="validation.js?v=3"></script>
+</body>
+</html>

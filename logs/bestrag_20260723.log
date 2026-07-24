@@ -1,0 +1,54 @@
+2026-07-23 21:44:18,871 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-M3 API Embedding 已配置: http://localhost:8001/embed
+2026-07-23 21:44:22,855 - retrieval.embedding.providers.bge - INFO - info:54 - Connected to Milvus: localhost:19530
+2026-07-23 21:44:23,579 - retrieval.embedding.providers.bge - INFO - info:54 - Created collection: bestrag_bestrag_chunks
+2026-07-23 21:45:47,271 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-M3 API Embedding 已配置: http://localhost:8001/embed
+2026-07-23 21:45:48,162 - retrieval.embedding.providers.bge - INFO - info:54 - Connected to Milvus: localhost:19530
+2026-07-23 21:45:48,162 - retrieval.embedding.providers.bge - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-23 21:46:11,413 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-M3 API Embedding 已配置: http://localhost:8001/embed
+2026-07-23 21:46:26,732 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-M3 API Embedding 已配置: http://localhost:8001/embed
+2026-07-23 21:46:27,469 - retrieval.embedding.providers.bge - INFO - info:54 - Connected to Milvus: localhost:19530
+2026-07-23 21:46:27,469 - retrieval.embedding.providers.bge - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-23 21:47:01,924 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-M3 API Embedding 已配置: http://localhost:8001/embed
+2026-07-23 21:47:02,566 - retrieval.embedding.providers.bge - INFO - info:54 - Connected to Milvus: localhost:19530
+2026-07-23 21:47:02,582 - retrieval.embedding.providers.bge - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-23 21:50:31,125 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-M3 API Embedding 已配置: http://localhost:8001/embed
+2026-07-23 21:50:32,894 - retrieval.embedding.providers.bge - INFO - info:54 - Connected to Milvus: localhost:19530
+2026-07-23 21:50:32,904 - retrieval.embedding.providers.bge - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-23 21:50:38,054 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-M3 API Embedding 已配置: http://localhost:8001/embed
+2026-07-23 21:50:40,331 - retrieval.embedding.providers.bge - INFO - info:54 - Connected to Milvus: localhost:19530
+2026-07-23 21:50:40,410 - retrieval.embedding.providers.bge - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-23 21:52:40,142 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-M3 API Embedding 已配置: http://localhost:8001/embed
+2026-07-23 21:52:42,732 - retrieval.embedding.providers.bge - INFO - info:54 - Connected to Milvus: localhost:19530
+2026-07-23 21:52:42,747 - retrieval.embedding.providers.bge - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-23 21:53:20,809 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-M3 API Embedding 已配置: http://localhost:8001/embed
+2026-07-23 21:53:20,812 - retrieval.embedding.providers.bge - INFO - info:54 - Embedding single text | {'text': 'BestRAG is a RAG framework'}
+2026-07-23 21:53:23,718 - retrieval.embedding.providers.bge - INFO - info:54 - Embedding documents | {'count': 3}
+2026-07-23 21:53:26,190 - retrieval.embedding.providers.bge - INFO - info:54 - Embedding single text | {'text': ''}
+2026-07-23 21:53:33,337 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-M3 API Embedding 已配置: http://localhost:8001/embed
+2026-07-23 21:53:34,787 - retrieval.embedding.providers.bge - INFO - info:54 - Connected to Milvus: localhost:19530
+2026-07-23 21:53:34,815 - retrieval.embedding.providers.bge - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-23 21:53:47,103 - retrieval.embedding.providers.bge - INFO - info:54 - Embedding single text | {'text': 'BestRAG is a RAG framework'}
+2026-07-23 21:53:49,498 - retrieval.embedding.providers.bge - INFO - info:54 - Embedding documents | {'count': 3}
+2026-07-23 21:53:51,905 - retrieval.embedding.providers.bge - INFO - info:54 - Embedding single text | {'text': ''}
+2026-07-23 21:53:58,814 - retrieval.embedding.providers.bge - INFO - info:54 - Embedding documents | {'count': 4}
+2026-07-23 21:54:01,393 - retrieval.embedding.providers.bge - INFO - info:54 - Adding texts to vector store | {'count': 4}
+2026-07-23 21:54:06,051 - retrieval.embedding.providers.bge - INFO - info:54 - Inserted 4 vectors into collection bestrag_bestrag_chunks
+2026-07-23 21:54:06,051 - retrieval.embedding.providers.bge - INFO - info:54 - Embedding single text | {'text': 'programming'}
+2026-07-23 21:54:08,398 - retrieval.embedding.providers.bge - INFO - info:54 - Performing similarity search | {'query': 'programming', 'top_k': 2}
+2026-07-23 21:54:08,639 - retrieval.embedding.providers.bge - INFO - info:54 - Search completed, found 2 results
+2026-07-23 21:54:10,860 - retrieval.embedding.providers.bge - INFO - info:54 - Reranking documents | {'query': 'vector database technology', 'count': 4}
+2026-07-23 22:19:51,553 - retrieval.embedding.providers.bge - INFO - info:54 - Connected to Milvus: localhost:19530
+2026-07-23 22:19:51,575 - retrieval.embedding.providers.bge - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-23 22:19:51,576 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-M3 API Embedding 已配置: http://localhost:8001/embed
+2026-07-23 22:19:51,581 - retrieval.embedding.providers.bge - INFO - info:54 - Embedding documents | {'count': 4}
+2026-07-23 22:19:55,555 - retrieval.embedding.providers.bge - INFO - info:54 - Adding texts to vector store | {'count': 4}
+2026-07-23 22:19:57,810 - retrieval.embedding.providers.bge - INFO - info:54 - Inserted 4 vectors into collection bestrag_bestrag_chunks
+2026-07-23 22:19:57,810 - retrieval.embedding.providers.bge - INFO - info:54 - Embedding single text | {'text': 'programming'}
+2026-07-23 22:20:00,248 - retrieval.embedding.providers.bge - INFO - info:54 - Performing similarity search | {'query': 'programming', 'top_k': 2}
+2026-07-23 22:20:00,800 - retrieval.embedding.providers.bge - INFO - info:54 - Search completed, found 2 results
+2026-07-23 22:20:34,698 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-M3 API Embedding 已配置: http://localhost:8001/embed
+2026-07-23 22:20:36,389 - retrieval.embedding.providers.bge - INFO - info:54 - Connected to Milvus: localhost:19530
+2026-07-23 22:20:36,448 - retrieval.embedding.providers.bge - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-23 22:20:44,431 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-M3 API Embedding 已配置: http://localhost:8001/embed
+2026-07-23 22:20:46,323 - retrieval.embedding.providers.bge - INFO - info:54 - Connected to Milvus: localhost:19530
+2026-07-23 22:20:46,371 - retrieval.embedding.providers.bge - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks

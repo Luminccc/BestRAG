@@ -1,0 +1,72 @@
+2026-07-24 21:23:01,447 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-Rerank API 已配置: http://localhost:8002/rerank
+2026-07-24 21:25:20,770 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-M3 API Embedding 已配置: http://localhost:8001/embed
+2026-07-24 21:25:23,537 - retrieval.embedding.providers.bge - INFO - info:54 - Connected to Milvus: localhost:19530
+2026-07-24 21:25:23,592 - retrieval.embedding.providers.bge - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-24 21:25:23,593 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-Rerank API 已配置: http://localhost:8002/rerank
+2026-07-24 21:25:27,462 - retrieval.embedding.providers.bge - INFO - info:54 - Embedding single text | {'text': 'BestRAG is a RAG framework'}
+2026-07-24 21:26:07,181 - retrieval.embedding.providers.bge - INFO - info:54 - Embedding single text | {'text': 'BestRAG is a RAG framework'}
+2026-07-24 21:26:09,551 - retrieval.embedding.providers.bge - INFO - info:54 - Reranking documents | {'query': 'vector database technology', 'count': 4}
+2026-07-24 21:26:11,848 - retrieval.embedding.providers.bge - INFO - info:54 - Embedding documents | {'count': 4}
+2026-07-24 21:27:54,297 - retrieval.embedding.providers.bge - INFO - info:54 - Embedding single text | {'text': 'BestRAG is a RAG framework'}
+2026-07-24 21:27:56,979 - retrieval.embedding.providers.bge - INFO - info:54 - Reranking documents | {'query': 'vector database technology', 'count': 4}
+2026-07-24 21:27:59,486 - retrieval.embedding.providers.bge - INFO - info:54 - Embedding documents | {'count': 4}
+2026-07-24 21:28:15,414 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-M3 API Embedding 已配置: http://localhost:8001/embed
+2026-07-24 21:28:16,503 - retrieval.embedding.providers.bge - INFO - info:54 - Connected to Milvus: localhost:19530
+2026-07-24 21:28:16,567 - retrieval.embedding.providers.bge - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-24 21:28:16,567 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-Rerank API 已配置: http://localhost:8002/rerank
+2026-07-24 21:28:18,323 - retrieval.embedding.providers.bge - INFO - info:54 - Embedding single text | {'text': 'BestRAG is a RAG framework'}
+2026-07-24 21:29:02,597 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-24 21:29:03,560 - retrieval.embedding.providers.bge - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-24 21:29:03,576 - retrieval.embedding.providers.bge - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-24 21:29:03,576 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-24 21:29:06,765 - retrieval.embedding.providers.bge - INFO - info:54 - Embedding single text | {'text': 'BestRAG is a RAG framework'}
+2026-07-24 21:29:09,270 - retrieval.embedding.providers.bge - INFO - info:54 - Reranking documents | {'query': 'vector database technology', 'count': 4}
+2026-07-24 21:29:11,763 - retrieval.embedding.providers.bge - INFO - info:54 - Embedding documents | {'count': 4}
+2026-07-24 21:29:14,289 - retrieval.embedding.providers.bge - INFO - info:54 - Embedding documents | {'count': 5}
+2026-07-24 21:30:12,166 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-24 21:30:12,625 - retrieval.embedding.providers.bge - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-24 21:30:12,673 - retrieval.embedding.providers.bge - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-24 21:30:12,673 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-24 21:30:39,371 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-24 21:30:39,830 - retrieval.embedding.providers.bge - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-24 21:30:39,877 - retrieval.embedding.providers.bge - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-24 21:30:39,877 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-24 21:30:44,711 - retrieval.embedding.providers.bge - INFO - info:54 - Embedding single text | {'text': 'BestRAG is a RAG framework'}
+2026-07-24 21:30:46,364 - retrieval.embedding.providers.bge - INFO - info:54 - Embedding documents | {'count': 3}
+2026-07-24 21:30:49,362 - retrieval.embedding.providers.bge - INFO - info:54 - Embedding single text | {'text': ''}
+2026-07-24 21:30:49,425 - retrieval.embedding.providers.bge - INFO - info:54 - Reranking documents | {'query': 'vector database technology', 'count': 4}
+2026-07-24 21:31:19,716 - retrieval.embedding.providers.bge - INFO - info:54 - Embedding documents | {'count': 4}
+2026-07-24 21:31:21,122 - retrieval.embedding.providers.bge - INFO - info:54 - Adding texts to vector store | {'count': 4}
+2026-07-24 21:31:25,287 - retrieval.embedding.providers.bge - INFO - info:54 - Inserted 4 vectors into collection bestrag_bestrag_chunks
+2026-07-24 21:31:25,287 - retrieval.embedding.providers.bge - INFO - info:54 - Embedding single text | {'text': 'programming'}
+2026-07-24 21:31:25,556 - retrieval.embedding.providers.bge - INFO - info:54 - Performing similarity search | {'query': 'programming', 'top_k': 2}
+2026-07-24 21:31:26,145 - retrieval.embedding.providers.bge - INFO - info:54 - Search completed, found 2 results
+2026-07-24 21:31:26,192 - retrieval.embedding.providers.bge - INFO - info:54 - Embedding documents | {'count': 5}
+2026-07-24 21:31:26,743 - retrieval.embedding.providers.bge - INFO - info:54 - Adding texts to vector store | {'count': 5}
+2026-07-24 21:31:35,380 - retrieval.embedding.providers.bge - INFO - info:54 - Inserted 5 vectors into collection bestrag_bestrag_chunks
+2026-07-24 21:31:35,380 - retrieval.embedding.providers.bge - INFO - info:54 - Starting retrieval | {'query': 'What database stores vectors?', 'top_k': 3}
+2026-07-24 21:31:35,380 - retrieval.embedding.providers.bge - INFO - info:54 - Embedding single text | {'text': 'What database stores vectors?'}
+2026-07-24 21:31:36,135 - retrieval.embedding.providers.bge - INFO - info:54 - Performing similarity search | {'query': 'What database stores vectors?', 'top_k': 3}
+2026-07-24 21:31:36,149 - retrieval.embedding.providers.bge - INFO - info:54 - Search completed, found 3 results
+2026-07-24 21:31:36,149 - retrieval.embedding.providers.bge - INFO - info:54 - Retrieved 3 results
+2026-07-24 21:32:07,277 - retrieval.embedding.providers.bge - INFO - info:54 - Reranking documents | {'query': 'vector database technology', 'count': 4}
+2026-07-24 21:38:59,687 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-24 21:39:01,735 - retrieval.embedding.providers.bge - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-24 21:39:01,750 - retrieval.embedding.providers.bge - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-24 21:39:01,750 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-24 22:11:04,555 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-24 22:11:06,576 - retrieval.embedding.providers.bge - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-24 22:11:06,591 - retrieval.embedding.providers.bge - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-24 22:11:06,591 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-24 22:16:08,071 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-24 22:16:10,134 - retrieval.embedding.providers.bge - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-24 22:16:10,150 - retrieval.embedding.providers.bge - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-24 22:16:10,150 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-24 22:30:36,096 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-24 22:30:36,609 - retrieval.embedding.providers.bge - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-24 22:30:36,670 - retrieval.embedding.providers.bge - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-24 22:30:36,670 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-24 22:35:33,363 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-24 22:35:33,891 - retrieval.embedding.providers.bge - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-24 22:35:33,942 - retrieval.embedding.providers.bge - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-24 22:35:33,942 - retrieval.embedding.providers.bge - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank

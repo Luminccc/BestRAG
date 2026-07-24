@@ -1,0 +1,19 @@
+# BestRAG 配置文件
+# 所有模型均通过 FastAPI 接口接入，不加载本地模型
+
+retrieval:
+  # ---- Embedding (BGE-M3 Docker 服务) ----
+  embedding_api_url: "http://127.0.0.1:8001/embed"
+  embedding_dim: 1024
+
+  # ---- VectorStore (Milvus) ----
+  vectorstore_type: "milvus"
+  milvus_host: "127.0.0.1"
+  milvus_port: 19530
+  milvus_collection_prefix: "bestrag"
+
+  # ---- Rerank (BGE-Rerank Docker 服务) ----
+  rerank_api_url: "http://127.0.0.1:8002/rerank"
+
+  # ---- 检索参数 ----
+  top_k: 10
