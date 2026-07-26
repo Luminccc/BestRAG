@@ -404,12 +404,15 @@ class _TestFileGenerator:
 
 
 def _resolve_parser_name(file_path: str) -> str:
-    """根据文件路径推测 Parser 名称（仅用于报告）。"""
+    """根据文件路径推测 Provider 名称（仅用于报告）。"""
     ext = Path(file_path).suffix.lower()
     mapping = {
-        ".txt": "TxtParser",
-        ".md": "MarkdownParser",
-        ".pdf": "PDFParser",
-        ".docx": "DocxParser",
+        ".txt": "MarkItDownProvider",
+        ".md": "MarkItDownProvider",
+        ".pdf": "OpenDataLoaderProvider",
+        ".docx": "MarkItDownProvider",
+        ".pptx": "MarkItDownProvider",
+        ".xlsx": "MarkItDownProvider",
+        ".html": "MarkItDownProvider",
     }
     return mapping.get(ext, "unknown")

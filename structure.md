@@ -94,3 +94,6 @@ attu 8000
 bgem3 8001
 bge-rerank 8002
 Milvus 19530
+
+
+docker stop milvus-standalone milvus-minio milvus-etcd attu
