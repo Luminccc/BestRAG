@@ -1,56 +1,105 @@
-"""Core — BestRAG 基础设施层。
+"""Core — BestRAG 基础运行层。
 
-提供所有模块共同依赖的基础能力：
-- 配置管理
-- 依赖注入/服务注册
-- 日志记录
-- 异常处理
-- 工具函数
+职责：
+- 应用生命周期管理（Application）
+- 全局配置管理（ConfigManager）
+- Provider 注册与发现（ServiceRegistry）
+- 重量级资源管理（ResourceManager）
+- 统一日志（Logger）
+- 统一异常（Exception）
 
-Core 的职责不是管理模块间的服务链路，而是提供模块共同依赖的基础能力。
-业务链路本身（如上传、解析、调度、检索）仍留在各自的业务模块中。
+所有业务模块（Document / Processor / Retrieval）通过 Core 获取实例和服务，
+不负责创建实例或管理生命周期。
 """
 
-from .config import get_config, CoreConfig, RetrievalConfig
-from .registry import register_service, register_service_factory, get_service, unregister_service
-from .logger import get_logger, Logger
+from .config import (
+    AppConfig,
+    ConfigManager,
+    CoreConfig,
+    EmbeddingConfig,
+    GenerationConfig,
+    IndexingConfig,
+    RetrievalConfig,
+    RerankerConfig,
+    VectorStoreConfig,
+    WorkspaceConfig,
+    get_config,
+)
 from .exception import (
     BestRAGException,
-    ConfigException,
-    ServiceNotFoundException,
+    ConfigError,
+    CoreRuntimeError,
     EmbeddingException,
-    VectorStoreException,
+    GenerationException,
+    ProviderError,
+    RerankException,
+    ResourceError,
     RetrievalException,
-    RerankException
+    ServiceNotFoundError,
+    VectorStoreException,
 )
+from .logger import Logger, get_logger
+from .provider import BaseProvider
+from .registry import (
+    clear_services,
+    get_service,
+    register_service,
+    register_service_factory,
+    unregister_service,
+)
+from .resource_manager import ResourceManager
 from .utils import (
+    calculate_md5,
+    calculate_sha256,
     generate_id,
     get_current_timestamp,
     get_current_timestamp_ms,
-    calculate_md5,
-    calculate_sha256,
+    is_empty,
     safe_get_nested_value,
     truncate_text,
-    is_empty
 )
 
 __all__ = [
-    "get_config",
+    # Application (兼容入口 — 通过 core.app 延迟加载)
+    "Application",
+    # Config
+    "AppConfig",
+    "ConfigManager",
     "CoreConfig",
+    "EmbeddingConfig",
     "RetrievalConfig",
+    "RerankerConfig",
+    "VectorStoreConfig",
+    "WorkspaceConfig",
+    "get_config",
+    "GenerationConfig",
+    "IndexingConfig",
+    # Registry
     "register_service",
     "register_service_factory",
     "get_service",
     "unregister_service",
+    "clear_services",
+    # Logger
     "get_logger",
     "Logger",
+    # Provider
+    "BaseProvider",
+    # Resource
+    "ResourceManager",
+    # Exception
     "BestRAGException",
-    "ConfigException",
-    "ServiceNotFoundException",
+    "ConfigError",
+    "CoreRuntimeError",
     "EmbeddingException",
-    "VectorStoreException",
-    "RetrievalException",
+    "GenerationException",
+    "ProviderError",
     "RerankException",
+    "ResourceError",
+    "RetrievalException",
+    "ServiceNotFoundError",
+    "VectorStoreException",
+    # Utils
     "generate_id",
     "get_current_timestamp",
     "get_current_timestamp_ms",
@@ -58,5 +107,13 @@ __all__ = [
     "calculate_sha256",
     "safe_get_nested_value",
     "truncate_text",
-    "is_empty"
+    "is_empty",
 ]
+
+
+# 延迟加载 Application（避免循环导入：core → core.app → core.application → retrieval → core）
+def __getattr__(name: str):
+    if name == "Application":
+        from .app import Application
+        return Application
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")

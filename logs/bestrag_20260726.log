@@ -1,0 +1,859 @@
+2026-07-26 16:26:20,675 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 16:26:20,676 - bestrag.resource - INFO - info:54 - 配置加载完成
+2026-07-26 16:26:20,676 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 16:26:20,676 - bestrag.resource - INFO - info:54 - 应用关闭中...
+2026-07-26 16:26:20,676 - bestrag.resource - INFO - info:54 - 应用已关闭
+2026-07-26 16:38:26,319 - bestrag.resource - INFO - info:54 - VectorWriter 写入 2 条向量
+2026-07-26 16:38:26,320 - bestrag.resource - WARNING - warning:60 - 没有可写入的 chunk（全部缺少 embedding）
+2026-07-26 16:38:26,323 - bestrag.resource - INFO - info:54 - VectorWriter 写入 3 条向量
+2026-07-26 16:38:26,323 - bestrag.resource - INFO - info:54 - 索引完成: doc=doc-1, chunks=3
+2026-07-26 16:38:26,325 - bestrag.resource - INFO - info:54 - 开始索引: doc=doc-1
+2026-07-26 16:38:26,326 - bestrag.resource - INFO - info:54 - VectorWriter 写入 3 条向量
+2026-07-26 16:38:26,326 - bestrag.resource - INFO - info:54 - 索引完成: doc=doc-1, chunks=3
+2026-07-26 16:38:29,739 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 16:38:29,739 - bestrag.resource - INFO - info:54 - 配置加载完成
+2026-07-26 16:38:29,739 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 16:38:29,739 - bestrag.resource - INFO - info:54 - 应用关闭中...
+2026-07-26 16:38:29,739 - bestrag.resource - INFO - info:54 - 应用已关闭
+2026-07-26 16:38:29,752 - bestrag.resource - INFO - info:54 - VectorWriter 写入 2 条向量
+2026-07-26 16:38:29,753 - bestrag.resource - WARNING - warning:60 - 没有可写入的 chunk（全部缺少 embedding）
+2026-07-26 16:38:29,756 - bestrag.resource - INFO - info:54 - VectorWriter 写入 3 条向量
+2026-07-26 16:38:29,756 - bestrag.resource - INFO - info:54 - 索引完成: doc=doc-1, chunks=3
+2026-07-26 16:38:29,757 - bestrag.resource - INFO - info:54 - 开始索引: doc=doc-1
+2026-07-26 16:38:29,758 - bestrag.resource - INFO - info:54 - VectorWriter 写入 3 条向量
+2026-07-26 16:38:29,758 - bestrag.resource - INFO - info:54 - 索引完成: doc=doc-1, chunks=3
+2026-07-26 17:05:15,994 - bestrag.resource - INFO - info:54 - VectorRetriever 返回 3 条结果
+2026-07-26 17:05:15,996 - bestrag.resource - INFO - info:54 - BM25 corpus 已注册: 3 条文档
+2026-07-26 17:05:15,996 - bestrag.resource - INFO - info:54 - BM25Retriever 返回 0 条结果
+2026-07-26 17:05:16,113 - bestrag.resource - INFO - info:54 - BM25 corpus 已注册: 3 条文档
+2026-07-26 17:05:16,115 - bestrag.resource - INFO - info:54 - VectorRetriever 返回 3 条结果
+2026-07-26 17:05:16,115 - bestrag.resource - INFO - info:54 - BM25Retriever 返回 0 条结果
+2026-07-26 17:05:21,964 - bestrag.resource - INFO - info:54 - BM25 corpus 已注册: 3 条文档
+2026-07-26 17:05:21,964 - bestrag.resource - INFO - info:54 - BM25Retriever 返回 0 条结果
+2026-07-26 17:05:47,250 - bestrag.resource - INFO - info:54 - BM25 corpus 已注册: 3 条文档
+2026-07-26 17:05:47,250 - bestrag.resource - INFO - info:54 - BM25Retriever 返回 2 条结果
+2026-07-26 17:06:02,227 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 17:06:02,227 - bestrag.resource - INFO - info:54 - 配置加载完成
+2026-07-26 17:06:02,227 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 17:06:02,227 - bestrag.resource - INFO - info:54 - 应用关闭中...
+2026-07-26 17:06:02,228 - bestrag.resource - INFO - info:54 - 应用已关闭
+2026-07-26 17:06:02,240 - bestrag.resource - INFO - info:54 - VectorWriter 写入 2 条向量
+2026-07-26 17:06:02,241 - bestrag.resource - WARNING - warning:60 - 没有可写入的 chunk（全部缺少 embedding）
+2026-07-26 17:06:02,243 - bestrag.resource - INFO - info:54 - VectorWriter 写入 3 条向量
+2026-07-26 17:06:02,243 - bestrag.resource - INFO - info:54 - 索引完成: doc=doc-1, chunks=3
+2026-07-26 17:06:02,245 - bestrag.resource - INFO - info:54 - 开始索引: doc=doc-1
+2026-07-26 17:06:02,245 - bestrag.resource - INFO - info:54 - VectorWriter 写入 3 条向量
+2026-07-26 17:06:02,245 - bestrag.resource - INFO - info:54 - 索引完成: doc=doc-1, chunks=3
+2026-07-26 17:06:02,248 - bestrag.resource - INFO - info:54 - VectorRetriever 返回 3 条结果
+2026-07-26 17:06:02,250 - bestrag.resource - INFO - info:54 - BM25 corpus 已注册: 3 条文档
+2026-07-26 17:06:02,251 - bestrag.resource - INFO - info:54 - BM25Retriever 返回 1 条结果
+2026-07-26 17:06:02,252 - bestrag.resource - INFO - info:54 - BM25 corpus 已注册: 3 条文档
+2026-07-26 17:06:02,253 - bestrag.resource - INFO - info:54 - VectorRetriever 返回 3 条结果
+2026-07-26 17:06:02,253 - bestrag.resource - INFO - info:54 - BM25Retriever 返回 1 条结果
+2026-07-26 17:06:40,083 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 17:06:40,083 - bestrag.resource - INFO - info:54 - 配置加载完成
+2026-07-26 17:06:40,083 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 17:06:40,083 - bestrag.resource - INFO - info:54 - 应用关闭中...
+2026-07-26 17:06:40,083 - bestrag.resource - INFO - info:54 - 应用已关闭
+2026-07-26 17:06:40,095 - bestrag.resource - INFO - info:54 - VectorWriter 写入 2 条向量
+2026-07-26 17:06:40,096 - bestrag.resource - WARNING - warning:60 - 没有可写入的 chunk（全部缺少 embedding）
+2026-07-26 17:06:40,098 - bestrag.resource - INFO - info:54 - VectorWriter 写入 3 条向量
+2026-07-26 17:06:40,098 - bestrag.resource - INFO - info:54 - 索引完成: doc=doc-1, chunks=3
+2026-07-26 17:06:40,099 - bestrag.resource - INFO - info:54 - 开始索引: doc=doc-1
+2026-07-26 17:06:40,100 - bestrag.resource - INFO - info:54 - VectorWriter 写入 3 条向量
+2026-07-26 17:06:40,100 - bestrag.resource - INFO - info:54 - 索引完成: doc=doc-1, chunks=3
+2026-07-26 17:06:40,103 - bestrag.resource - INFO - info:54 - VectorRetriever 返回 3 条结果
+2026-07-26 17:06:40,105 - bestrag.resource - INFO - info:54 - BM25 corpus 已注册: 3 条文档
+2026-07-26 17:06:40,105 - bestrag.resource - INFO - info:54 - BM25Retriever 返回 1 条结果
+2026-07-26 17:06:40,106 - bestrag.resource - INFO - info:54 - BM25 corpus 已注册: 3 条文档
+2026-07-26 17:06:40,107 - bestrag.resource - INFO - info:54 - VectorRetriever 返回 3 条结果
+2026-07-26 17:06:40,107 - bestrag.resource - INFO - info:54 - BM25Retriever 返回 1 条结果
+2026-07-26 17:07:09,507 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 17:07:09,507 - bestrag.resource - INFO - info:54 - 配置加载完成
+2026-07-26 17:07:09,507 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 17:07:09,507 - bestrag.resource - INFO - info:54 - 应用关闭中...
+2026-07-26 17:07:09,507 - bestrag.resource - INFO - info:54 - 应用已关闭
+2026-07-26 17:07:09,520 - bestrag.resource - INFO - info:54 - VectorWriter 写入 2 条向量
+2026-07-26 17:07:09,521 - bestrag.resource - WARNING - warning:60 - 没有可写入的 chunk（全部缺少 embedding）
+2026-07-26 17:07:09,523 - bestrag.resource - INFO - info:54 - VectorWriter 写入 3 条向量
+2026-07-26 17:07:09,524 - bestrag.resource - INFO - info:54 - 索引完成: doc=doc-1, chunks=3
+2026-07-26 17:07:09,525 - bestrag.resource - INFO - info:54 - 开始索引: doc=doc-1
+2026-07-26 17:07:09,526 - bestrag.resource - INFO - info:54 - VectorWriter 写入 3 条向量
+2026-07-26 17:07:09,526 - bestrag.resource - INFO - info:54 - 索引完成: doc=doc-1, chunks=3
+2026-07-26 17:07:09,528 - bestrag.resource - INFO - info:54 - VectorRetriever 返回 3 条结果
+2026-07-26 17:07:09,530 - bestrag.resource - INFO - info:54 - BM25 corpus 已注册: 3 条文档
+2026-07-26 17:07:09,531 - bestrag.resource - INFO - info:54 - BM25Retriever 返回 1 条结果
+2026-07-26 17:07:09,532 - bestrag.resource - INFO - info:54 - BM25 corpus 已注册: 3 条文档
+2026-07-26 17:07:09,533 - bestrag.resource - INFO - info:54 - VectorRetriever 返回 3 条结果
+2026-07-26 17:07:09,533 - bestrag.resource - INFO - info:54 - BM25Retriever 返回 1 条结果
+2026-07-26 17:32:43,765 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 17:32:43,767 - bestrag.resource - INFO - info:54 - 配置加载完成
+2026-07-26 17:32:43,767 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 17:32:43,767 - bestrag.resource - INFO - info:54 - 应用关闭中...
+2026-07-26 17:32:43,767 - bestrag.resource - INFO - info:54 - 应用已关闭
+2026-07-26 17:32:43,796 - bestrag.resource - INFO - info:54 - 生成开始: 如何部署RAG?...
+2026-07-26 17:32:43,797 - bestrag.resource - INFO - info:54 - 生成完成: model=gpt-4o-mini, len=21
+2026-07-26 17:32:43,804 - bestrag.resource - INFO - info:54 - VectorWriter 写入 2 条向量
+2026-07-26 17:32:43,805 - bestrag.resource - WARNING - warning:60 - 没有可写入的 chunk（全部缺少 embedding）
+2026-07-26 17:32:43,809 - bestrag.resource - INFO - info:54 - VectorWriter 写入 3 条向量
+2026-07-26 17:32:43,809 - bestrag.resource - INFO - info:54 - 索引完成: doc=doc-1, chunks=3
+2026-07-26 17:32:43,811 - bestrag.resource - INFO - info:54 - 开始索引: doc=doc-1
+2026-07-26 17:32:43,813 - bestrag.resource - INFO - info:54 - VectorWriter 写入 3 条向量
+2026-07-26 17:32:43,813 - bestrag.resource - INFO - info:54 - 索引完成: doc=doc-1, chunks=3
+2026-07-26 17:32:43,817 - bestrag.resource - INFO - info:54 - VectorRetriever 返回 3 条结果
+2026-07-26 17:32:43,820 - bestrag.resource - INFO - info:54 - BM25 corpus 已注册: 3 条文档
+2026-07-26 17:32:43,821 - bestrag.resource - INFO - info:54 - BM25Retriever 返回 1 条结果
+2026-07-26 17:32:43,823 - bestrag.resource - INFO - info:54 - BM25 corpus 已注册: 3 条文档
+2026-07-26 17:32:43,824 - bestrag.resource - INFO - info:54 - VectorRetriever 返回 3 条结果
+2026-07-26 17:32:43,824 - bestrag.resource - INFO - info:54 - BM25Retriever 返回 1 条结果
+2026-07-26 17:33:08,807 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 17:33:08,808 - bestrag.resource - INFO - info:54 - 配置加载完成
+2026-07-26 17:33:08,808 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 17:33:08,808 - bestrag.resource - INFO - info:54 - 应用关闭中...
+2026-07-26 17:33:08,808 - bestrag.resource - INFO - info:54 - 应用已关闭
+2026-07-26 17:33:08,832 - bestrag.resource - INFO - info:54 - 生成开始: 如何部署RAG?...
+2026-07-26 17:33:08,833 - bestrag.resource - INFO - info:54 - 生成完成: model=gpt-4o-mini, len=21
+2026-07-26 17:33:08,839 - bestrag.resource - INFO - info:54 - VectorWriter 写入 2 条向量
+2026-07-26 17:33:08,840 - bestrag.resource - WARNING - warning:60 - 没有可写入的 chunk（全部缺少 embedding）
+2026-07-26 17:33:08,843 - bestrag.resource - INFO - info:54 - VectorWriter 写入 3 条向量
+2026-07-26 17:33:08,843 - bestrag.resource - INFO - info:54 - 索引完成: doc=doc-1, chunks=3
+2026-07-26 17:33:08,845 - bestrag.resource - INFO - info:54 - 开始索引: doc=doc-1
+2026-07-26 17:33:08,847 - bestrag.resource - INFO - info:54 - VectorWriter 写入 3 条向量
+2026-07-26 17:33:08,847 - bestrag.resource - INFO - info:54 - 索引完成: doc=doc-1, chunks=3
+2026-07-26 17:33:08,849 - bestrag.resource - INFO - info:54 - VectorRetriever 返回 3 条结果
+2026-07-26 17:33:08,851 - bestrag.resource - INFO - info:54 - BM25 corpus 已注册: 3 条文档
+2026-07-26 17:33:08,852 - bestrag.resource - INFO - info:54 - BM25Retriever 返回 1 条结果
+2026-07-26 17:33:08,854 - bestrag.resource - INFO - info:54 - BM25 corpus 已注册: 3 条文档
+2026-07-26 17:33:08,855 - bestrag.resource - INFO - info:54 - VectorRetriever 返回 3 条结果
+2026-07-26 17:33:08,855 - bestrag.resource - INFO - info:54 - BM25Retriever 返回 1 条结果
+2026-07-26 17:48:27,040 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 18:10:31,924 - bestrag.application - INFO - info:54 - Bootstrap 开始...
+2026-07-26 18:10:31,928 - bestrag.application - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 18:10:31,930 - bestrag.application - INFO - info:54 - Workspace 初始化完成
+2026-07-26 18:10:31,930 - bestrag.application - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 18:12:13,119 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 18:12:13,121 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 18:12:13,121 - bestrag.resource - INFO - info:54 - 应用关闭中...
+2026-07-26 18:12:13,122 - bestrag.resource - INFO - info:54 - 应用已关闭
+2026-07-26 18:12:56,409 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 18:12:56,411 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 18:12:56,411 - bestrag.resource - INFO - info:54 - 应用关闭中...
+2026-07-26 18:12:56,411 - bestrag.resource - INFO - info:54 - 应用已关闭
+2026-07-26 18:14:18,097 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 18:14:18,098 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 18:14:18,098 - bestrag.resource - INFO - info:54 - 应用关闭中...
+2026-07-26 18:14:18,098 - bestrag.resource - INFO - info:54 - 应用已关闭
+2026-07-26 18:20:53,125 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 18:20:53,127 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 18:20:53,128 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 18:20:53,128 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 18:35:29,231 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 18:35:29,235 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 18:35:29,236 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 18:35:29,237 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 20:45:24,056 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 20:45:24,059 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 20:45:24,060 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 20:45:24,060 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 20:45:34,458 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 20:45:34,460 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 20:45:34,461 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 20:45:34,461 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 20:45:52,069 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 20:45:52,070 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 20:45:52,071 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 20:45:52,071 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 20:46:00,931 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 20:46:00,932 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 20:46:00,933 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 20:46:00,933 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 20:46:43,555 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 20:46:43,556 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 20:46:43,557 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 20:46:43,557 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 20:46:49,171 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 20:46:49,172 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 20:46:49,173 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 20:46:49,173 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 20:48:45,882 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 20:48:45,883 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 20:48:45,884 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 20:48:45,884 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 20:48:45,884 - bestrag.resource - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-26 20:48:45,896 - bestrag.resource - INFO - info:54 - Bootstrap 完成
+2026-07-26 20:48:45,896 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 20:48:45,896 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: embedding
+2026-07-26 20:48:45,897 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: vector_store
+2026-07-26 20:48:45,897 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: retrieval
+2026-07-26 20:48:45,897 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: rerank
+2026-07-26 20:48:45,897 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: generation
+2026-07-26 20:48:45,897 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: indexing
+2026-07-26 20:48:45,897 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 20:48:45,898 - bestrag.resource - INFO - info:54 - 应用关闭中...
+2026-07-26 20:48:45,898 - bestrag.resource - INFO - info:54 - 应用已关闭
+2026-07-26 21:07:28,987 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 21:07:28,987 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 21:07:28,987 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 21:07:28,987 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:07:28,987 - bestrag.resource - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-26 21:07:29,005 - bestrag.resource - INFO - info:54 - Bootstrap 完成
+2026-07-26 21:07:29,005 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 21:07:29,005 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: embedding
+2026-07-26 21:07:29,005 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: vector_store
+2026-07-26 21:07:29,005 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: retrieval
+2026-07-26 21:07:29,005 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: rerank
+2026-07-26 21:07:29,005 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: generation
+2026-07-26 21:07:29,005 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: indexing
+2026-07-26 21:07:29,005 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 21:08:00,143 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'test'}
+2026-07-26 21:08:08,815 - bestrag.resource - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-26 21:08:08,842 - bestrag.resource - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-26 21:08:29,650 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'BestRAG is a RAG framework'}
+2026-07-26 21:08:30,289 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 3}
+2026-07-26 21:08:31,644 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': ''}
+2026-07-26 21:08:31,644 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 4}
+2026-07-26 21:08:39,820 - bestrag.resource - INFO - info:54 - Inserted 4 vectors into collection bestrag_bestrag_chunks
+2026-07-26 21:08:39,820 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'programming'}
+2026-07-26 21:08:41,140 - bestrag.resource - INFO - info:54 - Search completed, found 2 results
+2026-07-26 21:08:41,140 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 5}
+2026-07-26 21:08:44,210 - bestrag.resource - INFO - info:54 - Inserted 5 vectors into collection bestrag_bestrag_chunks
+2026-07-26 21:08:44,210 - bestrag.resource - INFO - info:54 - Starting retrieval | {'query': 'What database stores vectors?', 'top_k': 3}
+2026-07-26 21:08:44,210 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'What database stores vectors?'}
+2026-07-26 21:08:44,474 - bestrag.resource - INFO - info:54 - Search completed, found 3 results
+2026-07-26 21:08:44,474 - bestrag.resource - INFO - info:54 - Retrieved 3 results
+2026-07-26 21:14:51,271 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 21:14:51,271 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 21:14:51,273 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 21:14:51,273 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:14:51,273 - bestrag.resource - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-26 21:14:51,285 - bestrag.resource - INFO - info:54 - Bootstrap 完成
+2026-07-26 21:14:51,285 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 21:14:51,285 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: embedding
+2026-07-26 21:14:51,285 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: vector_store
+2026-07-26 21:14:51,285 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: retrieval
+2026-07-26 21:14:51,285 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: rerank
+2026-07-26 21:14:51,285 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: generation
+2026-07-26 21:14:51,285 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: indexing
+2026-07-26 21:14:51,285 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 21:15:23,008 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'test'}
+2026-07-26 21:15:24,204 - bestrag.resource - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-26 21:15:24,256 - bestrag.resource - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-26 21:15:28,564 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'test'}
+2026-07-26 21:15:31,564 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'test'}
+2026-07-26 21:15:32,621 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'test'}
+2026-07-26 21:15:34,034 - bestrag.resource - INFO - info:54 - 生成开始: 如何部署 BestRAG？...
+2026-07-26 21:15:35,737 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'BestRAG is a RAG framework'}
+2026-07-26 21:15:36,054 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 3}
+2026-07-26 21:15:36,400 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': ''}
+2026-07-26 21:15:36,400 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 4}
+2026-07-26 21:15:39,873 - bestrag.resource - INFO - info:54 - Inserted 4 vectors into collection bestrag_bestrag_chunks
+2026-07-26 21:15:39,873 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'programming'}
+2026-07-26 21:15:40,211 - bestrag.resource - INFO - info:54 - Search completed, found 2 results
+2026-07-26 21:15:40,211 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 5}
+2026-07-26 21:15:48,780 - bestrag.resource - INFO - info:54 - Inserted 5 vectors into collection bestrag_bestrag_chunks
+2026-07-26 21:15:48,780 - bestrag.resource - INFO - info:54 - Starting retrieval | {'query': 'What database stores vectors?', 'top_k': 3}
+2026-07-26 21:15:48,781 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'What database stores vectors?'}
+2026-07-26 21:15:49,110 - bestrag.resource - INFO - info:54 - Search completed, found 3 results
+2026-07-26 21:15:49,110 - bestrag.resource - INFO - info:54 - Retrieved 3 results
+2026-07-26 21:15:49,119 - bestrag.resource - INFO - info:54 - 生成开始: 如何部署 BestRAG？...
+2026-07-26 21:15:49,119 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'BestRAG is a RAG framework'}
+2026-07-26 21:15:49,437 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 3}
+2026-07-26 21:15:49,705 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': ''}
+2026-07-26 21:15:49,705 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 4}
+2026-07-26 21:15:58,069 - bestrag.resource - INFO - info:54 - Inserted 4 vectors into collection bestrag_bestrag_chunks
+2026-07-26 21:15:58,069 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'programming'}
+2026-07-26 21:15:58,387 - bestrag.resource - INFO - info:54 - Search completed, found 2 results
+2026-07-26 21:15:58,387 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 5}
+2026-07-26 21:16:09,963 - bestrag.resource - INFO - info:54 - Inserted 5 vectors into collection bestrag_bestrag_chunks
+2026-07-26 21:16:09,963 - bestrag.resource - INFO - info:54 - Starting retrieval | {'query': 'What database stores vectors?', 'top_k': 3}
+2026-07-26 21:16:09,963 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'What database stores vectors?'}
+2026-07-26 21:16:10,303 - bestrag.resource - INFO - info:54 - Search completed, found 3 results
+2026-07-26 21:16:10,303 - bestrag.resource - INFO - info:54 - Retrieved 3 results
+2026-07-26 21:16:10,309 - bestrag.resource - INFO - info:54 - 生成开始: 如何部署 BestRAG？...
+2026-07-26 21:16:10,309 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'BestRAG is a RAG framework'}
+2026-07-26 21:16:10,620 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 3}
+2026-07-26 21:16:10,875 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': ''}
+2026-07-26 21:16:10,875 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 4}
+2026-07-26 21:16:19,232 - bestrag.resource - INFO - info:54 - Inserted 4 vectors into collection bestrag_bestrag_chunks
+2026-07-26 21:16:19,232 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'programming'}
+2026-07-26 21:16:19,546 - bestrag.resource - INFO - info:54 - Search completed, found 2 results
+2026-07-26 21:16:19,546 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 5}
+2026-07-26 21:16:31,159 - bestrag.resource - INFO - info:54 - Inserted 5 vectors into collection bestrag_bestrag_chunks
+2026-07-26 21:16:31,159 - bestrag.resource - INFO - info:54 - Starting retrieval | {'query': 'What database stores vectors?', 'top_k': 3}
+2026-07-26 21:16:31,159 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'What database stores vectors?'}
+2026-07-26 21:16:31,631 - bestrag.resource - INFO - info:54 - Search completed, found 3 results
+2026-07-26 21:16:31,631 - bestrag.resource - INFO - info:54 - Retrieved 3 results
+2026-07-26 21:16:31,646 - bestrag.resource - INFO - info:54 - 生成开始: 如何部署 BestRAG？...
+2026-07-26 21:16:31,646 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'BestRAG is a RAG framework'}
+2026-07-26 21:16:32,032 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 3}
+2026-07-26 21:16:32,351 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': ''}
+2026-07-26 21:16:32,360 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 4}
+2026-07-26 21:16:40,843 - bestrag.resource - INFO - info:54 - Inserted 4 vectors into collection bestrag_bestrag_chunks
+2026-07-26 21:16:40,843 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'programming'}
+2026-07-26 21:16:41,186 - bestrag.resource - INFO - info:54 - Search completed, found 2 results
+2026-07-26 21:16:41,186 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 5}
+2026-07-26 21:16:52,779 - bestrag.resource - INFO - info:54 - Inserted 5 vectors into collection bestrag_bestrag_chunks
+2026-07-26 21:16:52,783 - bestrag.resource - INFO - info:54 - Starting retrieval | {'query': 'What database stores vectors?', 'top_k': 3}
+2026-07-26 21:16:52,783 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'What database stores vectors?'}
+2026-07-26 21:16:53,148 - bestrag.resource - INFO - info:54 - Search completed, found 3 results
+2026-07-26 21:16:53,148 - bestrag.resource - INFO - info:54 - Retrieved 3 results
+2026-07-26 21:16:53,152 - bestrag.resource - INFO - info:54 - 生成开始: 如何部署 BestRAG？...
+2026-07-26 21:16:53,152 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'BestRAG is a RAG framework'}
+2026-07-26 21:16:53,474 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 3}
+2026-07-26 21:16:53,807 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': ''}
+2026-07-26 21:16:53,807 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 4}
+2026-07-26 21:17:02,112 - bestrag.resource - INFO - info:54 - Inserted 4 vectors into collection bestrag_bestrag_chunks
+2026-07-26 21:17:02,112 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'programming'}
+2026-07-26 21:17:02,445 - bestrag.resource - INFO - info:54 - Search completed, found 2 results
+2026-07-26 21:17:02,445 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 5}
+2026-07-26 21:17:13,980 - bestrag.resource - INFO - info:54 - Inserted 5 vectors into collection bestrag_bestrag_chunks
+2026-07-26 21:17:13,980 - bestrag.resource - INFO - info:54 - Starting retrieval | {'query': 'What database stores vectors?', 'top_k': 3}
+2026-07-26 21:17:13,980 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'What database stores vectors?'}
+2026-07-26 21:17:14,345 - bestrag.resource - INFO - info:54 - Search completed, found 3 results
+2026-07-26 21:17:14,345 - bestrag.resource - INFO - info:54 - Retrieved 3 results
+2026-07-26 21:17:15,849 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 21:17:15,849 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 21:17:15,849 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 21:17:15,849 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:17:15,849 - bestrag.resource - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-26 21:17:15,863 - bestrag.resource - INFO - info:54 - Bootstrap 完成
+2026-07-26 21:17:15,866 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 21:17:15,866 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: embedding
+2026-07-26 21:17:15,866 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: vector_store
+2026-07-26 21:17:15,866 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: retrieval
+2026-07-26 21:17:15,866 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: rerank
+2026-07-26 21:17:15,866 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: generation
+2026-07-26 21:17:15,866 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: indexing
+2026-07-26 21:17:15,866 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 21:17:19,797 - bestrag.resource - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=2
+2026-07-26 21:17:29,207 - bestrag.resource - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=2
+2026-07-26 21:17:29,353 - bestrag.resource - INFO - info:54 - 生成开始: 如何部署 BestRAG？...
+2026-07-26 21:17:30,615 - bestrag.resource - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=101
+2026-07-26 21:17:30,615 - bestrag.resource - INFO - info:54 - 生成完成: model=deepseek-chat, len=101
+2026-07-26 21:17:53,024 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 21:17:53,030 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 21:17:53,032 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 21:17:53,032 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:17:53,032 - bestrag.resource - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-26 21:17:53,043 - bestrag.resource - INFO - info:54 - Bootstrap 完成
+2026-07-26 21:17:53,043 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 21:17:53,043 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: embedding
+2026-07-26 21:17:53,043 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: vector_store
+2026-07-26 21:17:53,043 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: retrieval
+2026-07-26 21:17:53,043 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: rerank
+2026-07-26 21:17:53,043 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: generation
+2026-07-26 21:17:53,043 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: indexing
+2026-07-26 21:17:53,043 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 21:17:57,737 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'test'}
+2026-07-26 21:17:58,757 - bestrag.resource - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-26 21:17:58,801 - bestrag.resource - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-26 21:18:07,024 - bestrag.resource - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=2
+2026-07-26 21:18:07,024 - bestrag.resource - INFO - info:54 - 生成开始: 如何部署 BestRAG？...
+2026-07-26 21:18:08,675 - bestrag.resource - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=55
+2026-07-26 21:18:08,675 - bestrag.resource - INFO - info:54 - 生成完成: model=deepseek-chat, len=55
+2026-07-26 21:18:08,675 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'BestRAG is a RAG framework'}
+2026-07-26 21:18:09,025 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 3}
+2026-07-26 21:18:09,355 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': ''}
+2026-07-26 21:18:09,356 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 4}
+2026-07-26 21:18:12,304 - bestrag.resource - INFO - info:54 - Inserted 4 vectors into collection bestrag_bestrag_chunks
+2026-07-26 21:18:12,304 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'programming'}
+2026-07-26 21:18:12,639 - bestrag.resource - INFO - info:54 - Search completed, found 2 results
+2026-07-26 21:18:12,639 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 5}
+2026-07-26 21:18:20,635 - bestrag.resource - INFO - info:54 - Inserted 5 vectors into collection bestrag_bestrag_chunks
+2026-07-26 21:18:20,635 - bestrag.resource - INFO - info:54 - Starting retrieval | {'query': 'What database stores vectors?', 'top_k': 3}
+2026-07-26 21:18:20,635 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'What database stores vectors?'}
+2026-07-26 21:18:20,970 - bestrag.resource - INFO - info:54 - Search completed, found 3 results
+2026-07-26 21:18:20,970 - bestrag.resource - INFO - info:54 - Retrieved 3 results
+2026-07-26 21:23:06,559 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'test'}
+2026-07-26 21:24:43,930 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 21:24:43,930 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 21:24:43,930 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 21:24:43,930 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:24:43,930 - bestrag.resource - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-26 21:24:43,946 - bestrag.resource - INFO - info:54 - Bootstrap 完成
+2026-07-26 21:24:43,946 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 21:24:43,946 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: embedding
+2026-07-26 21:24:43,946 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: vector_store
+2026-07-26 21:24:43,946 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: retrieval
+2026-07-26 21:24:43,946 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: rerank
+2026-07-26 21:24:43,946 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: generation
+2026-07-26 21:24:43,946 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: indexing
+2026-07-26 21:24:43,946 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 21:24:47,116 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 21:24:47,116 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 21:24:47,116 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 21:24:47,116 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:24:47,116 - bestrag.resource - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-26 21:24:47,133 - bestrag.resource - INFO - info:54 - Bootstrap 完成
+2026-07-26 21:24:47,133 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 21:24:47,133 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: embedding
+2026-07-26 21:24:47,133 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: vector_store
+2026-07-26 21:24:47,133 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: retrieval
+2026-07-26 21:24:47,133 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: rerank
+2026-07-26 21:24:47,133 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: generation
+2026-07-26 21:24:47,133 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: indexing
+2026-07-26 21:24:47,133 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 21:25:49,572 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 21:25:49,586 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 21:25:49,586 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 21:25:49,586 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:25:49,586 - bestrag.resource - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-26 21:25:49,593 - bestrag.resource - INFO - info:54 - Bootstrap 完成
+2026-07-26 21:25:49,593 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 21:25:49,593 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: embedding
+2026-07-26 21:25:49,593 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: vector_store
+2026-07-26 21:25:49,593 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: retrieval
+2026-07-26 21:25:49,593 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: rerank
+2026-07-26 21:25:49,593 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: generation
+2026-07-26 21:25:49,593 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: indexing
+2026-07-26 21:25:49,593 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 21:25:53,740 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'test'}
+2026-07-26 21:25:54,922 - bestrag.resource - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-26 21:25:54,978 - bestrag.resource - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-26 21:27:32,968 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 21:27:32,968 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 21:27:32,968 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 21:27:32,968 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:27:32,968 - bestrag.resource - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-26 21:27:32,975 - bestrag.resource - INFO - info:54 - Bootstrap 完成
+2026-07-26 21:27:32,975 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 21:27:32,975 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: embedding
+2026-07-26 21:27:32,975 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: vector_store
+2026-07-26 21:27:32,975 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: retrieval
+2026-07-26 21:27:32,975 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: rerank
+2026-07-26 21:27:32,975 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: generation
+2026-07-26 21:27:32,975 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: indexing
+2026-07-26 21:27:32,975 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 21:27:32,982 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 21:27:32,982 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 21:27:32,982 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 21:27:32,982 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:27:32,982 - bestrag.resource - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-26 21:27:32,982 - bestrag.resource - INFO - info:54 - Bootstrap 完成
+2026-07-26 21:27:32,982 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 21:27:32,982 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: embedding
+2026-07-26 21:27:32,982 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: vector_store
+2026-07-26 21:27:32,982 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: retrieval
+2026-07-26 21:27:32,982 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: rerank
+2026-07-26 21:27:32,982 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: generation
+2026-07-26 21:27:32,982 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: indexing
+2026-07-26 21:27:32,982 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 21:27:58,409 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 21:27:58,409 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 21:27:58,409 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 21:27:58,409 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:27:58,409 - bestrag.resource - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-26 21:27:58,424 - bestrag.resource - INFO - info:54 - Bootstrap 完成
+2026-07-26 21:27:58,424 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 21:27:58,424 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: embedding
+2026-07-26 21:27:58,424 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: vector_store
+2026-07-26 21:27:58,424 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: retrieval
+2026-07-26 21:27:58,424 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: rerank
+2026-07-26 21:27:58,424 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: generation
+2026-07-26 21:27:58,424 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: indexing
+2026-07-26 21:27:58,424 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 21:28:47,153 - bestrag.resource - INFO - info:54 - Starting retrieval | {'query': 'hello', 'top_k': 3}
+2026-07-26 21:28:47,153 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'hello'}
+2026-07-26 21:28:48,070 - bestrag.resource - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-26 21:28:48,077 - bestrag.resource - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-26 21:28:48,320 - bestrag.resource - INFO - info:54 - Search completed, found 3 results
+2026-07-26 21:28:48,320 - bestrag.resource - INFO - info:54 - Retrieved 3 results
+2026-07-26 21:28:48,320 - bestrag.resource - INFO - info:54 - 检索完成: 3 results, 1166.27ms
+2026-07-26 21:28:48,320 - bestrag.resource - INFO - info:54 - Reranking documents | {'query': 'hello', 'count': 3}
+2026-07-26 21:28:53,567 - bestrag.resource - INFO - info:54 - 重排序完成: 3 results, 5247.61ms
+2026-07-26 21:28:53,570 - bestrag.resource - INFO - info:54 - 生成开始: hello...
+2026-07-26 21:28:56,564 - bestrag.resource - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=113
+2026-07-26 21:28:56,564 - bestrag.resource - INFO - info:54 - 生成完成: model=deepseek-chat, len=113
+2026-07-26 21:28:56,564 - bestrag.resource - INFO - info:54 - 生成完成: 113 chars, 2993.62ms
+2026-07-26 21:29:37,869 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 21:29:37,869 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 21:29:37,869 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 21:29:37,869 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:29:37,869 - bestrag.resource - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-26 21:29:37,885 - bestrag.resource - INFO - info:54 - Bootstrap 完成
+2026-07-26 21:29:37,885 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 21:29:37,885 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: embedding
+2026-07-26 21:29:37,885 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: vector_store
+2026-07-26 21:29:37,885 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: retrieval
+2026-07-26 21:29:37,885 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: rerank
+2026-07-26 21:29:37,885 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: generation
+2026-07-26 21:29:37,885 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: indexing
+2026-07-26 21:29:37,885 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 21:29:41,370 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'test'}
+2026-07-26 21:29:43,417 - bestrag.resource - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-26 21:29:43,464 - bestrag.resource - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-26 21:29:47,853 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'test'}
+2026-07-26 21:30:20,264 - bestrag.resource - INFO - info:54 - 文档解析完成: 154090f1-868c-46f5-8f40-498c98d8507b, 866 chars
+2026-07-26 21:30:20,264 - bestrag.resource - INFO - info:54 - 文档处理完成: 2 chunks
+2026-07-26 21:30:20,264 - bestrag.resource - INFO - info:54 - 开始索引: doc=154090f1-868c-46f5-8f40-498c98d8507b
+2026-07-26 21:30:20,264 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:30:20,264 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 2}
+2026-07-26 21:30:21,606 - bestrag.resource - ERROR - error:66 - 索引失败: doc=154090f1-868c-46f5-8f40-498c98d8507b, error='VectorStoreService' object has no attribute 'add'
+2026-07-26 21:30:21,606 - bestrag.resource - ERROR - error:66 - 知识库摄入失败: IndexingError: 索引失败: doc=154090f1-868c-46f5-8f40-498c98d8507b, error='VectorStoreService' object has no attribute 'add'
+2026-07-26 21:31:01,238 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 21:31:01,238 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 21:31:01,238 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 21:31:01,238 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:31:01,238 - bestrag.resource - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-26 21:31:01,247 - bestrag.resource - INFO - info:54 - Bootstrap 完成
+2026-07-26 21:31:01,247 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 21:31:01,247 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: embedding
+2026-07-26 21:31:01,247 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: vector_store
+2026-07-26 21:31:01,247 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: retrieval
+2026-07-26 21:31:01,247 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: rerank
+2026-07-26 21:31:01,247 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: generation
+2026-07-26 21:31:01,247 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: indexing
+2026-07-26 21:31:01,247 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 21:31:06,634 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 21:31:06,636 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 21:31:06,636 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 21:31:06,636 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:31:06,636 - bestrag.resource - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-26 21:31:06,643 - bestrag.resource - INFO - info:54 - Bootstrap 完成
+2026-07-26 21:31:06,643 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 21:31:06,643 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: embedding
+2026-07-26 21:31:06,643 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: vector_store
+2026-07-26 21:31:06,643 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: retrieval
+2026-07-26 21:31:06,643 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: rerank
+2026-07-26 21:31:06,643 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: generation
+2026-07-26 21:31:06,643 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: indexing
+2026-07-26 21:31:06,643 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 21:32:26,549 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 21:32:26,549 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 21:32:26,549 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 21:32:26,549 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:32:26,549 - bestrag.resource - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-26 21:32:26,563 - bestrag.resource - INFO - info:54 - Bootstrap 完成
+2026-07-26 21:32:26,563 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 21:32:26,563 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: embedding
+2026-07-26 21:32:26,563 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: vector_store
+2026-07-26 21:32:26,563 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: retrieval
+2026-07-26 21:32:26,563 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: rerank
+2026-07-26 21:32:26,563 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: generation
+2026-07-26 21:32:26,563 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: indexing
+2026-07-26 21:32:26,563 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 21:32:29,873 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'test'}
+2026-07-26 21:32:32,513 - bestrag.resource - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-26 21:32:32,577 - bestrag.resource - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-26 21:32:55,430 - bestrag.resource - INFO - info:54 - 文档解析完成: 5e89c3c1-b826-432a-b1cf-3f3dcf64b565, 866 chars
+2026-07-26 21:32:55,432 - bestrag.resource - INFO - info:54 - 文档处理完成: 2 chunks
+2026-07-26 21:32:55,432 - bestrag.resource - INFO - info:54 - 开始索引: doc=5e89c3c1-b826-432a-b1cf-3f3dcf64b565
+2026-07-26 21:32:55,432 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:32:55,432 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 2}
+2026-07-26 21:32:56,219 - bestrag.resource - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-26 21:32:56,227 - bestrag.resource - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-26 21:32:56,227 - bestrag.resource - ERROR - error:66 - 索引失败: doc=5e89c3c1-b826-432a-b1cf-3f3dcf64b565, error=object of type 'EmbeddingResult' has no len()
+2026-07-26 21:32:56,227 - bestrag.resource - ERROR - error:66 - 知识库摄入失败: IndexingError: 索引失败: doc=5e89c3c1-b826-432a-b1cf-3f3dcf64b565, error=object of type 'EmbeddingResult' has no len()
+2026-07-26 21:33:23,715 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 21:33:23,717 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 21:33:23,719 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 21:33:23,719 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:33:23,719 - bestrag.resource - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-26 21:33:23,732 - bestrag.resource - INFO - info:54 - Bootstrap 完成
+2026-07-26 21:33:23,732 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 21:33:23,732 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: embedding
+2026-07-26 21:33:23,732 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: vector_store
+2026-07-26 21:33:23,732 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: retrieval
+2026-07-26 21:33:23,737 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: rerank
+2026-07-26 21:33:23,737 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: generation
+2026-07-26 21:33:23,737 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: indexing
+2026-07-26 21:33:23,737 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 21:33:27,437 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:33:27,437 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 2}
+2026-07-26 21:33:35,011 - bestrag.resource - INFO - info:54 - 文档解析完成: de1ce1ca-1693-424d-bc2d-f57bb0e214fa, 866 chars
+2026-07-26 21:33:35,013 - bestrag.resource - INFO - info:54 - 文档处理完成: 2 chunks
+2026-07-26 21:33:35,013 - bestrag.resource - INFO - info:54 - 开始索引: doc=de1ce1ca-1693-424d-bc2d-f57bb0e214fa
+2026-07-26 21:33:35,013 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:33:35,013 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 2}
+2026-07-26 21:33:35,940 - bestrag.resource - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-26 21:33:35,987 - bestrag.resource - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-26 21:33:39,429 - bestrag.resource - INFO - info:54 - Inserted 2 vectors into collection bestrag_bestrag_chunks
+2026-07-26 21:33:39,429 - bestrag.resource - INFO - info:54 - VectorWriter 写入 2 条向量
+2026-07-26 21:33:39,429 - bestrag.resource - INFO - info:54 - 索引完成: doc=de1ce1ca-1693-424d-bc2d-f57bb0e214fa, chunks=2
+2026-07-26 21:33:39,429 - bestrag.resource - INFO - info:54 - 索引完成: 2 vectors
+2026-07-26 21:33:48,841 - bestrag.resource - INFO - info:54 - Starting retrieval | {'query': 'BestRAG is what?', 'top_k': 3}
+2026-07-26 21:33:48,841 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'BestRAG is what?'}
+2026-07-26 21:33:49,283 - bestrag.resource - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-26 21:33:49,294 - bestrag.resource - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-26 21:33:49,360 - bestrag.resource - INFO - info:54 - Search completed, found 3 results
+2026-07-26 21:33:49,360 - bestrag.resource - INFO - info:54 - Retrieved 3 results
+2026-07-26 21:33:49,361 - bestrag.resource - INFO - info:54 - 检索完成: 3 results, 519.14ms
+2026-07-26 21:33:49,361 - bestrag.resource - INFO - info:54 - Reranking documents | {'query': 'BestRAG is what?', 'count': 3}
+2026-07-26 21:33:52,275 - bestrag.resource - INFO - info:54 - 重排序完成: 3 results, 2914.49ms
+2026-07-26 21:33:52,275 - bestrag.resource - INFO - info:54 - 生成开始: BestRAG is what?...
+2026-07-26 21:33:55,114 - bestrag.resource - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=23
+2026-07-26 21:33:55,114 - bestrag.resource - INFO - info:54 - 生成完成: model=deepseek-chat, len=23
+2026-07-26 21:33:55,114 - bestrag.resource - INFO - info:54 - 生成完成: 23 chars, 2838.64ms
+2026-07-26 21:34:57,424 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 21:34:57,426 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 21:34:57,428 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 21:34:57,428 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:34:57,428 - bestrag.resource - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-26 21:34:57,437 - bestrag.resource - INFO - info:54 - Bootstrap 完成
+2026-07-26 21:34:57,437 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 21:34:57,437 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: embedding
+2026-07-26 21:34:57,437 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: vector_store
+2026-07-26 21:34:57,437 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: retrieval
+2026-07-26 21:34:57,437 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: rerank
+2026-07-26 21:34:57,437 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: generation
+2026-07-26 21:34:57,437 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: indexing
+2026-07-26 21:34:57,437 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 21:35:05,106 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'test'}
+2026-07-26 21:35:08,170 - bestrag.resource - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-26 21:35:08,221 - bestrag.resource - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-26 21:35:26,493 - bestrag.resource - INFO - info:54 - 文档解析完成: 80f0675a-e1f0-42f5-91af-60707ae3ef62, 866 chars
+2026-07-26 21:35:26,493 - bestrag.resource - INFO - info:54 - 文档处理完成: 2 chunks
+2026-07-26 21:35:26,493 - bestrag.resource - INFO - info:54 - 开始索引: doc=80f0675a-e1f0-42f5-91af-60707ae3ef62
+2026-07-26 21:35:26,493 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:35:26,493 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 2}
+2026-07-26 21:35:27,178 - bestrag.resource - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-26 21:35:27,228 - bestrag.resource - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-26 21:35:30,510 - bestrag.resource - INFO - info:54 - Inserted 2 vectors into collection bestrag_bestrag_chunks
+2026-07-26 21:35:30,511 - bestrag.resource - INFO - info:54 - VectorWriter 写入 2 条向量
+2026-07-26 21:35:30,511 - bestrag.resource - INFO - info:54 - 索引完成: doc=80f0675a-e1f0-42f5-91af-60707ae3ef62, chunks=2
+2026-07-26 21:35:30,511 - bestrag.resource - INFO - info:54 - 索引完成: 2 vectors
+2026-07-26 21:36:34,941 - bestrag.resource - INFO - info:54 - Starting retrieval | {'query': '燧人青年是几岁到几岁，干了什么事，什么时候赶回部落', 'top_k': 5}
+2026-07-26 21:36:34,943 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': '燧人青年是几岁到几岁，干了什么事，什么时候赶回部落'}
+2026-07-26 21:36:35,329 - bestrag.resource - INFO - info:54 - Search completed, found 5 results
+2026-07-26 21:36:35,329 - bestrag.resource - INFO - info:54 - Retrieved 5 results
+2026-07-26 21:36:35,329 - bestrag.resource - INFO - info:54 - 检索完成: 5 results, 388.68ms
+2026-07-26 21:36:35,329 - bestrag.resource - INFO - info:54 - Reranking documents | {'query': '燧人青年是几岁到几岁，干了什么事，什么时候赶回部落', 'count': 5}
+2026-07-26 21:36:37,267 - bestrag.resource - INFO - info:54 - 重排序完成: 5 results, 1937.36ms
+2026-07-26 21:36:37,267 - bestrag.resource - INFO - info:54 - 生成开始: 燧人青年是几岁到几岁，干了什么事，什么时候赶回部落...
+2026-07-26 21:36:40,523 - bestrag.resource - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=141
+2026-07-26 21:36:40,523 - bestrag.resource - INFO - info:54 - 生成完成: model=deepseek-chat, len=141
+2026-07-26 21:36:40,523 - bestrag.resource - INFO - info:54 - 生成完成: 141 chars, 3256.64ms
+2026-07-26 21:37:31,697 - bestrag.resource - INFO - info:54 - Starting retrieval | {'query': '壮年', 'top_k': 10}
+2026-07-26 21:37:31,697 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': '壮年'}
+2026-07-26 21:37:33,038 - bestrag.resource - INFO - info:54 - Search completed, found 10 results
+2026-07-26 21:37:33,038 - bestrag.resource - INFO - info:54 - Retrieved 10 results
+2026-07-26 21:37:33,038 - bestrag.resource - INFO - info:54 - Reranking documents | {'query': '壮年', 'count': 10}
+2026-07-26 21:38:01,464 - bestrag.resource - INFO - info:54 - Starting retrieval | {'query': '燧人是谁', 'top_k': 5}
+2026-07-26 21:38:01,464 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': '燧人是谁'}
+2026-07-26 21:38:02,857 - bestrag.resource - INFO - info:54 - Search completed, found 5 results
+2026-07-26 21:38:02,857 - bestrag.resource - INFO - info:54 - Retrieved 5 results
+2026-07-26 21:38:02,857 - bestrag.resource - INFO - info:54 - Reranking documents | {'query': '燧人是谁', 'count': 5}
+2026-07-26 21:38:05,207 - bestrag.resource - INFO - info:54 - 生成开始: 燧人是谁...
+2026-07-26 21:38:07,201 - bestrag.resource - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=182
+2026-07-26 21:38:07,201 - bestrag.resource - INFO - info:54 - 生成完成: model=deepseek-chat, len=182
+2026-07-26 21:40:06,579 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 21:40:06,579 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 21:40:06,579 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 21:40:06,579 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:40:06,579 - bestrag.resource - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-26 21:40:06,595 - bestrag.resource - INFO - info:54 - Bootstrap 完成
+2026-07-26 21:40:06,595 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 21:40:06,595 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: embedding
+2026-07-26 21:40:06,595 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: vector_store
+2026-07-26 21:40:06,595 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: retrieval
+2026-07-26 21:40:06,595 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: rerank
+2026-07-26 21:40:06,595 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: generation
+2026-07-26 21:40:06,595 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: indexing
+2026-07-26 21:40:06,595 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 21:40:06,719 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 21:40:06,719 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 21:40:06,719 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 21:40:06,719 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:40:06,719 - bestrag.resource - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-26 21:40:06,719 - bestrag.resource - INFO - info:54 - Bootstrap 完成
+2026-07-26 21:40:08,977 - bestrag.resource - INFO - info:54 - 文档解析完成: 46cbb198-b51b-4cb8-bfa6-5c10e0bb1e98, 219 chars
+2026-07-26 21:40:08,977 - bestrag.resource - INFO - info:54 - 文档处理完成: 1 chunks
+2026-07-26 21:40:08,977 - bestrag.resource - INFO - info:54 - 开始索引: doc=46cbb198-b51b-4cb8-bfa6-5c10e0bb1e98
+2026-07-26 21:40:08,977 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:40:08,981 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 1}
+2026-07-26 21:40:14,819 - bestrag.resource - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-26 21:40:14,848 - bestrag.resource - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-26 21:40:19,103 - bestrag.resource - INFO - info:54 - Inserted 1 vectors into collection bestrag_bestrag_chunks
+2026-07-26 21:40:19,103 - bestrag.resource - INFO - info:54 - VectorWriter 写入 1 条向量
+2026-07-26 21:40:19,103 - bestrag.resource - INFO - info:54 - 索引完成: doc=46cbb198-b51b-4cb8-bfa6-5c10e0bb1e98, chunks=1
+2026-07-26 21:40:19,103 - bestrag.resource - INFO - info:54 - 索引完成: 1 vectors
+2026-07-26 21:40:24,314 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 21:40:24,314 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 21:40:24,314 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 21:40:24,314 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:40:24,314 - bestrag.resource - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-26 21:40:24,324 - bestrag.resource - INFO - info:54 - Bootstrap 完成
+2026-07-26 21:40:25,016 - bestrag.resource - INFO - info:54 - 文档解析完成: 5d089923-1918-4cd8-a689-5215cb3c4ba7, 716 chars
+2026-07-26 21:40:25,018 - bestrag.resource - INFO - info:54 - 文档处理完成: 2 chunks
+2026-07-26 21:40:25,018 - bestrag.resource - INFO - info:54 - 开始索引: doc=5d089923-1918-4cd8-a689-5215cb3c4ba7
+2026-07-26 21:40:25,018 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 2}
+2026-07-26 21:40:30,431 - bestrag.resource - INFO - info:54 - Inserted 2 vectors into collection bestrag_bestrag_chunks
+2026-07-26 21:40:30,431 - bestrag.resource - INFO - info:54 - VectorWriter 写入 2 条向量
+2026-07-26 21:40:30,431 - bestrag.resource - INFO - info:54 - 索引完成: doc=5d089923-1918-4cd8-a689-5215cb3c4ba7, chunks=2
+2026-07-26 21:40:30,431 - bestrag.resource - INFO - info:54 - 索引完成: 2 vectors
+2026-07-26 21:40:30,441 - bestrag.resource - INFO - info:54 - Starting retrieval | {'query': 'BestRAG 的系统要求是什么？', 'top_k': 5}
+2026-07-26 21:40:30,441 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'BestRAG 的系统要求是什么？'}
+2026-07-26 21:40:30,845 - bestrag.resource - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-26 21:40:30,890 - bestrag.resource - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-26 21:40:30,945 - bestrag.resource - INFO - info:54 - Search completed, found 5 results
+2026-07-26 21:40:30,961 - bestrag.resource - INFO - info:54 - Retrieved 5 results
+2026-07-26 21:40:30,961 - bestrag.resource - INFO - info:54 - 检索完成: 5 results, 519.88ms
+2026-07-26 21:40:30,961 - bestrag.resource - INFO - info:54 - Reranking documents | {'query': 'BestRAG 的系统要求是什么？', 'count': 5}
+2026-07-26 21:40:33,087 - bestrag.resource - INFO - info:54 - 重排序完成: 5 results, 2125.81ms
+2026-07-26 21:40:33,087 - bestrag.resource - INFO - info:54 - 生成开始: BestRAG 的系统要求是什么？...
+2026-07-26 21:40:39,467 - bestrag.resource - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=83
+2026-07-26 21:40:39,468 - bestrag.resource - INFO - info:54 - 生成完成: model=deepseek-chat, len=83
+2026-07-26 21:40:39,468 - bestrag.resource - INFO - info:54 - 生成完成: 83 chars, 6381.15ms
+2026-07-26 21:40:44,283 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 21:40:44,283 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 21:40:44,283 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 21:40:44,283 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:40:44,283 - bestrag.resource - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-26 21:40:44,283 - bestrag.resource - INFO - info:54 - Bootstrap 完成
+2026-07-26 21:40:44,336 - bestrag.resource - INFO - info:54 - 文档解析完成: 5a5bc8ed-af9c-498c-a0f0-86bc4f8b4176, 716 chars
+2026-07-26 21:40:44,336 - bestrag.resource - INFO - info:54 - 文档处理完成: 2 chunks
+2026-07-26 21:40:44,336 - bestrag.resource - INFO - info:54 - 开始索引: doc=5a5bc8ed-af9c-498c-a0f0-86bc4f8b4176
+2026-07-26 21:40:44,336 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 2}
+2026-07-26 21:40:48,536 - bestrag.resource - INFO - info:54 - Inserted 2 vectors into collection bestrag_bestrag_chunks
+2026-07-26 21:40:48,536 - bestrag.resource - INFO - info:54 - VectorWriter 写入 2 条向量
+2026-07-26 21:40:48,536 - bestrag.resource - INFO - info:54 - 索引完成: doc=5a5bc8ed-af9c-498c-a0f0-86bc4f8b4176, chunks=2
+2026-07-26 21:40:48,536 - bestrag.resource - INFO - info:54 - 索引完成: 2 vectors
+2026-07-26 21:40:48,536 - bestrag.resource - INFO - info:54 - Starting retrieval | {'query': 'BestRAG 的系统要求是什么？', 'top_k': 5}
+2026-07-26 21:40:48,536 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'BestRAG 的系统要求是什么？'}
+2026-07-26 21:40:48,859 - bestrag.resource - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-26 21:40:48,868 - bestrag.resource - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-26 21:40:48,891 - bestrag.resource - INFO - info:54 - Search completed, found 5 results
+2026-07-26 21:40:48,891 - bestrag.resource - INFO - info:54 - Retrieved 5 results
+2026-07-26 21:40:48,891 - bestrag.resource - INFO - info:54 - 检索完成: 5 results, 354.65ms
+2026-07-26 21:40:48,891 - bestrag.resource - INFO - info:54 - Reranking documents | {'query': 'BestRAG 的系统要求是什么？', 'count': 5}
+2026-07-26 21:40:50,189 - bestrag.resource - INFO - info:54 - 重排序完成: 5 results, 1297.84ms
+2026-07-26 21:40:50,189 - bestrag.resource - INFO - info:54 - 生成开始: BestRAG 的系统要求是什么？...
+2026-07-26 21:40:51,305 - bestrag.resource - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=73
+2026-07-26 21:40:51,305 - bestrag.resource - INFO - info:54 - 生成完成: model=deepseek-chat, len=73
+2026-07-26 21:40:51,305 - bestrag.resource - INFO - info:54 - 生成完成: 73 chars, 1116.02ms
+2026-07-26 21:41:35,232 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 21:41:35,232 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 21:41:35,249 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 21:41:35,249 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:41:35,249 - bestrag.resource - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-26 21:41:35,249 - bestrag.resource - INFO - info:54 - Bootstrap 完成
+2026-07-26 21:41:35,249 - bestrag.resource - INFO - info:54 - Starting retrieval | {'query': '如何安装 BestRAG？', 'top_k': 5}
+2026-07-26 21:41:35,249 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': '如何安装 BestRAG？'}
+2026-07-26 21:41:36,992 - bestrag.resource - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-26 21:41:37,039 - bestrag.resource - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-26 21:41:37,055 - bestrag.resource - INFO - info:54 - Search completed, found 5 results
+2026-07-26 21:41:37,055 - bestrag.resource - INFO - info:54 - Retrieved 5 results
+2026-07-26 21:41:37,055 - bestrag.resource - INFO - info:54 - 检索完成: 5 results, 1806.6ms
+2026-07-26 21:41:37,055 - bestrag.resource - INFO - info:54 - Reranking documents | {'query': '如何安装 BestRAG？', 'count': 5}
+2026-07-26 21:41:39,543 - bestrag.resource - INFO - info:54 - 重排序完成: 5 results, 2488.38ms
+2026-07-26 21:41:39,543 - bestrag.resource - INFO - info:54 - 生成开始: 如何安装 BestRAG？...
+2026-07-26 21:41:41,223 - bestrag.resource - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=398
+2026-07-26 21:41:41,223 - bestrag.resource - INFO - info:54 - 生成完成: model=deepseek-chat, len=398
+2026-07-26 21:41:41,223 - bestrag.resource - INFO - info:54 - 生成完成: 398 chars, 1679.89ms
+2026-07-26 21:41:58,052 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 21:41:58,052 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 21:41:58,052 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 21:41:58,052 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:41:58,052 - bestrag.resource - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-26 21:41:58,052 - bestrag.resource - INFO - info:54 - Bootstrap 完成
+2026-07-26 21:41:58,052 - bestrag.resource - INFO - info:54 - Starting retrieval | {'query': '如何安装 BestRAG？', 'top_k': 5}
+2026-07-26 21:41:58,052 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': '如何安装 BestRAG？'}
+2026-07-26 21:41:59,489 - bestrag.resource - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-26 21:41:59,531 - bestrag.resource - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-26 21:41:59,547 - bestrag.resource - INFO - info:54 - Search completed, found 5 results
+2026-07-26 21:41:59,547 - bestrag.resource - INFO - info:54 - Retrieved 5 results
+2026-07-26 21:41:59,547 - bestrag.resource - INFO - info:54 - 检索完成: 5 results, 1494.39ms
+2026-07-26 21:41:59,547 - bestrag.resource - INFO - info:54 - Reranking documents | {'query': '如何安装 BestRAG？', 'count': 5}
+2026-07-26 21:42:01,475 - bestrag.resource - INFO - info:54 - 重排序完成: 5 results, 1927.74ms
+2026-07-26 21:42:01,479 - bestrag.resource - INFO - info:54 - 生成开始: 如何安装 BestRAG？...
+2026-07-26 21:42:03,331 - bestrag.resource - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=393
+2026-07-26 21:42:03,331 - bestrag.resource - INFO - info:54 - 生成完成: model=deepseek-chat, len=393
+2026-07-26 21:42:03,331 - bestrag.resource - INFO - info:54 - 生成完成: 393 chars, 1851.96ms
+2026-07-26 21:42:11,127 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 21:42:11,127 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 21:42:11,127 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 21:42:11,127 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:42:11,127 - bestrag.resource - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-26 21:42:11,127 - bestrag.resource - INFO - info:54 - Bootstrap 完成
+2026-07-26 21:42:11,127 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-26 21:42:11,127 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: embedding
+2026-07-26 21:42:11,127 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: vector_store
+2026-07-26 21:42:11,127 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: retrieval
+2026-07-26 21:42:11,127 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: rerank
+2026-07-26 21:42:11,127 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: generation
+2026-07-26 21:42:11,127 - bestrag.resource - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: indexing
+2026-07-26 21:42:11,127 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-26 21:42:13,320 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 21:42:13,320 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 21:42:13,320 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 21:42:13,320 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:42:13,320 - bestrag.resource - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-26 21:42:13,320 - bestrag.resource - INFO - info:54 - Bootstrap 完成
+2026-07-26 21:42:14,983 - bestrag.resource - INFO - info:54 - 文档解析完成: e133ce70-eb37-4a33-8f09-b8cb98422381, 716 chars
+2026-07-26 21:42:14,983 - bestrag.resource - INFO - info:54 - 文档处理完成: 2 chunks
+2026-07-26 21:42:14,990 - bestrag.resource - INFO - info:54 - 开始索引: doc=e133ce70-eb37-4a33-8f09-b8cb98422381
+2026-07-26 21:42:14,990 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:42:14,990 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 2}
+2026-07-26 21:42:16,676 - bestrag.resource - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-26 21:42:16,724 - bestrag.resource - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-26 21:42:19,555 - bestrag.resource - INFO - info:54 - Inserted 2 vectors into collection bestrag_bestrag_chunks
+2026-07-26 21:42:19,555 - bestrag.resource - INFO - info:54 - VectorWriter 写入 2 条向量
+2026-07-26 21:42:19,555 - bestrag.resource - INFO - info:54 - 索引完成: doc=e133ce70-eb37-4a33-8f09-b8cb98422381, chunks=2
+2026-07-26 21:42:19,555 - bestrag.resource - INFO - info:54 - 索引完成: 2 vectors
+2026-07-26 21:42:19,555 - bestrag.resource - INFO - info:54 - Starting retrieval | {'query': 'BestRAG 的系统要求是什么？', 'top_k': 5}
+2026-07-26 21:42:19,555 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'BestRAG 的系统要求是什么？'}
+2026-07-26 21:42:19,918 - bestrag.resource - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-26 21:42:19,966 - bestrag.resource - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-26 21:42:19,982 - bestrag.resource - INFO - info:54 - Search completed, found 5 results
+2026-07-26 21:42:19,982 - bestrag.resource - INFO - info:54 - Retrieved 5 results
+2026-07-26 21:42:19,982 - bestrag.resource - INFO - info:54 - 检索完成: 5 results, 427.5ms
+2026-07-26 21:42:19,982 - bestrag.resource - INFO - info:54 - Reranking documents | {'query': 'BestRAG 的系统要求是什么？', 'count': 5}
+2026-07-26 21:42:21,274 - bestrag.resource - INFO - info:54 - 重排序完成: 5 results, 1292.02ms
+2026-07-26 21:42:21,274 - bestrag.resource - INFO - info:54 - 生成开始: BestRAG 的系统要求是什么？...
+2026-07-26 21:42:24,195 - bestrag.resource - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=72
+2026-07-26 21:42:24,195 - bestrag.resource - INFO - info:54 - 生成完成: model=deepseek-chat, len=72
+2026-07-26 21:42:24,195 - bestrag.resource - INFO - info:54 - 生成完成: 72 chars, 2920.92ms
+2026-07-26 21:42:28,132 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 21:42:28,132 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 21:42:28,132 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 21:42:28,132 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:42:28,132 - bestrag.resource - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-26 21:42:28,132 - bestrag.resource - INFO - info:54 - Bootstrap 完成
+2026-07-26 21:42:28,188 - bestrag.resource - INFO - info:54 - 文档解析完成: ca9ef1e4-ebb8-40a2-b7ed-e9b5fb3b9640, 716 chars
+2026-07-26 21:42:28,188 - bestrag.resource - INFO - info:54 - 文档处理完成: 2 chunks
+2026-07-26 21:42:28,188 - bestrag.resource - INFO - info:54 - 开始索引: doc=ca9ef1e4-ebb8-40a2-b7ed-e9b5fb3b9640
+2026-07-26 21:42:28,188 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 2}
+2026-07-26 21:42:32,703 - bestrag.resource - INFO - info:54 - Inserted 2 vectors into collection bestrag_bestrag_chunks
+2026-07-26 21:42:32,703 - bestrag.resource - INFO - info:54 - VectorWriter 写入 2 条向量
+2026-07-26 21:42:32,703 - bestrag.resource - INFO - info:54 - 索引完成: doc=ca9ef1e4-ebb8-40a2-b7ed-e9b5fb3b9640, chunks=2
+2026-07-26 21:42:32,703 - bestrag.resource - INFO - info:54 - 索引完成: 2 vectors
+2026-07-26 21:42:32,703 - bestrag.resource - INFO - info:54 - Starting retrieval | {'query': 'BestRAG 的系统要求是什么？', 'top_k': 5}
+2026-07-26 21:42:32,703 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'BestRAG 的系统要求是什么？'}
+2026-07-26 21:42:33,034 - bestrag.resource - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-26 21:42:33,042 - bestrag.resource - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-26 21:42:33,069 - bestrag.resource - INFO - info:54 - Search completed, found 5 results
+2026-07-26 21:42:33,070 - bestrag.resource - INFO - info:54 - Retrieved 5 results
+2026-07-26 21:42:33,070 - bestrag.resource - INFO - info:54 - 检索完成: 5 results, 367.14ms
+2026-07-26 21:42:33,070 - bestrag.resource - INFO - info:54 - Reranking documents | {'query': 'BestRAG 的系统要求是什么？', 'count': 5}
+2026-07-26 21:42:34,439 - bestrag.resource - INFO - info:54 - 重排序完成: 5 results, 1368.73ms
+2026-07-26 21:42:34,439 - bestrag.resource - INFO - info:54 - 生成开始: BestRAG 的系统要求是什么？...
+2026-07-26 21:42:35,443 - bestrag.resource - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=85
+2026-07-26 21:42:35,443 - bestrag.resource - INFO - info:54 - 生成完成: model=deepseek-chat, len=85
+2026-07-26 21:42:35,443 - bestrag.resource - INFO - info:54 - 生成完成: 85 chars, 1003.8ms
+2026-07-26 21:42:43,346 - bestrag.resource - INFO - info:54 - Bootstrap 开始...
+2026-07-26 21:42:43,346 - bestrag.resource - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-26 21:42:43,347 - bestrag.resource - INFO - info:54 - Workspace 初始化完成
+2026-07-26 21:42:43,347 - bestrag.resource - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-26 21:42:43,347 - bestrag.resource - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-26 21:42:43,347 - bestrag.resource - INFO - info:54 - Bootstrap 完成
+2026-07-26 21:42:43,396 - bestrag.resource - INFO - info:54 - 文档解析完成: f928fd0c-80ac-4532-9746-46710fd02143, 716 chars
+2026-07-26 21:42:43,396 - bestrag.resource - INFO - info:54 - 文档处理完成: 2 chunks
+2026-07-26 21:42:43,396 - bestrag.resource - INFO - info:54 - 开始索引: doc=f928fd0c-80ac-4532-9746-46710fd02143
+2026-07-26 21:42:43,400 - bestrag.resource - INFO - info:54 - Embedding documents | {'count': 2}
+2026-07-26 21:42:47,804 - bestrag.resource - INFO - info:54 - Inserted 2 vectors into collection bestrag_bestrag_chunks
+2026-07-26 21:42:47,804 - bestrag.resource - INFO - info:54 - VectorWriter 写入 2 条向量
+2026-07-26 21:42:47,804 - bestrag.resource - INFO - info:54 - 索引完成: doc=f928fd0c-80ac-4532-9746-46710fd02143, chunks=2
+2026-07-26 21:42:47,804 - bestrag.resource - INFO - info:54 - 索引完成: 2 vectors
+2026-07-26 21:42:47,804 - bestrag.resource - INFO - info:54 - Starting retrieval | {'query': 'BestRAG 的系统要求是什么？', 'top_k': 5}
+2026-07-26 21:42:47,804 - bestrag.resource - INFO - info:54 - Embedding single text | {'text': 'BestRAG 的系统要求是什么？'}
+2026-07-26 21:42:48,200 - bestrag.resource - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-26 21:42:48,250 - bestrag.resource - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-26 21:42:48,266 - bestrag.resource - INFO - info:54 - Search completed, found 5 results
+2026-07-26 21:42:48,266 - bestrag.resource - INFO - info:54 - Retrieved 5 results
+2026-07-26 21:42:48,266 - bestrag.resource - INFO - info:54 - 检索完成: 5 results, 461.96ms
+2026-07-26 21:42:48,266 - bestrag.resource - INFO - info:54 - Reranking documents | {'query': 'BestRAG 的系统要求是什么？', 'count': 5}
+2026-07-26 21:42:49,533 - bestrag.resource - INFO - info:54 - 重排序完成: 5 results, 1266.43ms
+2026-07-26 21:42:49,533 - bestrag.resource - INFO - info:54 - 生成开始: BestRAG 的系统要求是什么？...
+2026-07-26 21:42:50,637 - bestrag.resource - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=56
+2026-07-26 21:42:50,637 - bestrag.resource - INFO - info:54 - 生成完成: model=deepseek-chat, len=56
+2026-07-26 21:42:50,637 - bestrag.resource - INFO - info:54 - 生成完成: 56 chars, 1104.4ms

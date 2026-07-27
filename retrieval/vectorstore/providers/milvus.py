@@ -39,13 +39,14 @@ class MilvusVectorStore(BaseVectorStore):
         self.DataType = DataType
 
         # 获取配置
-        config = get_config().retrieval
-        self.host = config.milvus_host
-        self.port = config.milvus_port
-        self.collection_name = f"{config.milvus_collection_prefix}_{collection_name}"
+        config = get_config().vectorstore
+        self.host = config.host
+        self.port = config.port
+        self.collection_name = f"{config.collection_prefix}_{collection_name}"
 
         # 记录向量维度（初始化后设置）
-        self._dimension = config.embedding_dim
+        emb_config = get_config().embedding
+        self._dimension = emb_config.dim
 
         # 连接到 Milvus
         try:

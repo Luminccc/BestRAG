@@ -35,12 +35,12 @@ class RerankService:
         """
         if reranker is None:
             # 根据配置创建默认 Rerank 实例
-            config = get_config().retrieval
+            config = get_config().reranker
             # 优先使用 API 模式（BGE-Rerank Docker 服务）
-            if config.rerank_api_url:
-                self._reranker = BGEAPIReranker(config.rerank_api_url)
-            elif config.rerank_model.startswith("BAAI/bge"):
-                self._reranker = BGEReranker(config.rerank_model)
+            if config.api_url:
+                self._reranker = BGEAPIReranker(config.api_url)
+            elif config.model_name.startswith("BAAI/bge"):
+                self._reranker = BGEReranker(config.model_name)
             else:
                 # 默认使用 BGE 模型
                 self._reranker = BGEReranker()

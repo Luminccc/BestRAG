@@ -3,12 +3,14 @@
 职责：
 - 编排单文件验证（POST /validation/document）
 - 编排全量回归验证（POST /validation/document/all）
+- 编排 Generation / RAG Flow / Chat 验证（V2）
 - 不包含任何业务逻辑
 """
 
 from time import time
 from pathlib import Path
 import tempfile
+from typing import Optional
 
 from document.service import DocumentService
 from document.dispatcher import UnsupportedFileTypeError
@@ -28,37 +30,39 @@ from validation.checks.embedding_check import check_embedding
 from validation.checks.vectorstore_check import check_vectorstore
 from validation.checks.retrieval_check import check_retrieval
 from validation.checks.rerank_check import check_rerank
-from validation.model import ValidationReport
+from validation.model import ValidationReport, ChatResult, StatusResult, CheckResult, ValidationStatus, ScenarioResult, DebugResult
 
 
 class ValidationService:
-    """验证服务 — 对 Document/Processor/Retrieval 链路执行完整性检查。
+    """验证服务 — 对 Document/Processor/Retrieval/Generation 链路执行完整性检查。
 
     Usage::
 
-        svc = ValidationService(document_service, processor_service, chunk_service,
-                               embedding_service, vector_store_service, retrieval_service, rerank_service)
+        svc = ValidationService(
+            document_service, processor_service, chunk_service,
+            embedding_service, vector_store_service, retrieval_service, rerank_service,
+            generation_service,
+        )
+        # V1 checks
         doc_report = svc.validate_document("/data/test.pdf")
-        clean_report = svc.validate_cleaner("/data/test.pdf")
-        chunk_report = svc.validate_chunker("/data/test.pdf", "recursive")
-        pipe_report = svc.validate_pipeline("/data/test.pdf", "recursive")
-        embedding_report = svc.validate_embedding()
-        vectorstore_report = svc.validate_vectorstore()
-        retrieval_report = svc.validate_retrieval()
-        rerank_report = svc.validate_rerank()
-        all_reports = svc.validate_all()
+        # V2 checks
+        llm_report = svc.validate_llm()
+        gen_report = svc.validate_generation()
+        rag_report = svc.validate_rag_flow()
+        chat_result = svc.run_chat_test("如何部署?")
     """
 
     def __init__(
         self,
         document_service: DocumentService,
-        processor_service=None,   # ProcessorService | None
-        chunk_service=None,        # ChunkService | None
-        transformer_service=None,  # TransformerService | None
-        embedding_service=None,    # EmbeddingService | None
-        vector_store_service=None, # VectorStoreService | None
-        retrieval_service=None,    # RetrievalService | None
-        rerank_service=None,       # RerankService | None
+        processor_service=None,    # ProcessorService | None
+        chunk_service=None,         # ChunkService | None
+        transformer_service=None,   # TransformerService | None
+        embedding_service=None,     # EmbeddingService | None
+        vector_store_service=None,  # VectorStoreService | None
+        retrieval_service=None,     # RetrievalService | None
+        rerank_service=None,        # RerankService | None
+        generation_service=None,    # GenerationService | None (V2)
     ):
         self._doc_service = document_service
         self._processor_service = processor_service
@@ -68,6 +72,7 @@ class ValidationService:
         self._vector_store_service = vector_store_service
         self._retrieval_service = retrieval_service
         self._rerank_service = rerank_service
+        self._generation_service = generation_service
 
     # ---- 单文件验证 ----
 
@@ -346,6 +351,209 @@ class ValidationService:
         if self._rerank_service is None:
             raise RuntimeError("RerankService 未注入")
         return check_rerank(self._rerank_service)
+
+    # ---- V2: Generation 验证方法 ----
+
+    def validate_llm(self) -> ValidationReport:
+        """验证 LLM Provider 是否正常。"""
+        from validation.checks.llm_check import check_llm
+        return check_llm(self._generation_service)
+
+    def validate_generation(self) -> ValidationReport:
+        """验证 Generation 链路：Context → Prompt → LLM。"""
+        from validation.checks.generation_check import check_generation
+        return check_generation(self._generation_service)
+
+    def validate_rag_flow(self) -> ValidationReport:
+        """验证完整 RAG Flow：Document → Answer。"""
+        from validation.integration.rag_flow import run_rag_flow
+        return run_rag_flow(
+            doc_service=self._doc_service,
+            processor_service=self._processor_service,
+            embedding_service=self._embedding_service,
+            vector_store_service=self._vector_store_service,
+            retrieval_service=self._retrieval_service,
+            generation_service=self._generation_service,
+        )
+
+    # ---- V2: Scenario 验证方法 ----
+
+    def validate_knowledge_base_scenario(self) -> "ScenarioResult":
+        """验证 KnowledgeBase 场景：文档摄入 → 索引。"""
+        from validation.scenarios.knowledge_base import run_knowledge_base_scenario
+        from core.application import bootstrap
+        _app = bootstrap()
+        kb_svc = _app.context.services.get("knowledge_base")
+        return run_knowledge_base_scenario(kb_svc)
+
+    def validate_qa_scenario(self) -> "ScenarioResult":
+        """验证 QA 场景：提问 → 检索 → 生成 → 回答。"""
+        from validation.scenarios.qa import run_qa_scenario
+        from core.application import bootstrap
+        _app = bootstrap()
+        qa_svc = _app.context.services.get("qa")
+        return run_qa_scenario(qa_svc)
+
+    def validate_rag_e2e_scenario(self) -> "ScenarioResult":
+        """验证 RAG E2E 场景：文档 → 索引 → 问答 → 验证。"""
+        from validation.scenarios.rag_e2e import run_rag_e2e_scenario
+        from core.application import bootstrap
+        _app = bootstrap()
+        kb_svc = _app.context.services.get("knowledge_base")
+        qa_svc = _app.context.services.get("qa")
+        return run_rag_e2e_scenario(kb_svc, qa_svc)
+
+    # ---- V2: Diagnostics 方法 ----
+
+    def debug_retrieval(self, query: str) -> "DebugResult":
+        """诊断检索流程。"""
+        from validation.diagnostics import debug_retrieval as _debug_retrieval
+        return _debug_retrieval(
+            query=query,
+            retrieval_service=self._retrieval_service,
+            embedding_service=self._embedding_service,
+            vector_store_service=self._vector_store_service,
+            rerank_service=self._rerank_service,
+        )
+
+    def debug_generation(self, query: str) -> "DebugResult":
+        """诊断生成流程。"""
+        from validation.diagnostics import debug_generation as _debug_generation
+        return _debug_generation(
+            query=query,
+            generation_service=self._generation_service,
+            retrieval_service=self._retrieval_service,
+            rerank_service=self._rerank_service,
+        )
+
+    def run_chat_test(self, query: str, use_test_data: bool = False) -> ChatResult:
+        """执行 Chat 验证：Query → Retrieval → Generation → Answer。
+
+        Args:
+            query:         用户问题。
+            use_test_data: 是否自动生成测试数据并索引。
+
+        Returns:
+            ChatResult（含 answer / sources / latency）。
+        """
+        from validation.integration.chat_flow import run_chat_flow
+        return run_chat_flow(
+            query=query,
+            retrieval_service=self._retrieval_service,
+            generation_service=self._generation_service,
+            embedding_service=self._embedding_service,
+            vector_store_service=self._vector_store_service,
+            doc_service=self._doc_service,
+            processor_service=self._processor_service,
+            use_test_data=use_test_data,
+        )
+
+    def get_system_status(self) -> "StatusResult":
+        """获取系统状态快照。"""
+        from validation.integration.chat_flow import get_status
+        return get_status(
+            embedding_service=self._embedding_service,
+            vector_store_service=self._vector_store_service,
+            retrieval_service=self._retrieval_service,
+            rerank_service=self._rerank_service,
+            generation_service=self._generation_service,
+        )
+
+    def run_full_validation(self) -> ValidationReport:
+        """执行全链路验证（含 Generation）。"""
+        import os
+        from validation.model import CheckResult, ValidationStatus
+
+        checks: list[CheckResult] = []
+
+        # 1) LLM Check（默认 SKIP，需环境变量启用）
+        llm_enabled = os.environ.get("BESTRAG_VALIDATION_LLM", "").lower() in ("1", "true", "yes")
+        if llm_enabled:
+            try:
+                report = self.validate_llm()
+                for c in report.checks:
+                    checks.append(c)
+            except Exception as e:
+                checks.append(CheckResult(
+                    name="llm",
+                    status=ValidationStatus.FAIL,
+                    message=f"LLM 验证异常: {e}",
+                ))
+        else:
+            checks.append(CheckResult(
+                name="llm",
+                status=ValidationStatus.SKIP,
+                message="LLM 验证未启用（设置 BESTRAG_VALIDATION_LLM=true 启用）",
+            ))
+
+        # 2) Generation Check
+        if self._generation_service and llm_enabled:
+            try:
+                report = self.validate_generation()
+                for c in report.checks:
+                    checks.append(c)
+            except Exception as e:
+                checks.append(CheckResult(
+                    name="generation",
+                    status=ValidationStatus.FAIL,
+                    message=f"Generation 验证异常: {e}",
+                ))
+        elif not llm_enabled:
+            checks.append(CheckResult(
+                name="generation",
+                status=ValidationStatus.SKIP,
+                message="Generation 验证未启用（需 LLM）",
+            ))
+        else:
+            checks.append(CheckResult(
+                name="generation",
+                status=ValidationStatus.SKIP,
+                message="GenerationService 未注入",
+            ))
+
+        # 3) Embedding Check
+        if self._embedding_service:
+            try:
+                report = self.validate_embedding()
+                checks.append(_report_to_check(report))
+            except Exception as e:
+                checks.append(CheckResult(name="embedding", status=ValidationStatus.FAIL, message=str(e)))
+        else:
+            checks.append(CheckResult(name="embedding", status=ValidationStatus.SKIP, message="EmbeddingService 未注入"))
+
+        # 4) VectorStore Check
+        if self._vector_store_service and self._embedding_service:
+            try:
+                report = self.validate_vectorstore()
+                checks.append(_report_to_check(report))
+            except Exception as e:
+                checks.append(CheckResult(name="vectorstore", status=ValidationStatus.FAIL, message=str(e)))
+        else:
+            checks.append(CheckResult(name="vectorstore", status=ValidationStatus.SKIP, message="VectorStoreService 未注入"))
+
+        # 5) Retrieval Check
+        if self._retrieval_service and self._vector_store_service and self._embedding_service:
+            try:
+                report = self.validate_retrieval()
+                checks.append(_report_to_check(report))
+            except Exception as e:
+                checks.append(CheckResult(name="retrieval", status=ValidationStatus.FAIL, message=str(e)))
+        else:
+            checks.append(CheckResult(name="retrieval", status=ValidationStatus.SKIP, message="RetrievalService 未注入"))
+
+        return ValidationReport.from_checks("full_validation", checks)
+
+
+def _report_to_check(report: ValidationReport) -> CheckResult:
+    """将 V1 ValidationReport 转为 CheckResult。"""
+    from validation.model import ValidationStatus, CheckResult
+    return CheckResult(
+        name=report.module,
+        status=ValidationStatus.PASS if report.status == "success" else ValidationStatus.FAIL,
+        message=report.message or "",
+        latency=report.duration_ms,
+        details=report.details,
+    )
 
 
 class _TestFileGenerator:

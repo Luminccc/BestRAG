@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BestRAG Console</title>
+<link rel="stylesheet" href="css/console.css">
+</head>
+<body>
+
+<div class="container">
+  <!-- 头部 -->
+  <header class="header">
+    <h1>BestRAG Console</h1>
+    <p>统一 RAG 管理与验证入口</p>
+  </header>
+
+  <!-- 导航 Tab -->
+  <nav class="tabs" id="tabs">
+    <button class="tab active" data-panel="system">🫀 System</button>
+    <button class="tab" data-panel="knowledge">📚 Knowledge</button>
+    <button class="tab" data-panel="qa">💬 QA</button>
+    <button class="tab" data-panel="retrieval">🔍 Retrieval</button>
+    <button class="tab" data-panel="generation">🧠 Generation</button>
+    <button class="tab" data-panel="scenario">🔬 Scenario</button>
+  </nav>
+
+  <!-- ===== System Dashboard ===== -->
+  <div class="panel active" id="panel-system">
+    <div class="card">
+      <h2>🫀 System Status</h2>
+      <div class="quick-actions">
+        <button class="btn btn-primary btn-sm" id="btn-refresh-status">🔄 Refresh</button>
+        <button class="btn btn-outline btn-sm" id="btn-run-validation">▶ Run Full Validation</button>
+      </div>
+      <div class="status-grid" id="status-grid">
+        <div class="status-item"><span class="label">Core</span><span class="value status-unknown">⏳</span></div>
+        <div class="status-item"><span class="label">Embedding</span><span class="value status-unknown">⏳</span></div>
+        <div class="status-item"><span class="label">VectorStore</span><span class="value status-unknown">⏳</span></div>
+        <div class="status-item"><span class="label">Retrieval</span><span class="value status-unknown">⏳</span></div>
+        <div class="status-item"><span class="label">LLM</span><span class="value status-unknown">⏳</span></div>
+        <div class="status-item"><span class="label">Generation</span><span class="value status-unknown">⏳</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📋 Validation Result</h2>
+      <div id="validation-summary"></div>
+      <div class="result-box" id="validation-result" style="max-height:400px;"></div>
+    </div>
+  </div>
+
+  <!-- ===== Knowledge Base ===== -->
+  <div class="panel" id="panel-knowledge">
+    <div class="card">
+      <h2>📚 Document Ingest</h2>
+      <div class="form-row">
+        <input class="input" id="kb-filepath" placeholder="文件路径，如 /workspace/upload/doc.md">
+        <select class="select" id="kb-strategy" style="width:160px;">
+          <option value="recursive">recursive</option>
+          <option value="fixed">fixed</option>
+        </select>
+        <button class="btn btn-primary" id="btn-kb-ingest">⬆ Ingest</button>
+      </div>
+      <div id="kb-ingest-result"></div>
+    </div>
+
+    <div class="card">
+      <h2>📊 Knowledge Status</h2>
+      <div class="quick-actions">
+        <button class="btn btn-outline btn-sm" id="btn-kb-status">🔄 Refresh</button>
+      </div>
+      <div class="status-grid" id="kb-stats">
+        <div class="status-item"><span class="label">Documents</span><span class="value status-unknown">-</span></div>
+        <div class="status-item"><span class="label">Chunks</span><span class="value status-unknown">-</span></div>
+        <div class="status-item"><span class="label">VectorStore</span><span class="value status-unknown">-</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== QA Playground ===== -->
+  <div class="panel" id="panel-qa">
+    <div class="card">
+      <h2>💬 RAG Q&A</h2>
+      <div class="form-row">
+        <input class="input" id="qa-query" placeholder="输入问题，如：如何部署 BestRAG？">
+        <select class="select" id="qa-topk" style="width:100px;">
+          <option value="3">top 3</option>
+          <option value="5" selected>top 5</option>
+          <option value="10">top 10</option>
+        </select>
+        <button class="btn btn-primary" id="btn-qa-ask">Send</button>
+      </div>
+      <div class="latency-row">
+        <span>🔍 Retrieval: <span id="qa-ret-time">-</span>ms</span>
+        <span>🧠 Generation: <span id="qa-gen-time">-</span>ms</span>
+        <span>⏱ Total: <span id="qa-total-time">-</span>ms</span>
+      </div>
+      <div class="answer-block" id="qa-answer">输入问题开始 RAG 问答</div>
+    </div>
+
+    <div class="card">
+      <h2>📚 Sources (<span id="qa-source-count">0</span>)</h2>
+      <div id="qa-sources"></div>
+    </div>
+  </div>
+
+  <!-- ===== Retrieval Debug ===== -->
+  <div class="panel" id="panel-retrieval">
+    <div class="card">
+      <h2>🔍 Retrieval Debug</h2>
+      <div class="form-row">
+        <input class="input" id="ret-query" placeholder="输入查询文本诊断检索过程">
+        <button class="btn btn-primary" id="btn-ret-debug">Debug</button>
+      </div>
+      <div id="ret-debug-result"></div>
+    </div>
+  </div>
+
+  <!-- ===== Generation Debug ===== -->
+  <div class="panel" id="panel-generation">
+    <div class="card">
+      <h2>🧠 Generation Debug</h2>
+      <div class="form-row">
+        <input class="input" id="gen-query" placeholder="输入查询文本诊断生成过程">
+        <button class="btn btn-primary" id="btn-gen-debug">Debug</button>
+      </div>
+      <div id="gen-debug-result"></div>
+    </div>
+  </div>
+
+  <!-- ===== Validation Scenario ===== -->
+  <div class="panel" id="panel-scenario">
+    <div class="card">
+      <h2>🔬 Scenario Validation</h2>
+      <div class="quick-actions">
+        <button class="btn btn-primary btn-sm scenario-btn" data-scenario="knowledge-base">📚 KB Scenario</button>
+        <button class="btn btn-outline btn-sm scenario-btn" data-scenario="qa">💬 QA Scenario</button>
+        <button class="btn btn-outline btn-sm scenario-btn" data-scenario="rag-e2e">🔄 RAG E2E</button>
+      </div>
+      <div id="scenario-result"></div>
+    </div>
+  </div>
+
+</div>
+
+<script src="js/app.js"></script>
+<script src="js/system.js"></script>
+<script src="js/knowledge.js"></script>
+<script src="js/qa.js"></script>
+<script src="js/retrieval.js"></script>
+<script src="js/generation.js"></script>
+<script src="js/validation.js"></script>
+</body>
+</html>

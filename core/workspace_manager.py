@@ -7,7 +7,7 @@ No module may decide its own file storage location.
 import shutil
 from pathlib import Path
 
-from config import WorkspaceConfig, get_config
+from core.config import WorkspaceConfig, get_config
 
 
 class WorkspaceManager:

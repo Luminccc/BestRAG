@@ -579,9 +579,216 @@ function escapeHtml(text) {
   return div.innerHTML;
 }
 
+// ==================== V2: System Status + Run Validation + Chat Playground ====================
+
+function initV2() {
+  // System Status
+  const refreshBtn = $("#refresh-status-btn");
+  if (refreshBtn) {
+    refreshBtn.addEventListener("click", loadSystemStatus);
+  }
+  loadSystemStatus(); // 页面加载时自动获取状态
+
+  // Run Full Validation
+  const runBtn = $("#run-validation-btn");
+  if (runBtn) {
+    runBtn.addEventListener("click", runFullValidation);
+  }
+
+  // Chat Playground
+  const chatSendBtn = $("#chat-send-btn");
+  const chatInput = $("#chat-input");
+  if (chatSendBtn) {
+    chatSendBtn.addEventListener("click", sendChat);
+  }
+  if (chatInput) {
+    chatInput.addEventListener("keydown", function(e) {
+      if (e.key === "Enter") sendChat();
+    });
+  }
+}
+
+// ── System Status ──
+
+async function loadSystemStatus() {
+  try {
+    const resp = await fetch("/validation/status");
+    const data = await resp.json();
+    renderSystemStatus(data);
+  } catch (err) {
+    console.error("Status fetch failed:", err);
+  }
+}
+
+function renderSystemStatus(data) {
+  const setStatus = (id, ok) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    if (ok === true || ok === "ok") { el.textContent = "✅"; el.className = "text-emerald-400"; }
+    else if (ok === false || ok === "error") { el.textContent = "❌"; el.className = "text-red-400"; }
+    else if (ok === "no_key") { el.textContent = "⚠️"; el.className = "text-yellow-400"; }
+    else { el.textContent = "⚪"; el.className = "text-gray-500"; }
+  };
+
+  setStatus("status-core", data.core === "ok");
+  setStatus("status-retrieval", data.retrieval === "ok");
+  setStatus("status-generation", data.generation === "ok");
+
+  const d = data.details || {};
+  setStatus("status-embedding", d.embedding?.status === "ok");
+  setStatus("status-vectorstore", d.vectorstore?.status === "ok");
+  setStatus("status-llm", d.llm?.status === "ok" ? true : (d.llm?.status === "no_key" ? "no_key" : false));
+}
+
+// ── Run Full Validation ──
+
+async function runFullValidation() {
+  const statusEl = $("#run-validation-status");
+  const loadingEl = $("#run-validation-loading");
+  const resultEl = $("#run-validation-result");
+
+  if (statusEl) statusEl.textContent = "正在执行全链路验证...";
+  if (statusEl) statusEl.className = "text-xs text-yellow-400";
+  if (loadingEl) loadingEl.classList.remove("hidden");
+
+  try {
+    const resp = await fetch("/validation/run", { method: "POST" });
+    const report = await resp.json();
+    if (loadingEl) loadingEl.classList.add("hidden");
+
+    if (report.status === "success") {
+      if (statusEl) { statusEl.textContent = "全链路验证通过 ✅"; statusEl.className = "text-xs text-emerald-400"; }
+    } else {
+      if (statusEl) { statusEl.textContent = "验证存在失败项 ⚠️"; statusEl.className = "text-xs text-red-400"; }
+    }
+
+    renderFullValidationResult(report, resultEl);
+  } catch (err) {
+    if (loadingEl) loadingEl.classList.add("hidden");
+    if (statusEl) { statusEl.textContent = "验证请求失败: " + err.message; statusEl.className = "text-xs text-red-400"; }
+  }
+}
+
+function renderFullValidationResult(report, container) {
+  if (!container) return;
+  const summary = report.summary || {};
+  const checks = report.checks || [];
+
+  let rows = checks.map(function(c) {
+    var icon = c.status === "PASS" ? "✅" : (c.status === "SKIP" ? "⏭️" : "❌");
+    var color = c.status === "PASS" ? "text-emerald-400" : (c.status === "SKIP" ? "text-yellow-400" : "text-red-400");
+    return '<tr class="border-b border-gray-800/50 text-xs hover:bg-gray-800/20">'
+      + '<td class="py-1.5 px-2">' + icon + '</td>'
+      + '<td class="py-1.5 px-2 font-mono ' + color + '">' + escapeHtml(c.name) + '</td>'
+      + '<td class="py-1.5 px-2 ' + color + '">' + c.status + '</td>'
+      + '<td class="py-1.5 px-2 text-gray-400 max-w-xs truncate">' + escapeHtml(c.message || "-") + '</td>'
+      + '<td class="py-1.5 px-2 text-gray-500 text-right">' + (c.latency || 0) + 'ms</td>'
+      + '</tr>';
+  }).join("");
+
+  container.innerHTML = '<div class="bg-gray-950/60 border border-gray-800 rounded-xl p-4 toast-in">'
+    + '<div class="flex items-center gap-3 mb-3 text-xs">'
+    + '<span class="text-emerald-400">PASS: ' + (summary.pass || 0) + '</span>'
+    + '<span class="text-red-400">FAIL: ' + (summary.fail || 0) + '</span>'
+    + '<span class="text-yellow-400">SKIP: ' + (summary.skip || 0) + '</span>'
+    + '<span class="text-gray-500">Total: ' + (summary.total || 0) + '</span>'
+    + '</div>'
+    + '<div class="overflow-x-auto"><table class="w-full">'
+    + '<thead><tr class="text-gray-500 text-xs border-b border-gray-800">'
+    + '<th class="text-left py-1.5 px-2 font-medium"></th>'
+    + '<th class="text-left py-1.5 px-2 font-medium">Check</th>'
+    + '<th class="text-left py-1.5 px-2 font-medium">Status</th>'
+    + '<th class="text-left py-1.5 px-2 font-medium">Message</th>'
+    + '<th class="text-right py-1.5 px-2 font-medium">Latency</th>'
+    + '</tr></thead><tbody>' + rows + '</tbody></table></div>'
+    + '</div>';
+}
+
+// ── Chat Playground ──
+
+async function sendChat() {
+  var input = document.getElementById("chat-input");
+  if (!input) return;
+  var query = input.value.trim();
+  if (!query) return;
+
+  var loading = document.getElementById("chat-loading");
+  var empty = document.getElementById("chat-empty");
+  var result = document.getElementById("chat-result");
+
+  if (loading) loading.classList.remove("hidden");
+  if (empty) empty.classList.add("hidden");
+  if (result) result.classList.add("hidden");
+
+  try {
+    var resp = await fetch("/validation/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ query: query, use_test_data: false }),
+    });
+    var data = await resp.json();
+
+    if (loading) loading.classList.add("hidden");
+    if (result) result.classList.remove("hidden");
+
+    renderChatResult(data);
+  } catch (err) {
+    if (loading) loading.classList.add("hidden");
+    if (result) result.classList.remove("hidden");
+    renderChatError(err.message);
+  }
+}
+
+function renderChatResult(data) {
+  // Answer
+  var answerEl = document.getElementById("chat-answer");
+  if (answerEl) answerEl.textContent = data.answer || "(无回答)";
+
+  // Sources
+  var sourcesCountEl = document.getElementById("chat-sources-count");
+  var sourcesEl = document.getElementById("chat-sources");
+  var sources = data.sources || [];
+  if (sourcesCountEl) sourcesCountEl.textContent = sources.length;
+
+  if (sourcesEl) {
+    if (sources.length === 0) {
+      sourcesEl.innerHTML = '<p class="text-xs text-gray-500">无检索结果</p>';
+    } else {
+      sourcesEl.innerHTML = sources.map(function(s, i) {
+        return '<div class="bg-gray-900/40 border border-gray-800 rounded-lg px-3 py-2 text-xs">'
+          + '<div class="flex items-center justify-between mb-1">'
+          + '<span class="text-gray-400 font-mono">#' + (i + 1) + ' ' + escapeHtml(s.chunk_id || "").slice(0, 12) + '</span>'
+          + '<span class="text-gray-500">score: ' + (s.score != null ? s.score.toFixed(4) : "-") + '</span>'
+          + '</div>'
+          + '<p class="text-gray-300 line-clamp-3">' + escapeHtml((s.content || "").slice(0, 200)) + '</p>'
+          + '</div>';
+      }).join("");
+    }
+  }
+
+  // Latency
+  var retEl = document.getElementById("chat-retrieval-time");
+  var genEl = document.getElementById("chat-generation-time");
+  var totalEl = document.getElementById("chat-total-time");
+  if (retEl) retEl.textContent = data.retrieval_time != null ? data.retrieval_time : "-";
+  if (genEl) genEl.textContent = data.generation_time != null ? data.generation_time : "-";
+  if (totalEl) totalEl.textContent = data.total_time != null ? data.total_time : "-";
+}
+
+function renderChatError(msg) {
+  var answerEl = document.getElementById("chat-answer");
+  if (answerEl) { answerEl.textContent = "[错误] " + msg; answerEl.className = "text-sm text-red-400"; }
+  var sourcesEl = document.getElementById("chat-sources");
+  if (sourcesEl) sourcesEl.innerHTML = "";
+  var sourcesCountEl = document.getElementById("chat-sources-count");
+  if (sourcesCountEl) sourcesCountEl.textContent = "0";
+}
+
+
 // ==================== 启动 ====================
 
 document.addEventListener("DOMContentLoaded", () => {
   initUpload();
   initActions();
+  initV2();  // V2: System Status + Chat Playground
 });

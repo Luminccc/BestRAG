@@ -35,12 +35,12 @@ class EmbeddingService:
         """
         if embedding is None:
             # 根据配置创建默认 Embedding 实例
-            config = get_config().retrieval
+            config = get_config().embedding
             # 优先使用 API 模式（BGE-M3 Docker 服务）
-            if config.embedding_api_url:
-                self._embedding = BGEAPIEmbedding(config.embedding_api_url)
-            elif config.embedding_model.startswith("BAAI/bge"):
-                self._embedding = BGEEmbedding(config.embedding_model)
+            if config.api_url:
+                self._embedding = BGEAPIEmbedding(config.api_url)
+            elif config.model_name.startswith("BAAI/bge"):
+                self._embedding = BGEEmbedding(config.model_name)
             else:
                 # 默认使用 BGE 模型
                 self._embedding = BGEEmbedding()

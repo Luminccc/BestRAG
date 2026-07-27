@@ -1,85 +1,104 @@
-"""服务注册中心 — 提供统一的服务注册和发现能力。
+"""服务注册中心 — 统一服务注册和发现。
 
 支持：
-- 服务注册
-- 服务发现
-- 依赖注入
+- 普通服务注册/获取
+- 工厂函数延迟创建（首次 get 时懒加载并缓存）
+- 移除/清空
 """
 
-from typing import Any, Dict, Type, TypeVar
+from typing import Any, Dict, Optional, Type, TypeVar
 
-T = TypeVar('T')
+from core.exception import ServiceNotFoundError
+
+T = TypeVar("T")
 
 
 class ServiceRegistry:
-    """服务注册中心。"""
+    """服务注册中心（单例）。"""
 
-    _instance: 'ServiceRegistry' = None  # type: ignore
+    _instance: Optional["ServiceRegistry"] = None
     _services: Dict[str, Any] = {}
     _factories: Dict[str, callable] = {}  # type: ignore
 
-    def __new__(cls) -> 'ServiceRegistry':
+    def __new__(cls) -> "ServiceRegistry":
         if cls._instance is None:
             cls._instance = super().__new__(cls)
         return cls._instance
 
+    # ── 注册 ──────────────────────────────────────
+
     def register(self, name: str, service: Any) -> None:
-        """注册服务实例。"""
+        """注册服务实例（覆盖同名 factory）。"""
         self._services[name] = service
-        # 如果存在对应的工厂函数，移除它
-        if name in self._factories:
-            del self._factories[name]
+        self._factories.pop(name, None)
 
     def register_factory(self, name: str, factory: callable) -> None:
-        """注册服务工厂函数。"""
+        """注册服务工厂函数（get 时懒加载）。"""
         self._factories[name] = factory
-        # 如果存在对应的实例，移除它
-        if name in self._services:
-            del self._services[name]
+        self._services.pop(name, None)
 
-    def get(self, name: str, service_type: Type[T]) -> T:
-        """获取服务实例。"""
-        # 如果已经有实例，直接返回
+    # ── 获取 ──────────────────────────────────────
+
+    def get(self, name: str, service_type: Type[T] = Any) -> T:
+        """获取服务实例。
+
+        优先返回已注册实例；无实例则尝试调用工厂创建并缓存。
+        """
         if name in self._services:
             return self._services[name]
 
-        # 如果有工厂函数，创建实例并缓存
         if name in self._factories:
             service = self._factories[name]()
             self._services[name] = service
-            # 移除工厂函数以避免重复创建
             del self._factories[name]
             return service
 
-        raise ValueError(f"Service '{name}' not found")
+        raise ServiceNotFoundError(f"Service '{name}' not found")
+
+    def has(self, name: str) -> bool:
+        """检查服务是否已注册（含工厂）。"""
+        return name in self._services or name in self._factories
+
+    # ── 移除 ──────────────────────────────────────
 
     def unregister(self, name: str) -> None:
         """注销服务。"""
-        if name in self._services:
-            del self._services[name]
-        if name in self._factories:
-            del self._factories[name]
+        self._services.pop(name, None)
+        self._factories.pop(name, None)
+
+    def clear(self) -> None:
+        """清空所有注册（主要用于 shutdown）。"""
+        self._services.clear()
+        self._factories.clear()
 
 
-# 全局服务注册中心实例
-_service_registry = ServiceRegistry()
+# ═══════════════════════════════════════════════════
+# 全局入口
+# ═══════════════════════════════════════════════════
+
+_registry = ServiceRegistry()
 
 
 def register_service(name: str, service: Any) -> None:
     """注册服务实例。"""
-    _service_registry.register(name, service)
+    _registry.register(name, service)
 
 
 def register_service_factory(name: str, factory: callable) -> None:
-    """注册服务工厂函数。"""
-    _service_registry.register_factory(name, factory)
+    """注册服务工厂。"""
+    _registry.register_factory(name, factory)
 
 
-def get_service(name: str, service_type: Type[T]) -> T:
+def get_service(name: str, service_type: Type[T] = Any) -> T:
     """获取服务实例。"""
-    return _service_registry.get(name, service_type)
+    return _registry.get(name, service_type)
 
 
 def unregister_service(name: str) -> None:
     """注销服务。"""
-    _service_registry.unregister(name)
+    _registry.unregister(name)
+
+
+def clear_services() -> None:
+    """清空所有服务注册。"""
+    _registry.clear()
