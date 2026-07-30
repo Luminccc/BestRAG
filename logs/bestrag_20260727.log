@@ -1,0 +1,273 @@
+2026-07-27 21:51:13,457 - bestrag.resource - INFO - info:54 - 生成开始: 如何部署RAG?...
+2026-07-27 21:51:13,459 - bestrag.resource - INFO - info:54 - 生成完成: model=deepseek-chat, len=21
+2026-07-27 21:51:13,476 - bestrag.resource - WARNING - warning:60 - 没有可写入的 chunk（全部缺少 embedding）
+2026-07-27 21:51:13,478 - bestrag.resource - ERROR - error:66 - 索引失败: doc=doc-1, error=Service 'embedding' not found
+2026-07-27 21:51:13,482 - bestrag.resource - INFO - info:54 - 开始索引: doc=doc-1
+2026-07-27 21:51:13,482 - bestrag.resource - ERROR - error:66 - 索引失败: doc=doc-1, error=Service 'embedding' not found
+2026-07-27 21:51:13,494 - bestrag.resource - INFO - info:54 - BM25 corpus 已注册: 3 条文档
+2026-07-27 21:51:13,494 - bestrag.resource - INFO - info:54 - BM25Retriever 返回 1 条结果
+2026-07-27 21:51:13,494 - bestrag.resource - INFO - info:54 - BM25 corpus 已注册: 3 条文档
+2026-07-27 21:53:34,970 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-27 21:53:34,970 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-27 21:53:34,970 - bestrag.resource - INFO - info:54 - 应用关闭中...
+2026-07-27 21:53:34,970 - bestrag.resource - INFO - info:54 - 应用已关闭
+2026-07-27 21:53:38,705 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-27 21:53:38,705 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-27 21:53:38,705 - bestrag.resource - INFO - info:54 - 应用关闭中...
+2026-07-27 21:53:38,705 - bestrag.resource - INFO - info:54 - 应用已关闭
+2026-07-27 21:57:42,991 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-27 21:57:42,991 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-27 21:57:42,991 - bestrag.resource - INFO - info:54 - 应用关闭中...
+2026-07-27 21:57:42,991 - bestrag.resource - INFO - info:54 - 应用已关闭
+2026-07-27 21:58:20,208 - bestrag.resource - INFO - info:54 - 注册 Chunk 策略: chunk:fixed
+2026-07-27 21:58:20,209 - bestrag.resource - INFO - info:54 - 注册 Chunk 策略: chunk:recursive
+2026-07-27 21:58:28,940 - bestrag.resource - INFO - info:54 - 注册 Chunk 策略: chunk:fixed
+2026-07-27 21:58:28,940 - bestrag.resource - INFO - info:54 - 注册 Chunk 策略: chunk:recursive
+2026-07-27 21:59:04,970 - bestrag.resource - INFO - info:54 - 注册 Chunk 策略: chunk:fixed
+2026-07-27 21:59:04,970 - bestrag.resource - INFO - info:54 - 注册 Chunk 策略: chunk:recursive
+2026-07-27 21:59:04,970 - bestrag.resource - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 21:59:04,970 - bestrag.resource - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 21:59:05,140 - bestrag.resource - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 21:59:05,140 - bestrag.resource - INFO - info:54 - Pipeline Step 2: double
+2026-07-27 21:59:05,143 - bestrag.resource - INFO - info:54 - Pipeline Step 1: double
+2026-07-27 21:59:05,145 - bestrag.resource - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 21:59:05,145 - bestrag.resource - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 21:59:05,145 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-27 21:59:05,145 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-27 21:59:05,145 - bestrag.resource - INFO - info:54 - 应用关闭中...
+2026-07-27 21:59:05,145 - bestrag.resource - INFO - info:54 - 应用已关闭
+2026-07-27 21:59:05,159 - bestrag.resource - INFO - info:54 - 生成开始: 如何部署RAG?...
+2026-07-27 21:59:05,159 - bestrag.resource - INFO - info:54 - 生成完成: model=deepseek-chat, len=21
+2026-07-27 21:59:05,188 - bestrag.resource - WARNING - warning:60 - 没有可写入的 chunk（全部缺少 embedding）
+2026-07-27 21:59:05,189 - bestrag.resource - ERROR - error:66 - 索引失败: doc=doc-1, error=Service 'embedding' not found
+2026-07-27 21:59:05,189 - bestrag.resource - INFO - info:54 - 开始索引: doc=doc-1
+2026-07-27 21:59:05,189 - bestrag.resource - ERROR - error:66 - 索引失败: doc=doc-1, error=Service 'embedding' not found
+2026-07-27 21:59:05,209 - bestrag.resource - INFO - info:54 - BM25 corpus 已注册: 3 条文档
+2026-07-27 21:59:05,209 - bestrag.resource - INFO - info:54 - BM25Retriever 返回 1 条结果
+2026-07-27 21:59:05,209 - bestrag.resource - INFO - info:54 - BM25 corpus 已注册: 3 条文档
+2026-07-27 22:01:09,736 - bestrag.resource - INFO - info:54 - 注册 Chunk 策略: chunk:fixed
+2026-07-27 22:01:09,736 - bestrag.resource - INFO - info:54 - 注册 Chunk 策略: chunk:recursive
+2026-07-27 22:01:09,736 - bestrag.resource - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 22:01:09,736 - bestrag.resource - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 22:01:09,898 - bestrag.resource - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:01:09,898 - bestrag.resource - INFO - info:54 - Pipeline Step 2: double
+2026-07-27 22:01:09,900 - bestrag.resource - INFO - info:54 - Pipeline Step 1: double
+2026-07-27 22:01:09,902 - bestrag.resource - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:01:09,902 - bestrag.resource - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:01:09,903 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-27 22:01:09,903 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-27 22:01:09,903 - bestrag.resource - INFO - info:54 - 应用关闭中...
+2026-07-27 22:01:09,903 - bestrag.resource - INFO - info:54 - 应用已关闭
+2026-07-27 22:01:20,111 - bestrag.resource - INFO - info:54 - 注册 Chunk 策略: chunk:fixed
+2026-07-27 22:01:20,111 - bestrag.resource - INFO - info:54 - 注册 Chunk 策略: chunk:recursive
+2026-07-27 22:01:20,111 - bestrag.resource - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 22:01:20,111 - bestrag.resource - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 22:01:20,127 - bestrag.resource - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:01:20,127 - bestrag.resource - INFO - info:54 - Pipeline Step 2: double
+2026-07-27 22:01:20,127 - bestrag.resource - INFO - info:54 - Pipeline Step 1: double
+2026-07-27 22:01:20,127 - bestrag.resource - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:01:20,127 - bestrag.resource - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:01:20,127 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-27 22:01:20,127 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-27 22:01:20,127 - bestrag.resource - INFO - info:54 - 应用关闭中...
+2026-07-27 22:01:20,127 - bestrag.resource - INFO - info:54 - 应用已关闭
+2026-07-27 22:06:35,628 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-27 22:06:35,628 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-27 22:06:35,628 - bestrag.resource - INFO - info:54 - 应用关闭中...
+2026-07-27 22:06:35,628 - bestrag.resource - INFO - info:54 - 应用已关闭
+2026-07-27 22:06:35,657 - bestrag.resource - INFO - info:54 - 注册 Chunk 策略: chunk:fixed
+2026-07-27 22:06:35,657 - bestrag.resource - INFO - info:54 - 注册 Chunk 策略: chunk:recursive
+2026-07-27 22:06:35,657 - bestrag.resource - INFO - info:54 - 注册 Chunk 策略: chunk:heading
+2026-07-27 22:06:35,657 - bestrag.resource - INFO - info:54 - 注册 Chunk 策略: chunk:semantic
+2026-07-27 22:06:35,657 - bestrag.resource - INFO - info:54 - 注册 Chunk 策略: chunk:hierarchical
+2026-07-27 22:06:35,657 - bestrag.resource - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 22:06:35,657 - bestrag.resource - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 22:06:35,657 - bestrag.resource - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:06:35,657 - bestrag.resource - INFO - info:54 - Pipeline Step 2: double
+2026-07-27 22:06:35,657 - bestrag.resource - INFO - info:54 - Pipeline Step 1: double
+2026-07-27 22:06:35,657 - bestrag.resource - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:06:35,657 - bestrag.resource - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:07:04,522 - bestrag.resource - INFO - info:54 - 注册 Chunk 策略: chunk:fixed
+2026-07-27 22:07:04,522 - bestrag.resource - INFO - info:54 - 注册 Chunk 策略: chunk:recursive
+2026-07-27 22:07:04,522 - bestrag.resource - INFO - info:54 - 注册 Chunk 策略: chunk:heading
+2026-07-27 22:07:04,522 - bestrag.resource - INFO - info:54 - 注册 Chunk 策略: chunk:semantic
+2026-07-27 22:07:04,522 - bestrag.resource - INFO - info:54 - 注册 Chunk 策略: chunk:hierarchical
+2026-07-27 22:07:04,528 - bestrag.resource - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 22:07:04,529 - bestrag.resource - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 22:07:04,531 - bestrag.resource - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:07:04,531 - bestrag.resource - INFO - info:54 - Pipeline Step 2: double
+2026-07-27 22:07:04,532 - bestrag.resource - INFO - info:54 - Pipeline Step 1: double
+2026-07-27 22:07:04,533 - bestrag.resource - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:07:04,533 - bestrag.resource - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:07:04,537 - bestrag.resource - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-27 22:07:04,537 - bestrag.resource - INFO - info:54 - 应用就绪
+2026-07-27 22:07:04,537 - bestrag.resource - INFO - info:54 - 应用关闭中...
+2026-07-27 22:07:04,537 - bestrag.resource - INFO - info:54 - 应用已关闭
+2026-07-27 22:18:41,585 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:fixed
+2026-07-27 22:18:41,585 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:recursive
+2026-07-27 22:18:41,585 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:heading
+2026-07-27 22:18:41,585 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:semantic
+2026-07-27 22:18:41,585 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:hierarchical
+2026-07-27 22:18:41,585 - bestrag.provider.factory - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 22:18:41,585 - bestrag.provider.factory - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 22:18:41,585 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:18:41,585 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 2: double
+2026-07-27 22:18:41,585 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: double
+2026-07-27 22:18:41,601 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:18:41,601 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:18:41,601 - bestrag.provider.factory - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-27 22:18:41,601 - bestrag.provider.factory - INFO - info:54 - 应用就绪
+2026-07-27 22:18:41,601 - bestrag.provider.factory - INFO - info:54 - 应用关闭中...
+2026-07-27 22:18:41,601 - bestrag.provider.factory - INFO - info:54 - 应用已关闭
+2026-07-27 22:18:58,797 - bestrag.provider.factory - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-27 22:18:58,797 - bestrag.provider.factory - INFO - info:54 - 应用就绪
+2026-07-27 22:18:58,799 - bestrag.provider.factory - INFO - info:54 - 应用关闭中...
+2026-07-27 22:18:58,799 - bestrag.provider.factory - INFO - info:54 - 应用已关闭
+2026-07-27 22:18:58,826 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:fixed
+2026-07-27 22:18:58,826 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:recursive
+2026-07-27 22:18:58,826 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:heading
+2026-07-27 22:18:58,826 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:semantic
+2026-07-27 22:18:58,826 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:hierarchical
+2026-07-27 22:18:58,826 - bestrag.provider.factory - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 22:18:58,826 - bestrag.provider.factory - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 22:18:58,826 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:18:58,826 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 2: double
+2026-07-27 22:18:58,826 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: double
+2026-07-27 22:18:58,826 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:18:58,826 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:19:27,537 - bestrag.provider.factory - INFO - info:54 - Provider 注册: similarity:jaccard
+2026-07-27 22:19:27,704 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:fixed
+2026-07-27 22:19:27,704 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:recursive
+2026-07-27 22:19:27,704 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:heading
+2026-07-27 22:19:27,704 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:semantic
+2026-07-27 22:19:27,704 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:hierarchical
+2026-07-27 22:19:27,720 - bestrag.provider.factory - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 22:19:27,720 - bestrag.provider.factory - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 22:19:27,720 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:19:27,720 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 2: double
+2026-07-27 22:19:27,720 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: double
+2026-07-27 22:19:27,720 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:19:27,720 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:19:27,748 - bestrag.provider.factory - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-27 22:19:27,748 - bestrag.provider.factory - INFO - info:54 - 应用就绪
+2026-07-27 22:19:27,748 - bestrag.provider.factory - INFO - info:54 - 应用关闭中...
+2026-07-27 22:19:27,748 - bestrag.provider.factory - INFO - info:54 - 应用已关闭
+2026-07-27 22:19:42,064 - bestrag.provider.factory - INFO - info:54 - Provider 注册: similarity:jaccard
+2026-07-27 22:19:42,080 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:fixed
+2026-07-27 22:19:42,096 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:recursive
+2026-07-27 22:19:42,096 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:heading
+2026-07-27 22:19:42,096 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:semantic
+2026-07-27 22:19:42,096 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:hierarchical
+2026-07-27 22:19:42,098 - bestrag.provider.factory - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 22:19:42,098 - bestrag.provider.factory - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 22:19:42,098 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:19:42,098 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 2: double
+2026-07-27 22:19:42,098 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: double
+2026-07-27 22:19:42,098 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:19:42,098 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:19:42,119 - bestrag.provider.factory - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-27 22:19:42,119 - bestrag.provider.factory - INFO - info:54 - 应用就绪
+2026-07-27 22:19:42,119 - bestrag.provider.factory - INFO - info:54 - 应用关闭中...
+2026-07-27 22:19:42,119 - bestrag.provider.factory - INFO - info:54 - 应用已关闭
+2026-07-27 22:25:45,251 - bestrag.provider.factory - INFO - info:54 - Provider 注册: similarity:jaccard
+2026-07-27 22:25:45,296 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:fixed
+2026-07-27 22:25:45,296 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:recursive
+2026-07-27 22:25:45,296 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:heading
+2026-07-27 22:25:45,296 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:semantic
+2026-07-27 22:25:45,296 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:hierarchical
+2026-07-27 22:25:45,296 - bestrag.provider.factory - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 22:25:45,296 - bestrag.provider.factory - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 22:25:45,303 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:25:45,303 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 2: double
+2026-07-27 22:25:45,304 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: double
+2026-07-27 22:25:45,306 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:25:45,306 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:25:45,330 - bestrag.provider.factory - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-27 22:25:45,330 - bestrag.provider.factory - INFO - info:54 - 应用就绪
+2026-07-27 22:25:45,330 - bestrag.provider.factory - INFO - info:54 - 应用关闭中...
+2026-07-27 22:25:45,330 - bestrag.provider.factory - INFO - info:54 - 应用已关闭
+2026-07-27 22:26:10,145 - bestrag.provider.factory - INFO - info:54 - Provider 注册: similarity:jaccard
+2026-07-27 22:26:10,168 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:fixed
+2026-07-27 22:26:10,168 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:recursive
+2026-07-27 22:26:10,168 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:heading
+2026-07-27 22:26:10,168 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:semantic
+2026-07-27 22:26:10,168 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:hierarchical
+2026-07-27 22:26:10,184 - bestrag.provider.factory - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 22:26:10,184 - bestrag.provider.factory - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 22:26:10,184 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:26:10,184 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 2: double
+2026-07-27 22:26:10,184 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: double
+2026-07-27 22:26:10,184 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:26:10,184 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:26:10,229 - bestrag.provider.factory - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-27 22:26:10,229 - bestrag.provider.factory - INFO - info:54 - 应用就绪
+2026-07-27 22:26:10,229 - bestrag.provider.factory - INFO - info:54 - 应用关闭中...
+2026-07-27 22:26:10,229 - bestrag.provider.factory - INFO - info:54 - 应用已关闭
+2026-07-27 22:30:41,950 - bestrag.provider.factory - INFO - info:54 - Provider 注册: similarity:jaccard
+2026-07-27 22:30:41,990 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:fixed
+2026-07-27 22:30:41,990 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:recursive
+2026-07-27 22:30:41,990 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:heading
+2026-07-27 22:30:41,990 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:semantic
+2026-07-27 22:30:41,990 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:hierarchical
+2026-07-27 22:30:41,994 - bestrag.provider.factory - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 22:30:41,995 - bestrag.provider.factory - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 22:30:41,997 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:30:41,997 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 2: double
+2026-07-27 22:30:41,998 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: double
+2026-07-27 22:30:42,000 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:30:42,000 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:30:42,036 - bestrag.provider.factory - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-27 22:30:42,036 - bestrag.provider.factory - INFO - info:54 - 应用就绪
+2026-07-27 22:30:42,036 - bestrag.provider.factory - INFO - info:54 - 应用关闭中...
+2026-07-27 22:30:42,036 - bestrag.provider.factory - INFO - info:54 - 应用已关闭
+2026-07-27 22:31:03,955 - bestrag.provider.factory - INFO - info:54 - Provider 注册: similarity:jaccard
+2026-07-27 22:31:03,976 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:fixed
+2026-07-27 22:31:03,976 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:recursive
+2026-07-27 22:31:03,976 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:heading
+2026-07-27 22:31:03,976 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:semantic
+2026-07-27 22:31:03,976 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:hierarchical
+2026-07-27 22:31:03,992 - bestrag.provider.factory - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 22:31:03,992 - bestrag.provider.factory - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 22:31:03,992 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:31:03,992 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 2: double
+2026-07-27 22:31:03,992 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: double
+2026-07-27 22:31:03,992 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:31:03,992 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:31:04,048 - bestrag.provider.factory - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-27 22:31:04,048 - bestrag.provider.factory - INFO - info:54 - 应用就绪
+2026-07-27 22:31:04,048 - bestrag.provider.factory - INFO - info:54 - 应用关闭中...
+2026-07-27 22:31:04,048 - bestrag.provider.factory - INFO - info:54 - 应用已关闭
+2026-07-27 22:37:24,218 - bestrag.provider.factory - INFO - info:54 - Provider 注册: similarity:jaccard
+2026-07-27 22:37:24,259 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:fixed
+2026-07-27 22:37:24,259 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:recursive
+2026-07-27 22:37:24,259 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:heading
+2026-07-27 22:37:24,259 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:semantic
+2026-07-27 22:37:24,259 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:hierarchical
+2026-07-27 22:37:24,263 - bestrag.provider.factory - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 22:37:24,264 - bestrag.provider.factory - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 22:37:24,267 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:37:24,267 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 2: double
+2026-07-27 22:37:24,268 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: double
+2026-07-27 22:37:24,270 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:37:24,270 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:37:24,310 - bestrag.provider.factory - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-27 22:37:24,310 - bestrag.provider.factory - INFO - info:54 - 应用就绪
+2026-07-27 22:37:24,310 - bestrag.provider.factory - INFO - info:54 - 应用关闭中...
+2026-07-27 22:37:24,310 - bestrag.provider.factory - INFO - info:54 - 应用已关闭
+2026-07-27 22:37:44,066 - bestrag.provider.factory - INFO - info:54 - Provider 注册: similarity:jaccard
+2026-07-27 22:37:44,095 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:fixed
+2026-07-27 22:37:44,095 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:recursive
+2026-07-27 22:37:44,095 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:heading
+2026-07-27 22:37:44,095 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:semantic
+2026-07-27 22:37:44,095 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:hierarchical
+2026-07-27 22:37:44,095 - bestrag.provider.factory - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 22:37:44,095 - bestrag.provider.factory - INFO - info:54 - 策略创建: chunk:test
+2026-07-27 22:37:44,095 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:37:44,095 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 2: double
+2026-07-27 22:37:44,095 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: double
+2026-07-27 22:37:44,111 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:37:44,111 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-27 22:37:44,161 - bestrag.provider.factory - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-27 22:37:44,161 - bestrag.provider.factory - INFO - info:54 - 应用就绪
+2026-07-27 22:37:44,161 - bestrag.provider.factory - INFO - info:54 - 应用关闭中...
+2026-07-27 22:37:44,161 - bestrag.provider.factory - INFO - info:54 - 应用已关闭

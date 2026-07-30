@@ -1,0 +1,1040 @@
+2026-07-28 22:55:58,628 - bestrag.provider.factory - INFO - info:54 - Provider 注册: similarity:jaccard
+2026-07-28 22:55:58,663 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:fixed
+2026-07-28 22:55:58,663 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:recursive
+2026-07-28 22:55:58,663 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:heading
+2026-07-28 22:55:58,663 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:semantic
+2026-07-28 22:55:58,663 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:hierarchical
+2026-07-28 22:55:58,663 - bestrag.provider.factory - INFO - info:54 - 策略创建: chunk:test
+2026-07-28 22:55:58,670 - bestrag.provider.factory - INFO - info:54 - 策略创建: chunk:test
+2026-07-28 22:55:58,670 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-28 22:55:58,670 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 2: double
+2026-07-28 22:55:58,670 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: double
+2026-07-28 22:55:58,670 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-28 22:55:58,670 - bestrag.provider.factory - INFO - info:54 - Pipeline Step 1: add_one
+2026-07-28 22:55:58,746 - bestrag.provider.factory - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-28 22:55:58,746 - bestrag.provider.factory - INFO - info:54 - 应用就绪
+2026-07-28 22:55:58,746 - bestrag.provider.factory - INFO - info:54 - 应用关闭中...
+2026-07-28 22:55:58,746 - bestrag.provider.factory - INFO - info:54 - 应用已关闭
+2026-07-28 22:55:59,009 - bestrag.provider.factory - INFO - info:54 - 生成开始: 如何部署RAG?...
+2026-07-28 22:55:59,009 - bestrag.provider.factory - INFO - info:54 - 生成完成: model=deepseek-chat, len=21
+2026-07-28 22:55:59,027 - bestrag.provider.factory - WARNING - warning:60 - 没有可写入的 chunk（全部缺少 embedding）
+2026-07-28 22:55:59,029 - bestrag.provider.factory - INFO - info:54 - 索引阶段: metadata_enrich
+2026-07-28 22:55:59,030 - bestrag.provider.factory - INFO - info:54 - 索引阶段: embedding
+2026-07-28 22:55:59,030 - bestrag.provider.factory - ERROR - error:66 - 索引失败: doc=doc-1, error=Service 'embedding' not found
+2026-07-28 22:55:59,030 - bestrag.provider.factory - INFO - info:54 - 开始索引: doc=doc-1
+2026-07-28 22:55:59,030 - bestrag.provider.factory - INFO - info:54 - 索引阶段: metadata_enrich
+2026-07-28 22:55:59,030 - bestrag.provider.factory - INFO - info:54 - 索引阶段: embedding
+2026-07-28 22:55:59,030 - bestrag.provider.factory - ERROR - error:66 - 索引失败: doc=doc-1, error=Service 'embedding' not found
+2026-07-28 22:55:59,044 - bestrag.provider.factory - INFO - info:54 - BM25 corpus 已注册: 3 条文档
+2026-07-28 22:55:59,044 - bestrag.provider.factory - INFO - info:54 - BM25Retriever 返回 1 条结果
+2026-07-28 22:55:59,044 - bestrag.provider.factory - INFO - info:54 - BM25 corpus 已注册: 3 条文档
+2026-07-28 22:58:32,525 - bestrag.provider.factory - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-28 22:58:32,525 - bestrag.provider.factory - INFO - info:54 - 应用就绪
+2026-07-28 22:58:32,525 - bestrag.provider.factory - INFO - info:54 - 应用关闭中...
+2026-07-28 22:58:32,525 - bestrag.provider.factory - INFO - info:54 - 应用已关闭
+2026-07-28 23:03:50,222 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 0f1c3e36-2744-435b-8e4d-3827ef5dff39 - test
+2026-07-28 23:03:50,223 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 8ef2dc62-db86-49e5-a318-15c31ffc677a - test
+2026-07-28 23:03:50,223 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 61bc197d-4906-4b37-845a-db7b01d72f4f - test
+2026-07-28 23:03:50,223 - bestrag.provider.factory - INFO - info:54 - 知识库已删除: 61bc197d-4906-4b37-845a-db7b01d72f4f
+2026-07-28 23:03:50,223 - bestrag.provider.factory - WARNING - warning:60 - 知识库不存在: nonexistent
+2026-07-28 23:03:50,223 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 82ee2ae5-dfe3-413a-be70-edf809a4b569 - a
+2026-07-28 23:03:50,223 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 9f4b8da6-ccc7-42d7-9d88-e48d844987e4 - b
+2026-07-28 23:03:50,228 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 5f54cac8-27f3-452a-bcfc-0de1060b941a - test
+2026-07-28 23:03:50,229 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: e189cb97-1829-47d6-8a81-84ee7c7f9e18 -> KB:kb_1
+2026-07-28 23:03:50,229 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: f510a724-2b7d-4cdc-bdf4-287c902a6e79 -> KB:kb_1
+2026-07-28 23:03:50,229 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 9083366b-fe77-41e2-8869-4806689ae895 -> KB:kb_1
+2026-07-28 23:03:50,229 - bestrag.provider.factory - INFO - info:54 - 文档已删除: 9083366b-fe77-41e2-8869-4806689ae895
+2026-07-28 23:03:50,232 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: cc30252a-efc2-4a36-89a1-725b2e684e7c -> KB:kb_1
+2026-07-28 23:03:50,232 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: e3e5c941-739f-4e03-a172-6df58c4471ef -> KB:kb_1
+2026-07-28 23:03:50,232 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 74dfe22f-2d72-423d-90b5-47647f65440d -> KB:kb_2
+2026-07-28 23:03:50,232 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 32a34939-4705-4f6d-9fa2-150822262073 -> KB:kb_1
+2026-07-28 23:03:50,232 - bestrag.provider.factory - INFO - info:54 - 文档已更新: 32a34939-4705-4f6d-9fa2-150822262073 -> v2
+2026-07-28 23:03:50,232 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 8f3b3da4-f6a9-4d7f-9bb0-e99746520332 -> KB:kb_1
+2026-07-28 23:03:50,232 - bestrag.provider.factory - INFO - info:54 - 文档内容无变化: 8f3b3da4-f6a9-4d7f-9bb0-e99746520332
+2026-07-28 23:03:50,232 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 99e540f9-8ad2-4894-a573-4da163b87fcc -> KB:kb_1
+2026-07-28 23:03:50,232 - bestrag.provider.factory - INFO - info:54 - 文档已更新: 99e540f9-8ad2-4894-a573-4da163b87fcc -> v2
+2026-07-28 23:03:50,235 - bestrag.provider.factory - INFO - info:54 - 文档已更新: 99e540f9-8ad2-4894-a573-4da163b87fcc -> v3
+2026-07-28 23:03:50,236 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=6ff2e845-73d0-406b-9c28-be33cbba859e, chunks=0, 耗时=0.0s
+2026-07-28 23:03:50,236 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=1b83083c-7410-4850-a768-9c4e0afe0af2, chunks=0, 耗时=0.0s
+2026-07-28 23:03:50,236 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=1b83083c-7410-4850-a768-9c4e0afe0af2, 清理 1 条旧记录
+2026-07-28 23:03:50,236 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=1b83083c-7410-4850-a768-9c4e0afe0af2, chunks=0, 耗时=0.0s
+2026-07-28 23:03:50,236 - bestrag.provider.factory - INFO - info:54 - 无旧索引记录，执行全量构建: doc=e2bf6284-57db-42f4-9019-bcd9be851da8
+2026-07-28 23:03:50,236 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=e2bf6284-57db-42f4-9019-bcd9be851da8, chunks=0, 耗时=0.0s
+2026-07-28 23:03:50,236 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=d8722e66-3f41-4cc0-b41b-60532acd283f, chunks=0, 耗时=0.0s
+2026-07-28 23:03:50,236 - bestrag.provider.factory - INFO - info:54 - 检测到旧索引，执行重建: doc=d8722e66-3f41-4cc0-b41b-60532acd283f, old_status=IndexStatus.READY
+2026-07-28 23:03:50,236 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=d8722e66-3f41-4cc0-b41b-60532acd283f, 清理 1 条旧记录
+2026-07-28 23:03:50,236 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=d8722e66-3f41-4cc0-b41b-60532acd283f, chunks=0, 耗时=0.0s
+2026-07-28 23:03:50,236 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:03:50,236 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:03:50,236 - bestrag.provider.factory - WARNING - warning:60 - 文档切分结果为空: doc=d1
+2026-07-28 23:03:50,241 - bestrag.provider.factory - INFO - info:54 - 增量索引更新: doc=d1, changed=1
+2026-07-28 23:03:50,243 - bestrag.provider.factory - INFO - info:54 - 增量索引更新: doc=d1, changed=0
+2026-07-28 23:03:50,243 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=d1
+2026-07-28 23:03:50,243 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:03:50,243 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:03:50,243 - bestrag.provider.factory - INFO - info:54 - Knowledge Model 注册完成
+2026-07-28 23:03:50,243 - bestrag.provider.factory - INFO - info:54 - Knowledge Repository 注册完成
+2026-07-28 23:03:50,243 - bestrag.provider.factory - INFO - info:54 - Knowledge Service 注册完成
+2026-07-28 23:03:50,243 - bestrag.provider.factory - INFO - info:54 - Knowledge Model 注册完成
+2026-07-28 23:03:50,243 - bestrag.provider.factory - INFO - info:54 - Knowledge Repository 注册完成
+2026-07-28 23:03:50,243 - bestrag.provider.factory - INFO - info:54 - Knowledge Service 注册完成
+2026-07-28 23:03:50,248 - bestrag.provider.factory - INFO - info:54 - Knowledge Model 注册完成
+2026-07-28 23:03:50,248 - bestrag.provider.factory - INFO - info:54 - Knowledge Repository 注册完成
+2026-07-28 23:03:50,248 - bestrag.provider.factory - INFO - info:54 - Knowledge Service 注册完成
+2026-07-28 23:03:50,249 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 94d3cf4a-6149-4877-b89e-d2b768199cec - registry_test
+2026-07-28 23:03:50,249 - bestrag.provider.factory - INFO - info:54 - Knowledge Model 注册完成
+2026-07-28 23:03:50,249 - bestrag.provider.factory - INFO - info:54 - Knowledge Repository 注册完成
+2026-07-28 23:03:50,249 - bestrag.provider.factory - INFO - info:54 - Knowledge Service 注册完成
+2026-07-28 23:03:50,249 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: efb3ba30-92f2-4e9c-920a-5677a5e5e3d2 - 集成测试库
+2026-07-28 23:03:50,249 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 4aadae42-f02b-446d-a398-3e004542fb38 -> KB:efb3ba30-92f2-4e9c-920a-5677a5e5e3d2
+2026-07-28 23:03:50,249 - bestrag.provider.factory - INFO - info:54 - 文档已更新: 4aadae42-f02b-446d-a398-3e004542fb38 -> v2
+2026-07-28 23:03:50,249 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=4aadae42-f02b-446d-a398-3e004542fb38, chunks=0, 耗时=0.0s
+2026-07-28 23:03:50,249 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=4aadae42-f02b-446d-a398-3e004542fb38, 清理 1 条旧记录
+2026-07-28 23:03:50,249 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=4aadae42-f02b-446d-a398-3e004542fb38, chunks=0, 耗时=0.0s
+2026-07-28 23:03:50,249 - bestrag.provider.factory - INFO - info:54 - 文档已删除: 4aadae42-f02b-446d-a398-3e004542fb38
+2026-07-28 23:03:50,249 - bestrag.provider.factory - INFO - info:54 - 知识库已删除: efb3ba30-92f2-4e9c-920a-5677a5e5e3d2
+2026-07-28 23:03:51,722 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 14b0a083-8468-4f62-91d3-e1c44428b2cb - test
+2026-07-28 23:03:51,722 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: fc6c5286-b53a-45cc-a25b-87b1441fefb0 - test
+2026-07-28 23:03:51,722 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 5732e8c8-5653-4a5d-a178-387eb89d1b14 - test
+2026-07-28 23:03:51,722 - bestrag.provider.factory - INFO - info:54 - 知识库已删除: 5732e8c8-5653-4a5d-a178-387eb89d1b14
+2026-07-28 23:03:51,722 - bestrag.provider.factory - WARNING - warning:60 - 知识库不存在: nonexistent
+2026-07-28 23:03:51,729 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: a6352bda-edbf-41a4-b732-1742ffb1662f - a
+2026-07-28 23:03:51,729 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: a1b5d82c-4708-49f2-9c0d-15ebbb2d78ad - b
+2026-07-28 23:03:51,729 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 6085d714-014a-45ba-84af-f2b9b82d6592 - test
+2026-07-28 23:03:51,729 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 0e9bd750-dafb-456a-8e45-94ad43a57adb -> KB:kb_1
+2026-07-28 23:03:51,732 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 67bec494-09c5-4a17-9e29-c55222cec455 -> KB:kb_1
+2026-07-28 23:03:51,732 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 78e45fe6-3cdc-4586-a20a-0e624f06cc88 -> KB:kb_1
+2026-07-28 23:03:51,732 - bestrag.provider.factory - INFO - info:54 - 文档已删除: 78e45fe6-3cdc-4586-a20a-0e624f06cc88
+2026-07-28 23:03:51,732 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: ff5e70b5-6d06-4101-87fc-e17b62d41555 -> KB:kb_1
+2026-07-28 23:03:51,732 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 4f61106b-0e24-4c4d-ab24-6c22b7954d19 -> KB:kb_1
+2026-07-28 23:03:51,732 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: bb6c2eb2-8875-4008-9bd5-6ea7ea9cb6d9 -> KB:kb_2
+2026-07-28 23:03:51,734 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: f414f5df-8c68-4830-8259-a8185c1d1c92 -> KB:kb_1
+2026-07-28 23:03:51,734 - bestrag.provider.factory - INFO - info:54 - 文档已更新: f414f5df-8c68-4830-8259-a8185c1d1c92 -> v2
+2026-07-28 23:03:51,735 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 1dc3e960-32a3-4637-abaf-5f0fee6389d2 -> KB:kb_1
+2026-07-28 23:03:51,735 - bestrag.provider.factory - INFO - info:54 - 文档内容无变化: 1dc3e960-32a3-4637-abaf-5f0fee6389d2
+2026-07-28 23:03:51,736 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 438f9614-6fe5-4849-b6c0-9cf10cc00cd2 -> KB:kb_1
+2026-07-28 23:03:51,736 - bestrag.provider.factory - INFO - info:54 - 文档已更新: 438f9614-6fe5-4849-b6c0-9cf10cc00cd2 -> v2
+2026-07-28 23:03:51,736 - bestrag.provider.factory - INFO - info:54 - 文档已更新: 438f9614-6fe5-4849-b6c0-9cf10cc00cd2 -> v3
+2026-07-28 23:03:51,736 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=b1f9de00-a533-415c-808f-bc6127abbca2, chunks=0, 耗时=0.0s
+2026-07-28 23:03:51,736 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=9be5f407-6b19-4bd8-b7b0-bc87329ea708, chunks=0, 耗时=0.0s
+2026-07-28 23:03:51,736 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=9be5f407-6b19-4bd8-b7b0-bc87329ea708, 清理 1 条旧记录
+2026-07-28 23:03:51,736 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=9be5f407-6b19-4bd8-b7b0-bc87329ea708, chunks=0, 耗时=0.0s
+2026-07-28 23:03:51,736 - bestrag.provider.factory - INFO - info:54 - 无旧索引记录，执行全量构建: doc=b93f9534-d96e-41e4-b157-34cc03cffe12
+2026-07-28 23:03:51,736 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=b93f9534-d96e-41e4-b157-34cc03cffe12, chunks=0, 耗时=0.0s
+2026-07-28 23:03:51,736 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=1cfc0b7f-0b6c-4fb9-9de9-8fcf5b9b166d, chunks=0, 耗时=0.0s
+2026-07-28 23:03:51,736 - bestrag.provider.factory - INFO - info:54 - 检测到旧索引，执行重建: doc=1cfc0b7f-0b6c-4fb9-9de9-8fcf5b9b166d, old_status=IndexStatus.READY
+2026-07-28 23:03:51,736 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=1cfc0b7f-0b6c-4fb9-9de9-8fcf5b9b166d, 清理 1 条旧记录
+2026-07-28 23:03:51,736 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=1cfc0b7f-0b6c-4fb9-9de9-8fcf5b9b166d, chunks=0, 耗时=0.0s
+2026-07-28 23:03:51,742 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:03:51,742 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:03:51,743 - bestrag.provider.factory - WARNING - warning:60 - 文档切分结果为空: doc=d1
+2026-07-28 23:03:51,743 - bestrag.provider.factory - INFO - info:54 - 增量索引更新: doc=d1, changed=1
+2026-07-28 23:03:51,743 - bestrag.provider.factory - INFO - info:54 - 增量索引更新: doc=d1, changed=0
+2026-07-28 23:03:51,743 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=d1
+2026-07-28 23:03:51,743 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:03:51,743 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:03:51,749 - bestrag.provider.factory - INFO - info:54 - Knowledge Model 注册完成
+2026-07-28 23:03:51,749 - bestrag.provider.factory - INFO - info:54 - Knowledge Repository 注册完成
+2026-07-28 23:03:51,749 - bestrag.provider.factory - INFO - info:54 - Knowledge Service 注册完成
+2026-07-28 23:03:51,750 - bestrag.provider.factory - INFO - info:54 - Knowledge Model 注册完成
+2026-07-28 23:03:51,750 - bestrag.provider.factory - INFO - info:54 - Knowledge Repository 注册完成
+2026-07-28 23:03:51,750 - bestrag.provider.factory - INFO - info:54 - Knowledge Service 注册完成
+2026-07-28 23:03:51,752 - bestrag.provider.factory - INFO - info:54 - Knowledge Model 注册完成
+2026-07-28 23:03:51,752 - bestrag.provider.factory - INFO - info:54 - Knowledge Repository 注册完成
+2026-07-28 23:03:51,752 - bestrag.provider.factory - INFO - info:54 - Knowledge Service 注册完成
+2026-07-28 23:03:51,752 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 8d8d55f3-7f2f-4442-a015-62a1f0353af1 - registry_test
+2026-07-28 23:03:51,752 - bestrag.provider.factory - INFO - info:54 - Knowledge Model 注册完成
+2026-07-28 23:03:51,752 - bestrag.provider.factory - INFO - info:54 - Knowledge Repository 注册完成
+2026-07-28 23:03:51,752 - bestrag.provider.factory - INFO - info:54 - Knowledge Service 注册完成
+2026-07-28 23:03:51,752 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 6b8cdbc7-d0d2-4da6-87bf-b96ae63bbc8b - 集成测试库
+2026-07-28 23:03:51,752 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 2e8de344-0116-496a-808f-b95bbf92c42c -> KB:6b8cdbc7-d0d2-4da6-87bf-b96ae63bbc8b
+2026-07-28 23:03:51,752 - bestrag.provider.factory - INFO - info:54 - 文档已更新: 2e8de344-0116-496a-808f-b95bbf92c42c -> v2
+2026-07-28 23:03:51,752 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=2e8de344-0116-496a-808f-b95bbf92c42c, chunks=0, 耗时=0.0s
+2026-07-28 23:03:51,752 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=2e8de344-0116-496a-808f-b95bbf92c42c, 清理 1 条旧记录
+2026-07-28 23:03:51,752 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=2e8de344-0116-496a-808f-b95bbf92c42c, chunks=0, 耗时=0.0s
+2026-07-28 23:03:51,752 - bestrag.provider.factory - INFO - info:54 - 文档已删除: 2e8de344-0116-496a-808f-b95bbf92c42c
+2026-07-28 23:03:51,752 - bestrag.provider.factory - INFO - info:54 - 知识库已删除: 6b8cdbc7-d0d2-4da6-87bf-b96ae63bbc8b
+2026-07-28 23:03:56,672 - bestrag.provider.factory - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-28 23:03:56,672 - bestrag.provider.factory - INFO - info:54 - 应用就绪
+2026-07-28 23:03:56,672 - bestrag.provider.factory - INFO - info:54 - 应用关闭中...
+2026-07-28 23:03:56,672 - bestrag.provider.factory - INFO - info:54 - 应用已关闭
+2026-07-28 23:03:56,700 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 90e971c8-5ae5-4a8c-b4a9-5292e2375ff8 - test
+2026-07-28 23:03:56,702 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 3b18e219-2d00-483b-b31d-86f3c0d32421 - test
+2026-07-28 23:03:56,702 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 19c505fc-334b-416d-8f5e-5b28cb28cbae - test
+2026-07-28 23:03:56,702 - bestrag.provider.factory - INFO - info:54 - 知识库已删除: 19c505fc-334b-416d-8f5e-5b28cb28cbae
+2026-07-28 23:03:56,702 - bestrag.provider.factory - WARNING - warning:60 - 知识库不存在: nonexistent
+2026-07-28 23:03:56,702 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: a734a3d5-3334-4384-9501-c21164b81482 - a
+2026-07-28 23:03:56,702 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 5a8dd389-030b-4ed7-9e47-72a1e1f10b36 - b
+2026-07-28 23:03:56,702 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: a7f4a9d4-96e9-4ed9-81b6-f4ae0f0bdfb4 - test
+2026-07-28 23:03:56,707 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: d8573611-afec-48e3-ba3e-500fe79c7445 -> KB:kb_1
+2026-07-28 23:03:56,707 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: f428514f-a93a-4a97-8815-8b05f1d31a1e -> KB:kb_1
+2026-07-28 23:03:56,707 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: d58f4a42-8328-4159-9f2c-c919ac738c67 -> KB:kb_1
+2026-07-28 23:03:56,707 - bestrag.provider.factory - INFO - info:54 - 文档已删除: d58f4a42-8328-4159-9f2c-c919ac738c67
+2026-07-28 23:03:56,707 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: dae8548a-f8b8-47ec-ade6-d7fe491e6780 -> KB:kb_1
+2026-07-28 23:03:56,707 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 1c0a0b64-5ba9-4f9e-b5fb-39dff9471167 -> KB:kb_1
+2026-07-28 23:03:56,707 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 70153ac7-702f-436c-8a70-dab48934ce19 -> KB:kb_2
+2026-07-28 23:03:56,707 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 867906df-165a-49a5-bde6-06f8682b28ab -> KB:kb_1
+2026-07-28 23:03:56,707 - bestrag.provider.factory - INFO - info:54 - 文档已更新: 867906df-165a-49a5-bde6-06f8682b28ab -> v2
+2026-07-28 23:03:56,707 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 915d47f8-c06c-4f94-963a-558c0dd890c8 -> KB:kb_1
+2026-07-28 23:03:56,707 - bestrag.provider.factory - INFO - info:54 - 文档内容无变化: 915d47f8-c06c-4f94-963a-558c0dd890c8
+2026-07-28 23:03:56,712 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 6f2a1d8e-954f-4351-b6b9-fa433657bce7 -> KB:kb_1
+2026-07-28 23:03:56,712 - bestrag.provider.factory - INFO - info:54 - 文档已更新: 6f2a1d8e-954f-4351-b6b9-fa433657bce7 -> v2
+2026-07-28 23:03:56,712 - bestrag.provider.factory - INFO - info:54 - 文档已更新: 6f2a1d8e-954f-4351-b6b9-fa433657bce7 -> v3
+2026-07-28 23:03:56,713 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=f388899b-a8e3-410e-a43c-a2d871790170, chunks=0, 耗时=0.0s
+2026-07-28 23:03:56,714 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=8bc89a9c-ae6c-4539-b8b4-7ec3683257a9, chunks=0, 耗时=0.0s
+2026-07-28 23:03:56,714 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=8bc89a9c-ae6c-4539-b8b4-7ec3683257a9, 清理 1 条旧记录
+2026-07-28 23:03:56,714 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=8bc89a9c-ae6c-4539-b8b4-7ec3683257a9, chunks=0, 耗时=0.0s
+2026-07-28 23:03:56,714 - bestrag.provider.factory - INFO - info:54 - 无旧索引记录，执行全量构建: doc=90bdbd6a-be7c-4fb5-8430-16eacac338be
+2026-07-28 23:03:56,714 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=90bdbd6a-be7c-4fb5-8430-16eacac338be, chunks=0, 耗时=0.0s
+2026-07-28 23:03:56,714 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=68bed150-f84d-4875-8188-72d23c8b1cc9, chunks=0, 耗时=0.0s
+2026-07-28 23:03:56,714 - bestrag.provider.factory - INFO - info:54 - 检测到旧索引，执行重建: doc=68bed150-f84d-4875-8188-72d23c8b1cc9, old_status=IndexStatus.READY
+2026-07-28 23:03:56,714 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=68bed150-f84d-4875-8188-72d23c8b1cc9, 清理 1 条旧记录
+2026-07-28 23:03:56,714 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=68bed150-f84d-4875-8188-72d23c8b1cc9, chunks=0, 耗时=0.0s
+2026-07-28 23:03:56,714 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:03:56,714 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:03:56,714 - bestrag.provider.factory - WARNING - warning:60 - 文档切分结果为空: doc=d1
+2026-07-28 23:03:56,714 - bestrag.provider.factory - INFO - info:54 - 增量索引更新: doc=d1, changed=1
+2026-07-28 23:03:56,714 - bestrag.provider.factory - INFO - info:54 - 增量索引更新: doc=d1, changed=0
+2026-07-28 23:03:56,714 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=d1
+2026-07-28 23:03:56,721 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:03:56,722 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:03:56,722 - bestrag.provider.factory - INFO - info:54 - Knowledge Model 注册完成
+2026-07-28 23:03:56,722 - bestrag.provider.factory - INFO - info:54 - Knowledge Repository 注册完成
+2026-07-28 23:03:56,722 - bestrag.provider.factory - INFO - info:54 - Knowledge Service 注册完成
+2026-07-28 23:03:56,722 - bestrag.provider.factory - INFO - info:54 - Knowledge Model 注册完成
+2026-07-28 23:03:56,722 - bestrag.provider.factory - INFO - info:54 - Knowledge Repository 注册完成
+2026-07-28 23:03:56,722 - bestrag.provider.factory - INFO - info:54 - Knowledge Service 注册完成
+2026-07-28 23:03:56,722 - bestrag.provider.factory - INFO - info:54 - Knowledge Model 注册完成
+2026-07-28 23:03:56,722 - bestrag.provider.factory - INFO - info:54 - Knowledge Repository 注册完成
+2026-07-28 23:03:56,722 - bestrag.provider.factory - INFO - info:54 - Knowledge Service 注册完成
+2026-07-28 23:03:56,727 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 314176de-090e-4d6f-b754-d4ce1271963a - registry_test
+2026-07-28 23:03:56,727 - bestrag.provider.factory - INFO - info:54 - Knowledge Model 注册完成
+2026-07-28 23:03:56,728 - bestrag.provider.factory - INFO - info:54 - Knowledge Repository 注册完成
+2026-07-28 23:03:56,728 - bestrag.provider.factory - INFO - info:54 - Knowledge Service 注册完成
+2026-07-28 23:03:56,728 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: bf6bee45-9d00-4b11-a70b-13bf3426e8af - 集成测试库
+2026-07-28 23:03:56,728 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 26dfdaf3-6564-47a3-9168-ae5566dbdbc5 -> KB:bf6bee45-9d00-4b11-a70b-13bf3426e8af
+2026-07-28 23:03:56,728 - bestrag.provider.factory - INFO - info:54 - 文档已更新: 26dfdaf3-6564-47a3-9168-ae5566dbdbc5 -> v2
+2026-07-28 23:03:56,728 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=26dfdaf3-6564-47a3-9168-ae5566dbdbc5, chunks=0, 耗时=0.0s
+2026-07-28 23:03:56,728 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=26dfdaf3-6564-47a3-9168-ae5566dbdbc5, 清理 1 条旧记录
+2026-07-28 23:03:56,728 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=26dfdaf3-6564-47a3-9168-ae5566dbdbc5, chunks=0, 耗时=0.0s
+2026-07-28 23:03:56,728 - bestrag.provider.factory - INFO - info:54 - 文档已删除: 26dfdaf3-6564-47a3-9168-ae5566dbdbc5
+2026-07-28 23:03:56,728 - bestrag.provider.factory - INFO - info:54 - 知识库已删除: bf6bee45-9d00-4b11-a70b-13bf3426e8af
+2026-07-28 23:09:30,775 - bestrag.provider.factory - INFO - info:54 - Trace 开始: ff942ac4-7ac8-41d5-a39e-f24f32308161 type=TraceType.RETRIEVAL
+2026-07-28 23:09:30,781 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 58fde313-0098-4c2f-bc45-ecd7b99a5a3b type=TraceType.RETRIEVAL
+2026-07-28 23:09:30,781 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 58fde313-0098-4c2f-bc45-ecd7b99a5a3b type=TraceType.RETRIEVAL
+2026-07-28 23:09:30,781 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 58fde313-0098-4c2f-bc45-ecd7b99a5a3b status=TraceStatus.SUCCESS
+2026-07-28 23:09:30,782 - bestrag.provider.factory - INFO - info:54 - Trace 开始: a683c66d-50c4-4828-ae97-1091f7d8ec4e type=TraceType.RETRIEVAL
+2026-07-28 23:09:30,782 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: a683c66d-50c4-4828-ae97-1091f7d8ec4e type=TraceType.RETRIEVAL
+2026-07-28 23:09:30,782 - bestrag.provider.factory - INFO - info:54 - Trace 结束: a683c66d-50c4-4828-ae97-1091f7d8ec4e status=TraceStatus.SUCCESS
+2026-07-28 23:09:30,782 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 8288a54a-9e7e-4497-b978-9bacc368def9 type=TraceType.RETRIEVAL
+2026-07-28 23:09:30,782 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 8288a54a-9e7e-4497-b978-9bacc368def9 type=TraceType.RETRIEVAL
+2026-07-28 23:09:30,782 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 8288a54a-9e7e-4497-b978-9bacc368def9 status=TraceStatus.FAILED
+2026-07-28 23:09:30,782 - bestrag.provider.factory - INFO - info:54 - Trace 开始: ad23aea9-d782-46e2-9111-a3a4a101f94b type=TraceType.INDEX
+2026-07-28 23:09:30,782 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: ad23aea9-d782-46e2-9111-a3a4a101f94b type=TraceType.INDEX
+2026-07-28 23:09:30,782 - bestrag.provider.factory - INFO - info:54 - Trace 结束: ad23aea9-d782-46e2-9111-a3a4a101f94b status=TraceStatus.SUCCESS
+2026-07-28 23:09:30,782 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 12910fcd-7df6-4554-8244-a322a8e4a68e type=TraceType.INDEX
+2026-07-28 23:09:30,782 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 12910fcd-7df6-4554-8244-a322a8e4a68e type=TraceType.INDEX
+2026-07-28 23:09:30,782 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 12910fcd-7df6-4554-8244-a322a8e4a68e status=TraceStatus.SUCCESS
+2026-07-28 23:09:30,782 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 9f3c3150-4cf8-4469-8c6c-2420be0c528e type=TraceType.RETRIEVAL
+2026-07-28 23:09:30,782 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 9f3c3150-4cf8-4469-8c6c-2420be0c528e type=TraceType.RETRIEVAL
+2026-07-28 23:09:30,782 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 9f3c3150-4cf8-4469-8c6c-2420be0c528e status=TraceStatus.SUCCESS
+2026-07-28 23:09:30,787 - bestrag.provider.factory - WARNING - warning:60 - end_trace 调用时无活跃 Trace
+2026-07-28 23:09:30,791 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: b2376a7e-fa7c-4d8c-82cc-321ffe6b1b0f type=TraceType.RETRIEVAL
+2026-07-28 23:09:30,794 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:09:30,795 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 97475524-729c-4c2d-a8fa-530e7977f2da type=TraceType.INDEX
+2026-07-28 23:09:30,795 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 97475524-729c-4c2d-a8fa-530e7977f2da type=TraceType.INDEX
+2026-07-28 23:09:30,795 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 97475524-729c-4c2d-a8fa-530e7977f2da status=TraceStatus.SUCCESS
+2026-07-28 23:09:30,795 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:09:30,795 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 5911ab85-20c0-402a-9a57-653a5a30ca00 type=TraceType.INDEX
+2026-07-28 23:09:30,795 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 5911ab85-20c0-402a-9a57-653a5a30ca00 type=TraceType.INDEX
+2026-07-28 23:09:30,795 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 5911ab85-20c0-402a-9a57-653a5a30ca00 status=TraceStatus.SUCCESS
+2026-07-28 23:09:30,795 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=d1
+2026-07-28 23:09:30,795 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:09:30,795 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 626a3b75-ff32-4327-a9a8-c7a8ae25151e type=TraceType.INDEX
+2026-07-28 23:09:30,795 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 626a3b75-ff32-4327-a9a8-c7a8ae25151e type=TraceType.INDEX
+2026-07-28 23:09:30,795 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 626a3b75-ff32-4327-a9a8-c7a8ae25151e status=TraceStatus.SUCCESS
+2026-07-28 23:09:30,795 - bestrag.provider.factory - INFO - info:54 - 增量索引更新: doc=d1, changed=1
+2026-07-28 23:09:30,795 - bestrag.provider.factory - INFO - info:54 - Trace 开始: f480c970-5344-4572-b52d-5a991067f202 type=TraceType.INDEX
+2026-07-28 23:09:30,795 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: f480c970-5344-4572-b52d-5a991067f202 type=TraceType.INDEX
+2026-07-28 23:09:30,795 - bestrag.provider.factory - INFO - info:54 - Trace 结束: f480c970-5344-4572-b52d-5a991067f202 status=TraceStatus.SUCCESS
+2026-07-28 23:09:30,812 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 13acf366-12eb-4524-8db8-f50908a04f76 type=TraceType.RETRIEVAL
+2026-07-28 23:09:30,812 - bestrag.provider.factory - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-28 23:09:30,815 - bestrag.provider.factory - INFO - info:54 - Embedding single text | {'text': 'test query'}
+2026-07-28 23:09:33,157 - bestrag.provider.factory - ERROR - error:66 - 检索器 'vector' 失败: 无法连接到 BGE-M3 API: http://127.0.0.1:8001/embed
+2026-07-28 23:09:33,157 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 13acf366-12eb-4524-8db8-f50908a04f76 type=TraceType.RETRIEVAL
+2026-07-28 23:09:33,158 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 13acf366-12eb-4524-8db8-f50908a04f76 status=TraceStatus.SUCCESS
+2026-07-28 23:09:33,160 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 924ba369-8323-4085-8f48-d1240ff1addd type=TraceType.RETRIEVAL
+2026-07-28 23:09:33,160 - bestrag.provider.factory - INFO - info:54 - Embedding single text | {'text': 'hello'}
+2026-07-28 23:09:35,364 - bestrag.provider.factory - ERROR - error:66 - 检索器 'vector' 失败: 无法连接到 BGE-M3 API: http://127.0.0.1:8001/embed
+2026-07-28 23:09:35,365 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 924ba369-8323-4085-8f48-d1240ff1addd type=TraceType.RETRIEVAL
+2026-07-28 23:09:35,365 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 924ba369-8323-4085-8f48-d1240ff1addd status=TraceStatus.SUCCESS
+2026-07-28 23:09:35,365 - bestrag.provider.factory - INFO - info:54 - Trace 开始: f95e0e43-9026-44ef-9021-821a721175df type=TraceType.GENERATION
+2026-07-28 23:09:35,365 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: f95e0e43-9026-44ef-9021-821a721175df type=TraceType.GENERATION
+2026-07-28 23:09:35,365 - bestrag.provider.factory - INFO - info:54 - Trace 结束: f95e0e43-9026-44ef-9021-821a721175df status=TraceStatus.SUCCESS
+2026-07-28 23:09:35,370 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 8e03807a-c937-4a86-8434-dc5541a0f034 type=TraceType.EVALUATION
+2026-07-28 23:09:35,371 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 8e03807a-c937-4a86-8434-dc5541a0f034 type=TraceType.EVALUATION
+2026-07-28 23:09:35,371 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 8e03807a-c937-4a86-8434-dc5541a0f034 status=TraceStatus.SUCCESS
+2026-07-28 23:09:35,371 - bestrag.provider.factory - INFO - info:54 - 评测 Trace 已记录: dataset=test_dataset, strategy=hybrid, metrics=2
+2026-07-28 23:09:35,372 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 7db9b593-5068-4a25-a991-e1ff5ba50eeb type=TraceType.RETRIEVAL
+2026-07-28 23:09:35,372 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 7db9b593-5068-4a25-a991-e1ff5ba50eeb type=TraceType.RETRIEVAL
+2026-07-28 23:09:35,372 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 7db9b593-5068-4a25-a991-e1ff5ba50eeb status=TraceStatus.SUCCESS
+2026-07-28 23:10:26,161 - bestrag.provider.factory - INFO - info:54 - Trace 开始: b98a95ae-e4e7-409c-98ae-519e18b83b96 type=TraceType.RETRIEVAL
+2026-07-28 23:10:26,162 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 072a57a2-4180-4831-bc20-c931e5ac4496 type=TraceType.RETRIEVAL
+2026-07-28 23:10:26,162 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 072a57a2-4180-4831-bc20-c931e5ac4496 type=TraceType.RETRIEVAL
+2026-07-28 23:10:26,162 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 072a57a2-4180-4831-bc20-c931e5ac4496 status=TraceStatus.SUCCESS
+2026-07-28 23:10:26,163 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 2e8dfcea-478f-4505-aef5-9e769d639fee type=TraceType.RETRIEVAL
+2026-07-28 23:10:26,163 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 2e8dfcea-478f-4505-aef5-9e769d639fee type=TraceType.RETRIEVAL
+2026-07-28 23:10:26,163 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 2e8dfcea-478f-4505-aef5-9e769d639fee status=TraceStatus.SUCCESS
+2026-07-28 23:10:26,165 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 4ac79ceb-78aa-49a0-824f-c61f101884e0 type=TraceType.RETRIEVAL
+2026-07-28 23:10:26,165 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 4ac79ceb-78aa-49a0-824f-c61f101884e0 type=TraceType.RETRIEVAL
+2026-07-28 23:10:26,165 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 4ac79ceb-78aa-49a0-824f-c61f101884e0 status=TraceStatus.FAILED
+2026-07-28 23:10:26,166 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 6a87e16c-777f-468b-a4b0-60d0be8b0d71 type=TraceType.INDEX
+2026-07-28 23:10:26,166 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 6a87e16c-777f-468b-a4b0-60d0be8b0d71 type=TraceType.INDEX
+2026-07-28 23:10:26,166 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 6a87e16c-777f-468b-a4b0-60d0be8b0d71 status=TraceStatus.SUCCESS
+2026-07-28 23:10:26,167 - bestrag.provider.factory - INFO - info:54 - Trace 开始: e60675bc-b9be-460c-912d-a70fcaa6a20c type=TraceType.INDEX
+2026-07-28 23:10:26,167 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: e60675bc-b9be-460c-912d-a70fcaa6a20c type=TraceType.INDEX
+2026-07-28 23:10:26,167 - bestrag.provider.factory - INFO - info:54 - Trace 结束: e60675bc-b9be-460c-912d-a70fcaa6a20c status=TraceStatus.SUCCESS
+2026-07-28 23:10:26,168 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 5f60c448-6e86-4e5c-a597-318c077e933b type=TraceType.RETRIEVAL
+2026-07-28 23:10:26,168 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 5f60c448-6e86-4e5c-a597-318c077e933b type=TraceType.RETRIEVAL
+2026-07-28 23:10:26,168 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 5f60c448-6e86-4e5c-a597-318c077e933b status=TraceStatus.SUCCESS
+2026-07-28 23:10:26,169 - bestrag.provider.factory - WARNING - warning:60 - end_trace 调用时无活跃 Trace
+2026-07-28 23:10:26,174 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 5c66a58d-6027-4ca8-81ad-381f69aaa722 type=TraceType.RETRIEVAL
+2026-07-28 23:10:26,176 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:10:26,176 - bestrag.provider.factory - INFO - info:54 - Trace 开始: b446c5bb-ae32-423e-92e5-f30b069c58e3 type=TraceType.INDEX
+2026-07-28 23:10:26,176 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: b446c5bb-ae32-423e-92e5-f30b069c58e3 type=TraceType.INDEX
+2026-07-28 23:10:26,176 - bestrag.provider.factory - INFO - info:54 - Trace 结束: b446c5bb-ae32-423e-92e5-f30b069c58e3 status=TraceStatus.SUCCESS
+2026-07-28 23:10:26,177 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:10:26,177 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 53a60f8f-0297-4a62-ac0e-15409be701f0 type=TraceType.INDEX
+2026-07-28 23:10:26,178 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 53a60f8f-0297-4a62-ac0e-15409be701f0 type=TraceType.INDEX
+2026-07-28 23:10:26,178 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 53a60f8f-0297-4a62-ac0e-15409be701f0 status=TraceStatus.SUCCESS
+2026-07-28 23:10:26,178 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=d1
+2026-07-28 23:10:26,178 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:10:26,179 - bestrag.provider.factory - INFO - info:54 - Trace 开始: e402ecb6-8c00-46fd-93b9-55b704b41797 type=TraceType.INDEX
+2026-07-28 23:10:26,179 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: e402ecb6-8c00-46fd-93b9-55b704b41797 type=TraceType.INDEX
+2026-07-28 23:10:26,179 - bestrag.provider.factory - INFO - info:54 - Trace 结束: e402ecb6-8c00-46fd-93b9-55b704b41797 status=TraceStatus.SUCCESS
+2026-07-28 23:10:26,179 - bestrag.provider.factory - INFO - info:54 - 增量索引更新: doc=d1, changed=1
+2026-07-28 23:10:26,180 - bestrag.provider.factory - INFO - info:54 - Trace 开始: fb178a9e-8c8f-4ae2-9e9c-6eaa28de535e type=TraceType.INDEX
+2026-07-28 23:10:26,180 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: fb178a9e-8c8f-4ae2-9e9c-6eaa28de535e type=TraceType.INDEX
+2026-07-28 23:10:26,180 - bestrag.provider.factory - INFO - info:54 - Trace 结束: fb178a9e-8c8f-4ae2-9e9c-6eaa28de535e status=TraceStatus.SUCCESS
+2026-07-28 23:10:26,186 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 2aefb0da-f6a5-4188-969a-439453f7c458 type=TraceType.RETRIEVAL
+2026-07-28 23:10:26,187 - bestrag.provider.factory - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-28 23:10:26,187 - bestrag.provider.factory - INFO - info:54 - Embedding single text | {'text': 'test query'}
+2026-07-28 23:10:28,446 - bestrag.provider.factory - ERROR - error:66 - 检索器 'vector' 失败: 无法连接到 BGE-M3 API: http://127.0.0.1:8001/embed
+2026-07-28 23:10:28,447 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 2aefb0da-f6a5-4188-969a-439453f7c458 type=TraceType.RETRIEVAL
+2026-07-28 23:10:28,448 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 2aefb0da-f6a5-4188-969a-439453f7c458 status=TraceStatus.SUCCESS
+2026-07-28 23:10:28,451 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 525fa4c5-406c-42af-9727-3e2560f1eeea type=TraceType.RETRIEVAL
+2026-07-28 23:10:28,451 - bestrag.provider.factory - INFO - info:54 - Embedding single text | {'text': 'hello'}
+2026-07-28 23:10:30,669 - bestrag.provider.factory - ERROR - error:66 - 检索器 'vector' 失败: 无法连接到 BGE-M3 API: http://127.0.0.1:8001/embed
+2026-07-28 23:10:30,669 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 525fa4c5-406c-42af-9727-3e2560f1eeea type=TraceType.RETRIEVAL
+2026-07-28 23:10:30,669 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 525fa4c5-406c-42af-9727-3e2560f1eeea status=TraceStatus.SUCCESS
+2026-07-28 23:10:30,672 - bestrag.provider.factory - INFO - info:54 - Trace 开始: d5617eb7-56a3-4aed-b10d-7770aeb9fb0e type=TraceType.GENERATION
+2026-07-28 23:10:30,672 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: d5617eb7-56a3-4aed-b10d-7770aeb9fb0e type=TraceType.GENERATION
+2026-07-28 23:10:30,672 - bestrag.provider.factory - INFO - info:54 - Trace 结束: d5617eb7-56a3-4aed-b10d-7770aeb9fb0e status=TraceStatus.SUCCESS
+2026-07-28 23:10:30,672 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 91b6829c-8bd5-4deb-b9af-7e04d3405837 type=TraceType.EVALUATION
+2026-07-28 23:10:30,672 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 91b6829c-8bd5-4deb-b9af-7e04d3405837 type=TraceType.EVALUATION
+2026-07-28 23:10:30,672 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 91b6829c-8bd5-4deb-b9af-7e04d3405837 status=TraceStatus.SUCCESS
+2026-07-28 23:10:30,672 - bestrag.provider.factory - INFO - info:54 - 评测 Trace 已记录: dataset=test_dataset, strategy=hybrid, metrics=2
+2026-07-28 23:10:30,677 - bestrag.provider.factory - INFO - info:54 - Trace 开始: a6892fc4-97b4-40ea-b9e6-92e99130b032 type=TraceType.RETRIEVAL
+2026-07-28 23:10:30,677 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: a6892fc4-97b4-40ea-b9e6-92e99130b032 type=TraceType.RETRIEVAL
+2026-07-28 23:10:30,677 - bestrag.provider.factory - INFO - info:54 - Trace 结束: a6892fc4-97b4-40ea-b9e6-92e99130b032 status=TraceStatus.SUCCESS
+2026-07-28 23:10:34,999 - bestrag.provider.factory - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-28 23:10:35,000 - bestrag.provider.factory - INFO - info:54 - 应用就绪
+2026-07-28 23:10:35,000 - bestrag.provider.factory - INFO - info:54 - 应用关闭中...
+2026-07-28 23:10:35,000 - bestrag.provider.factory - INFO - info:54 - 应用已关闭
+2026-07-28 23:10:35,024 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 96c37465-8c5f-4657-934c-b63770505c92 - test
+2026-07-28 23:10:35,025 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: e5a9747b-6ce1-4d6f-b67d-7e4ee7ba2750 - test
+2026-07-28 23:10:35,027 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 289b0992-3cdb-409c-83d1-c7768f8123b1 - test
+2026-07-28 23:10:35,027 - bestrag.provider.factory - INFO - info:54 - 知识库已删除: 289b0992-3cdb-409c-83d1-c7768f8123b1
+2026-07-28 23:10:35,028 - bestrag.provider.factory - WARNING - warning:60 - 知识库不存在: nonexistent
+2026-07-28 23:10:35,028 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 4151e462-f7a9-4ce6-b32d-5abbb4e3fcd4 - a
+2026-07-28 23:10:35,029 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 7ed7c52f-4fcf-4fc7-9aba-fbc01e28cb57 - b
+2026-07-28 23:10:35,029 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: e451f21c-75d6-411f-99bd-ffaff6139db1 - test
+2026-07-28 23:10:35,031 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: f6afe64f-b58b-43dd-80c6-010ab8deb8d2 -> KB:kb_1
+2026-07-28 23:10:35,031 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: d54a5751-29c9-47ba-bdfb-8d300c058a1e -> KB:kb_1
+2026-07-28 23:10:35,033 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 01637547-28c9-4884-8d64-628540b2da56 -> KB:kb_1
+2026-07-28 23:10:35,033 - bestrag.provider.factory - INFO - info:54 - 文档已删除: 01637547-28c9-4884-8d64-628540b2da56
+2026-07-28 23:10:35,034 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 7c3ac736-8740-44ab-b4ac-b079d665b20f -> KB:kb_1
+2026-07-28 23:10:35,034 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 3dd40d44-14e6-46c8-bd86-ea5f4db14814 -> KB:kb_1
+2026-07-28 23:10:35,034 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 6b76af99-3ef8-40d2-a729-7acfdc6f5c81 -> KB:kb_2
+2026-07-28 23:10:35,035 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 0edb6b63-6c9c-49e5-bc99-addd87102cda -> KB:kb_1
+2026-07-28 23:10:35,035 - bestrag.provider.factory - INFO - info:54 - 文档已更新: 0edb6b63-6c9c-49e5-bc99-addd87102cda -> v2
+2026-07-28 23:10:35,036 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: d1de857e-5a19-4c2a-b579-427c49ad3b6d -> KB:kb_1
+2026-07-28 23:10:35,036 - bestrag.provider.factory - INFO - info:54 - 文档内容无变化: d1de857e-5a19-4c2a-b579-427c49ad3b6d
+2026-07-28 23:10:35,037 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: dbb32519-6cf8-47af-9d57-3b7d8c5b1902 -> KB:kb_1
+2026-07-28 23:10:35,037 - bestrag.provider.factory - INFO - info:54 - 文档已更新: dbb32519-6cf8-47af-9d57-3b7d8c5b1902 -> v2
+2026-07-28 23:10:35,037 - bestrag.provider.factory - INFO - info:54 - 文档已更新: dbb32519-6cf8-47af-9d57-3b7d8c5b1902 -> v3
+2026-07-28 23:10:35,038 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=49237c84-0797-445a-933f-7c43bb6b7f05, chunks=0, 耗时=0.0s
+2026-07-28 23:10:35,038 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=2e8d58d9-8d8c-4bc5-b509-2d1ac03502e5, chunks=0, 耗时=0.0s
+2026-07-28 23:10:35,038 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=2e8d58d9-8d8c-4bc5-b509-2d1ac03502e5, 清理 1 条旧记录
+2026-07-28 23:10:35,038 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=2e8d58d9-8d8c-4bc5-b509-2d1ac03502e5, chunks=0, 耗时=0.0s
+2026-07-28 23:10:35,038 - bestrag.provider.factory - INFO - info:54 - 无旧索引记录，执行全量构建: doc=51b77f60-a701-4bde-9803-348d861fe0cf
+2026-07-28 23:10:35,038 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=51b77f60-a701-4bde-9803-348d861fe0cf, chunks=0, 耗时=0.0s
+2026-07-28 23:10:35,038 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=67bcdcd9-35c8-4467-95b8-8c1913487d6a, chunks=0, 耗时=0.0s
+2026-07-28 23:10:35,038 - bestrag.provider.factory - INFO - info:54 - 检测到旧索引，执行重建: doc=67bcdcd9-35c8-4467-95b8-8c1913487d6a, old_status=IndexStatus.READY
+2026-07-28 23:10:35,038 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=67bcdcd9-35c8-4467-95b8-8c1913487d6a, 清理 1 条旧记录
+2026-07-28 23:10:35,038 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=67bcdcd9-35c8-4467-95b8-8c1913487d6a, chunks=0, 耗时=0.0s
+2026-07-28 23:10:35,038 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:10:35,038 - bestrag.provider.factory - INFO - info:54 - Trace 开始: fb4a0531-a6ab-43bf-a48d-494baf50bc81 type=TraceType.INDEX
+2026-07-28 23:10:35,038 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: fb4a0531-a6ab-43bf-a48d-494baf50bc81 type=TraceType.INDEX
+2026-07-28 23:10:35,038 - bestrag.provider.factory - INFO - info:54 - Trace 结束: fb4a0531-a6ab-43bf-a48d-494baf50bc81 status=TraceStatus.SUCCESS
+2026-07-28 23:10:35,042 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:10:35,042 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 4763aade-029b-4066-ab29-8a21c85e0efe type=TraceType.INDEX
+2026-07-28 23:10:35,042 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 4763aade-029b-4066-ab29-8a21c85e0efe type=TraceType.INDEX
+2026-07-28 23:10:35,042 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 4763aade-029b-4066-ab29-8a21c85e0efe status=TraceStatus.SUCCESS
+2026-07-28 23:10:35,043 - bestrag.provider.factory - INFO - info:54 - 增量索引更新: doc=d1, changed=1
+2026-07-28 23:10:35,043 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 3f110c71-d87b-4991-afd6-97d896785d14 type=TraceType.INDEX
+2026-07-28 23:10:35,043 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 3f110c71-d87b-4991-afd6-97d896785d14 type=TraceType.INDEX
+2026-07-28 23:10:35,044 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 3f110c71-d87b-4991-afd6-97d896785d14 status=TraceStatus.SUCCESS
+2026-07-28 23:10:35,045 - bestrag.provider.factory - INFO - info:54 - 增量索引更新: doc=d1, changed=0
+2026-07-28 23:10:35,045 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=d1
+2026-07-28 23:10:35,045 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:10:35,045 - bestrag.provider.factory - INFO - info:54 - Trace 开始: a63a46c4-74ba-45a6-a1af-d0f0439a8ab8 type=TraceType.INDEX
+2026-07-28 23:10:35,045 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: a63a46c4-74ba-45a6-a1af-d0f0439a8ab8 type=TraceType.INDEX
+2026-07-28 23:10:35,045 - bestrag.provider.factory - INFO - info:54 - Trace 结束: a63a46c4-74ba-45a6-a1af-d0f0439a8ab8 status=TraceStatus.SUCCESS
+2026-07-28 23:10:35,045 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:10:35,045 - bestrag.provider.factory - INFO - info:54 - Trace 开始: bd958918-a6b6-482e-9222-8ad1c002ca6d type=TraceType.INDEX
+2026-07-28 23:10:35,045 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: bd958918-a6b6-482e-9222-8ad1c002ca6d type=TraceType.INDEX
+2026-07-28 23:10:35,045 - bestrag.provider.factory - INFO - info:54 - Trace 结束: bd958918-a6b6-482e-9222-8ad1c002ca6d status=TraceStatus.SUCCESS
+2026-07-28 23:10:35,050 - bestrag.provider.factory - INFO - info:54 - Knowledge Model 注册完成
+2026-07-28 23:10:35,050 - bestrag.provider.factory - INFO - info:54 - Knowledge Repository 注册完成
+2026-07-28 23:10:35,050 - bestrag.provider.factory - INFO - info:54 - Knowledge Service 注册完成
+2026-07-28 23:10:35,050 - bestrag.provider.factory - INFO - info:54 - Knowledge Model 注册完成
+2026-07-28 23:10:35,050 - bestrag.provider.factory - INFO - info:54 - Knowledge Repository 注册完成
+2026-07-28 23:10:35,050 - bestrag.provider.factory - INFO - info:54 - Knowledge Service 注册完成
+2026-07-28 23:10:35,051 - bestrag.provider.factory - INFO - info:54 - Knowledge Model 注册完成
+2026-07-28 23:10:35,051 - bestrag.provider.factory - INFO - info:54 - Knowledge Repository 注册完成
+2026-07-28 23:10:35,051 - bestrag.provider.factory - INFO - info:54 - Knowledge Service 注册完成
+2026-07-28 23:10:35,052 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: ad8ad4e9-d244-4e57-9d31-38fbd68a09a4 - registry_test
+2026-07-28 23:10:35,053 - bestrag.provider.factory - INFO - info:54 - Knowledge Model 注册完成
+2026-07-28 23:10:35,053 - bestrag.provider.factory - INFO - info:54 - Knowledge Repository 注册完成
+2026-07-28 23:10:35,053 - bestrag.provider.factory - INFO - info:54 - Knowledge Service 注册完成
+2026-07-28 23:10:35,053 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 3c49468e-f20f-4d50-a1c6-608fe6c86daf - 集成测试库
+2026-07-28 23:10:35,053 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 5b1fb411-c4fd-4cdf-a0cf-fc4acf4f3e6b -> KB:3c49468e-f20f-4d50-a1c6-608fe6c86daf
+2026-07-28 23:10:35,053 - bestrag.provider.factory - INFO - info:54 - 文档已更新: 5b1fb411-c4fd-4cdf-a0cf-fc4acf4f3e6b -> v2
+2026-07-28 23:10:35,054 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=5b1fb411-c4fd-4cdf-a0cf-fc4acf4f3e6b, chunks=0, 耗时=0.0s
+2026-07-28 23:10:35,054 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=5b1fb411-c4fd-4cdf-a0cf-fc4acf4f3e6b, 清理 1 条旧记录
+2026-07-28 23:10:35,054 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=5b1fb411-c4fd-4cdf-a0cf-fc4acf4f3e6b, chunks=0, 耗时=0.0s
+2026-07-28 23:10:35,054 - bestrag.provider.factory - INFO - info:54 - 文档已删除: 5b1fb411-c4fd-4cdf-a0cf-fc4acf4f3e6b
+2026-07-28 23:10:35,054 - bestrag.provider.factory - INFO - info:54 - 知识库已删除: 3c49468e-f20f-4d50-a1c6-608fe6c86daf
+2026-07-28 23:10:35,073 - bestrag.provider.factory - INFO - info:54 - Trace 开始: b42cb682-e59e-480e-9422-b48285c1d483 type=TraceType.RETRIEVAL
+2026-07-28 23:10:35,073 - bestrag.provider.factory - INFO - info:54 - Trace 开始: ab483216-c860-4495-9919-45a1050b5764 type=TraceType.RETRIEVAL
+2026-07-28 23:10:35,078 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: ab483216-c860-4495-9919-45a1050b5764 type=TraceType.RETRIEVAL
+2026-07-28 23:10:35,078 - bestrag.provider.factory - INFO - info:54 - Trace 结束: ab483216-c860-4495-9919-45a1050b5764 status=TraceStatus.SUCCESS
+2026-07-28 23:10:35,079 - bestrag.provider.factory - INFO - info:54 - Trace 开始: a9179a0e-7f62-498d-8250-381f2171dedd type=TraceType.RETRIEVAL
+2026-07-28 23:10:35,079 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: a9179a0e-7f62-498d-8250-381f2171dedd type=TraceType.RETRIEVAL
+2026-07-28 23:10:35,079 - bestrag.provider.factory - INFO - info:54 - Trace 结束: a9179a0e-7f62-498d-8250-381f2171dedd status=TraceStatus.SUCCESS
+2026-07-28 23:10:35,079 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 62c2703a-0e2d-4fb8-ad24-275dfbc6fcff type=TraceType.RETRIEVAL
+2026-07-28 23:10:35,079 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 62c2703a-0e2d-4fb8-ad24-275dfbc6fcff type=TraceType.RETRIEVAL
+2026-07-28 23:10:35,079 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 62c2703a-0e2d-4fb8-ad24-275dfbc6fcff status=TraceStatus.FAILED
+2026-07-28 23:10:35,079 - bestrag.provider.factory - INFO - info:54 - Trace 开始: bcc00c14-e1fc-4c82-8e69-de22623e3811 type=TraceType.INDEX
+2026-07-28 23:10:35,079 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: bcc00c14-e1fc-4c82-8e69-de22623e3811 type=TraceType.INDEX
+2026-07-28 23:10:35,079 - bestrag.provider.factory - INFO - info:54 - Trace 结束: bcc00c14-e1fc-4c82-8e69-de22623e3811 status=TraceStatus.SUCCESS
+2026-07-28 23:10:35,082 - bestrag.provider.factory - INFO - info:54 - Trace 开始: cb9c7809-4108-461a-9013-769cec21dd8f type=TraceType.INDEX
+2026-07-28 23:10:35,082 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: cb9c7809-4108-461a-9013-769cec21dd8f type=TraceType.INDEX
+2026-07-28 23:10:35,082 - bestrag.provider.factory - INFO - info:54 - Trace 结束: cb9c7809-4108-461a-9013-769cec21dd8f status=TraceStatus.SUCCESS
+2026-07-28 23:10:35,082 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 3fd60a0b-25fb-4450-81d7-6889e658fb4e type=TraceType.RETRIEVAL
+2026-07-28 23:10:35,082 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 3fd60a0b-25fb-4450-81d7-6889e658fb4e type=TraceType.RETRIEVAL
+2026-07-28 23:10:35,082 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 3fd60a0b-25fb-4450-81d7-6889e658fb4e status=TraceStatus.SUCCESS
+2026-07-28 23:10:35,082 - bestrag.provider.factory - WARNING - warning:60 - end_trace 调用时无活跃 Trace
+2026-07-28 23:10:35,090 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: fb5ee5f6-2607-4b88-8e30-7157a7a6a78b type=TraceType.RETRIEVAL
+2026-07-28 23:10:35,091 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:10:35,091 - bestrag.provider.factory - INFO - info:54 - Trace 开始: ac5bedcb-3fba-43da-abcf-b709e4b4ab7a type=TraceType.INDEX
+2026-07-28 23:10:35,091 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: ac5bedcb-3fba-43da-abcf-b709e4b4ab7a type=TraceType.INDEX
+2026-07-28 23:10:35,091 - bestrag.provider.factory - INFO - info:54 - Trace 结束: ac5bedcb-3fba-43da-abcf-b709e4b4ab7a status=TraceStatus.SUCCESS
+2026-07-28 23:10:35,092 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:10:35,092 - bestrag.provider.factory - INFO - info:54 - Trace 开始: a9ca762f-ada6-40d6-9b42-4bea7b27b729 type=TraceType.INDEX
+2026-07-28 23:10:35,092 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: a9ca762f-ada6-40d6-9b42-4bea7b27b729 type=TraceType.INDEX
+2026-07-28 23:10:35,092 - bestrag.provider.factory - INFO - info:54 - Trace 结束: a9ca762f-ada6-40d6-9b42-4bea7b27b729 status=TraceStatus.SUCCESS
+2026-07-28 23:10:35,093 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=d1
+2026-07-28 23:10:35,093 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:10:35,093 - bestrag.provider.factory - INFO - info:54 - Trace 开始: c082369b-1fda-496e-b054-ed8ef22e9eae type=TraceType.INDEX
+2026-07-28 23:10:35,093 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: c082369b-1fda-496e-b054-ed8ef22e9eae type=TraceType.INDEX
+2026-07-28 23:10:35,093 - bestrag.provider.factory - INFO - info:54 - Trace 结束: c082369b-1fda-496e-b054-ed8ef22e9eae status=TraceStatus.SUCCESS
+2026-07-28 23:10:35,094 - bestrag.provider.factory - INFO - info:54 - 增量索引更新: doc=d1, changed=1
+2026-07-28 23:10:35,094 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 69a34ab5-0837-4740-b116-1c7a02e2c058 type=TraceType.INDEX
+2026-07-28 23:10:35,094 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 69a34ab5-0837-4740-b116-1c7a02e2c058 type=TraceType.INDEX
+2026-07-28 23:10:35,094 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 69a34ab5-0837-4740-b116-1c7a02e2c058 status=TraceStatus.SUCCESS
+2026-07-28 23:10:35,100 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 4ecc4647-483a-45c8-ab8f-e64c9d92ad8c type=TraceType.RETRIEVAL
+2026-07-28 23:10:35,100 - bestrag.provider.factory - ERROR - error:66 - 检索器 'vector' 失败: Service 'embedding' not found
+2026-07-28 23:10:35,100 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 4ecc4647-483a-45c8-ab8f-e64c9d92ad8c type=TraceType.RETRIEVAL
+2026-07-28 23:10:35,100 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 4ecc4647-483a-45c8-ab8f-e64c9d92ad8c status=TraceStatus.SUCCESS
+2026-07-28 23:10:35,100 - bestrag.provider.factory - INFO - info:54 - Trace 开始: a8dbbff9-2cb4-49a4-b35b-c049df2c1b17 type=TraceType.RETRIEVAL
+2026-07-28 23:10:35,100 - bestrag.provider.factory - ERROR - error:66 - 检索器 'vector' 失败: Service 'embedding' not found
+2026-07-28 23:10:35,100 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: a8dbbff9-2cb4-49a4-b35b-c049df2c1b17 type=TraceType.RETRIEVAL
+2026-07-28 23:10:35,100 - bestrag.provider.factory - INFO - info:54 - Trace 结束: a8dbbff9-2cb4-49a4-b35b-c049df2c1b17 status=TraceStatus.SUCCESS
+2026-07-28 23:10:35,103 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 757f6791-4c92-4d0d-bf06-607731c6f807 type=TraceType.GENERATION
+2026-07-28 23:10:35,103 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 757f6791-4c92-4d0d-bf06-607731c6f807 type=TraceType.GENERATION
+2026-07-28 23:10:35,103 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 757f6791-4c92-4d0d-bf06-607731c6f807 status=TraceStatus.SUCCESS
+2026-07-28 23:10:35,106 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 8a11df80-39a0-42fe-8953-c32a2d39e7a9 type=TraceType.EVALUATION
+2026-07-28 23:10:35,107 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 8a11df80-39a0-42fe-8953-c32a2d39e7a9 type=TraceType.EVALUATION
+2026-07-28 23:10:35,107 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 8a11df80-39a0-42fe-8953-c32a2d39e7a9 status=TraceStatus.SUCCESS
+2026-07-28 23:10:35,107 - bestrag.provider.factory - INFO - info:54 - 评测 Trace 已记录: dataset=test_dataset, strategy=hybrid, metrics=2
+2026-07-28 23:10:35,113 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 8c1a6a1d-ce58-43b6-aa3d-91bb994338b1 type=TraceType.RETRIEVAL
+2026-07-28 23:10:35,113 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 8c1a6a1d-ce58-43b6-aa3d-91bb994338b1 type=TraceType.RETRIEVAL
+2026-07-28 23:10:35,113 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 8c1a6a1d-ce58-43b6-aa3d-91bb994338b1 status=TraceStatus.SUCCESS
+2026-07-28 23:16:19,987 - bestrag.provider.factory - INFO - info:54 - 数据集创建: test_ds
+2026-07-28 23:16:19,990 - bestrag.provider.factory - INFO - info:54 - 数据集创建: test
+2026-07-28 23:16:19,990 - bestrag.provider.factory - INFO - info:54 - 数据集创建: a
+2026-07-28 23:16:19,990 - bestrag.provider.factory - INFO - info:54 - 数据集创建: b
+2026-07-28 23:16:19,991 - bestrag.provider.factory - INFO - info:54 - 数据集版本创建: tech_qa_v2
+2026-07-28 23:16:19,992 - bestrag.provider.factory - INFO - info:54 - 数据集创建: export_test
+2026-07-28 23:16:19,993 - bestrag.provider.factory - INFO - info:54 - 数据集创建: json_test
+2026-07-28 23:16:19,994 - bestrag.provider.factory - INFO - info:54 - 数据集已导出: C:\Users\viho\AppData\Local\Temp\tmpowv7l34p.json
+2026-07-28 23:16:19,994 - bestrag.provider.factory - INFO - info:54 - 数据集已导入: C:\Users\viho\AppData\Local\Temp\tmpowv7l34p.json
+2026-07-28 23:16:20,007 - bestrag.provider.factory - INFO - info:54 - Evaluation Metrics 注册完成
+2026-07-28 23:16:20,007 - bestrag.provider.factory - INFO - info:54 - Trace Analyzer 注册完成
+2026-07-28 23:16:20,007 - bestrag.provider.factory - INFO - info:54 - Retrieval Debugger 注册完成
+2026-07-28 23:16:20,009 - bestrag.provider.factory - INFO - info:54 - Trace 开始: fdf2abfe-50d8-43b2-a444-d49f946166a7 type=TraceType.RETRIEVAL
+2026-07-28 23:16:20,009 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: fdf2abfe-50d8-43b2-a444-d49f946166a7 type=TraceType.RETRIEVAL
+2026-07-28 23:16:20,009 - bestrag.provider.factory - INFO - info:54 - Trace 结束: fdf2abfe-50d8-43b2-a444-d49f946166a7 status=TraceStatus.SUCCESS
+2026-07-28 23:16:37,975 - bestrag.provider.factory - INFO - info:54 - 数据集创建: test_ds
+2026-07-28 23:16:37,977 - bestrag.provider.factory - INFO - info:54 - 数据集创建: test
+2026-07-28 23:16:37,977 - bestrag.provider.factory - INFO - info:54 - 数据集创建: a
+2026-07-28 23:16:37,977 - bestrag.provider.factory - INFO - info:54 - 数据集创建: b
+2026-07-28 23:16:37,979 - bestrag.provider.factory - INFO - info:54 - 数据集版本创建: tech_qa_v2
+2026-07-28 23:16:37,979 - bestrag.provider.factory - INFO - info:54 - 数据集创建: export_test
+2026-07-28 23:16:37,979 - bestrag.provider.factory - INFO - info:54 - 数据集创建: json_test
+2026-07-28 23:16:37,981 - bestrag.provider.factory - INFO - info:54 - 数据集已导出: C:\Users\viho\AppData\Local\Temp\tmpcc3ub467.json
+2026-07-28 23:16:37,981 - bestrag.provider.factory - INFO - info:54 - 数据集已导入: C:\Users\viho\AppData\Local\Temp\tmpcc3ub467.json
+2026-07-28 23:16:37,983 - bestrag.provider.factory - INFO - info:54 - Evaluation Metrics 注册完成
+2026-07-28 23:16:37,983 - bestrag.provider.factory - INFO - info:54 - Trace Analyzer 注册完成
+2026-07-28 23:16:37,983 - bestrag.provider.factory - INFO - info:54 - Retrieval Debugger 注册完成
+2026-07-28 23:16:37,989 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 744e7347-c2e2-4788-aec9-d6ef710bca39 type=TraceType.RETRIEVAL
+2026-07-28 23:16:37,990 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 744e7347-c2e2-4788-aec9-d6ef710bca39 type=TraceType.RETRIEVAL
+2026-07-28 23:16:37,990 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 744e7347-c2e2-4788-aec9-d6ef710bca39 status=TraceStatus.SUCCESS
+2026-07-28 23:16:42,669 - bestrag.provider.factory - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-28 23:16:42,677 - bestrag.provider.factory - INFO - info:54 - 应用就绪
+2026-07-28 23:16:42,677 - bestrag.provider.factory - INFO - info:54 - 应用关闭中...
+2026-07-28 23:16:42,677 - bestrag.provider.factory - INFO - info:54 - 应用已关闭
+2026-07-28 23:16:42,699 - bestrag.provider.factory - INFO - info:54 - 数据集创建: test_ds
+2026-07-28 23:16:42,704 - bestrag.provider.factory - INFO - info:54 - 数据集创建: test
+2026-07-28 23:16:42,704 - bestrag.provider.factory - INFO - info:54 - 数据集创建: a
+2026-07-28 23:16:42,704 - bestrag.provider.factory - INFO - info:54 - 数据集创建: b
+2026-07-28 23:16:42,704 - bestrag.provider.factory - INFO - info:54 - 数据集版本创建: tech_qa_v2
+2026-07-28 23:16:42,704 - bestrag.provider.factory - INFO - info:54 - 数据集创建: export_test
+2026-07-28 23:16:42,709 - bestrag.provider.factory - INFO - info:54 - 数据集创建: json_test
+2026-07-28 23:16:42,709 - bestrag.provider.factory - INFO - info:54 - 数据集已导出: C:\Users\viho\AppData\Local\Temp\tmp44rgjk8d.json
+2026-07-28 23:16:42,709 - bestrag.provider.factory - INFO - info:54 - 数据集已导入: C:\Users\viho\AppData\Local\Temp\tmp44rgjk8d.json
+2026-07-28 23:16:42,711 - bestrag.provider.factory - INFO - info:54 - Evaluation Metrics 注册完成
+2026-07-28 23:16:42,711 - bestrag.provider.factory - INFO - info:54 - Trace Analyzer 注册完成
+2026-07-28 23:16:42,711 - bestrag.provider.factory - INFO - info:54 - Retrieval Debugger 注册完成
+2026-07-28 23:16:42,719 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 76486e85-cde3-41f3-a855-9a9aac31b7f7 type=TraceType.RETRIEVAL
+2026-07-28 23:16:42,719 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 76486e85-cde3-41f3-a855-9a9aac31b7f7 type=TraceType.RETRIEVAL
+2026-07-28 23:16:42,719 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 76486e85-cde3-41f3-a855-9a9aac31b7f7 status=TraceStatus.SUCCESS
+2026-07-28 23:16:42,731 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: f5b843de-c097-4d61-a064-a41baf806f5f - test
+2026-07-28 23:16:42,731 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: b7e766c1-3836-4da9-a814-e21f3b9198da - test
+2026-07-28 23:16:42,731 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 46236fa0-abc0-4aff-8d9b-f843432ef55d - test
+2026-07-28 23:16:42,731 - bestrag.provider.factory - INFO - info:54 - 知识库已删除: 46236fa0-abc0-4aff-8d9b-f843432ef55d
+2026-07-28 23:16:42,731 - bestrag.provider.factory - WARNING - warning:60 - 知识库不存在: nonexistent
+2026-07-28 23:16:42,738 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 459b0a71-8a2d-4575-96bb-2a021e183b11 - a
+2026-07-28 23:16:42,738 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: bccc1859-8352-4f43-a091-0ad738404083 - b
+2026-07-28 23:16:42,739 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: de5363f4-fd80-4466-8bb8-f754083e3512 - test
+2026-07-28 23:16:42,739 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: a1ac51e1-16c6-4c1c-b419-1cfc12d616c7 -> KB:kb_1
+2026-07-28 23:16:42,739 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: bf669838-15dd-402f-ab1e-f3e1c5e82573 -> KB:kb_1
+2026-07-28 23:16:42,739 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: f17ebe62-8dfe-4a4a-90dd-1517195e13e1 -> KB:kb_1
+2026-07-28 23:16:42,739 - bestrag.provider.factory - INFO - info:54 - 文档已删除: f17ebe62-8dfe-4a4a-90dd-1517195e13e1
+2026-07-28 23:16:42,739 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: f952274f-a6d6-41b3-ae4c-943c500b2491 -> KB:kb_1
+2026-07-28 23:16:42,739 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 8037759f-bf7d-46f4-b641-47280211f602 -> KB:kb_1
+2026-07-28 23:16:42,739 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 06889f61-a5a0-4d28-ac2d-834fcf3d84a7 -> KB:kb_2
+2026-07-28 23:16:42,739 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 9b441e21-dd89-44bd-9736-fa0406d388cb -> KB:kb_1
+2026-07-28 23:16:42,739 - bestrag.provider.factory - INFO - info:54 - 文档已更新: 9b441e21-dd89-44bd-9736-fa0406d388cb -> v2
+2026-07-28 23:16:42,739 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 3aca79d3-e2ba-4713-ae0b-81554fcbeb39 -> KB:kb_1
+2026-07-28 23:16:42,739 - bestrag.provider.factory - INFO - info:54 - 文档内容无变化: 3aca79d3-e2ba-4713-ae0b-81554fcbeb39
+2026-07-28 23:16:42,745 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 7c84e180-9513-4425-858d-d619e983394a -> KB:kb_1
+2026-07-28 23:16:42,745 - bestrag.provider.factory - INFO - info:54 - 文档已更新: 7c84e180-9513-4425-858d-d619e983394a -> v2
+2026-07-28 23:16:42,745 - bestrag.provider.factory - INFO - info:54 - 文档已更新: 7c84e180-9513-4425-858d-d619e983394a -> v3
+2026-07-28 23:16:42,745 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=2e6f2b19-2780-46fa-b352-ec5b9a71df9a, chunks=0, 耗时=0.0s
+2026-07-28 23:16:42,745 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=143586f3-a72a-4fb1-9c98-054648c0b8be, chunks=0, 耗时=0.0s
+2026-07-28 23:16:42,745 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=143586f3-a72a-4fb1-9c98-054648c0b8be, 清理 1 条旧记录
+2026-07-28 23:16:42,745 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=143586f3-a72a-4fb1-9c98-054648c0b8be, chunks=0, 耗时=0.0s
+2026-07-28 23:16:42,749 - bestrag.provider.factory - INFO - info:54 - 无旧索引记录，执行全量构建: doc=0791af2a-4f4b-45e6-808a-64ca93cf2dae
+2026-07-28 23:16:42,749 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=0791af2a-4f4b-45e6-808a-64ca93cf2dae, chunks=0, 耗时=0.0s
+2026-07-28 23:16:42,749 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=be6cba01-2342-4d4b-8927-7985d96604c4, chunks=0, 耗时=0.0s
+2026-07-28 23:16:42,749 - bestrag.provider.factory - INFO - info:54 - 检测到旧索引，执行重建: doc=be6cba01-2342-4d4b-8927-7985d96604c4, old_status=IndexStatus.READY
+2026-07-28 23:16:42,749 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=be6cba01-2342-4d4b-8927-7985d96604c4, 清理 1 条旧记录
+2026-07-28 23:16:42,749 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=be6cba01-2342-4d4b-8927-7985d96604c4, chunks=0, 耗时=0.0s
+2026-07-28 23:16:42,749 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:16:42,749 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 9f35b08f-0e36-4c32-ae2e-23e1b0ef6c0b type=TraceType.INDEX
+2026-07-28 23:16:42,749 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 9f35b08f-0e36-4c32-ae2e-23e1b0ef6c0b type=TraceType.INDEX
+2026-07-28 23:16:42,749 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 9f35b08f-0e36-4c32-ae2e-23e1b0ef6c0b status=TraceStatus.SUCCESS
+2026-07-28 23:16:42,749 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:16:42,749 - bestrag.provider.factory - INFO - info:54 - Trace 开始: a49705f0-6133-4c7e-884e-a778f3db96c7 type=TraceType.INDEX
+2026-07-28 23:16:42,749 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: a49705f0-6133-4c7e-884e-a778f3db96c7 type=TraceType.INDEX
+2026-07-28 23:16:42,749 - bestrag.provider.factory - INFO - info:54 - Trace 结束: a49705f0-6133-4c7e-884e-a778f3db96c7 status=TraceStatus.SUCCESS
+2026-07-28 23:16:42,753 - bestrag.provider.factory - INFO - info:54 - 增量索引更新: doc=d1, changed=1
+2026-07-28 23:16:42,753 - bestrag.provider.factory - INFO - info:54 - Trace 开始: e291c98a-1917-426b-a12a-db4b49576102 type=TraceType.INDEX
+2026-07-28 23:16:42,753 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: e291c98a-1917-426b-a12a-db4b49576102 type=TraceType.INDEX
+2026-07-28 23:16:42,753 - bestrag.provider.factory - INFO - info:54 - Trace 结束: e291c98a-1917-426b-a12a-db4b49576102 status=TraceStatus.SUCCESS
+2026-07-28 23:16:42,753 - bestrag.provider.factory - INFO - info:54 - 增量索引更新: doc=d1, changed=0
+2026-07-28 23:16:42,753 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=d1
+2026-07-28 23:16:42,753 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:16:42,753 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 7312db5c-cc7b-451a-ac76-c073b257b125 type=TraceType.INDEX
+2026-07-28 23:16:42,753 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 7312db5c-cc7b-451a-ac76-c073b257b125 type=TraceType.INDEX
+2026-07-28 23:16:42,753 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 7312db5c-cc7b-451a-ac76-c073b257b125 status=TraceStatus.SUCCESS
+2026-07-28 23:16:42,753 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:16:42,753 - bestrag.provider.factory - INFO - info:54 - Trace 开始: bf90b13a-bcb7-4de5-aef1-b6267f05eef4 type=TraceType.INDEX
+2026-07-28 23:16:42,753 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: bf90b13a-bcb7-4de5-aef1-b6267f05eef4 type=TraceType.INDEX
+2026-07-28 23:16:42,753 - bestrag.provider.factory - INFO - info:54 - Trace 结束: bf90b13a-bcb7-4de5-aef1-b6267f05eef4 status=TraceStatus.SUCCESS
+2026-07-28 23:16:42,759 - bestrag.provider.factory - INFO - info:54 - Knowledge Model 注册完成
+2026-07-28 23:16:42,759 - bestrag.provider.factory - INFO - info:54 - Knowledge Repository 注册完成
+2026-07-28 23:16:42,759 - bestrag.provider.factory - INFO - info:54 - Knowledge Service 注册完成
+2026-07-28 23:16:42,759 - bestrag.provider.factory - INFO - info:54 - Knowledge Model 注册完成
+2026-07-28 23:16:42,759 - bestrag.provider.factory - INFO - info:54 - Knowledge Repository 注册完成
+2026-07-28 23:16:42,759 - bestrag.provider.factory - INFO - info:54 - Knowledge Service 注册完成
+2026-07-28 23:16:42,759 - bestrag.provider.factory - INFO - info:54 - Knowledge Model 注册完成
+2026-07-28 23:16:42,759 - bestrag.provider.factory - INFO - info:54 - Knowledge Repository 注册完成
+2026-07-28 23:16:42,759 - bestrag.provider.factory - INFO - info:54 - Knowledge Service 注册完成
+2026-07-28 23:16:42,759 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: a4497067-f5be-49d3-aa87-a2ebffa42046 - registry_test
+2026-07-28 23:16:42,759 - bestrag.provider.factory - INFO - info:54 - Knowledge Model 注册完成
+2026-07-28 23:16:42,759 - bestrag.provider.factory - INFO - info:54 - Knowledge Repository 注册完成
+2026-07-28 23:16:42,759 - bestrag.provider.factory - INFO - info:54 - Knowledge Service 注册完成
+2026-07-28 23:16:42,759 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: b026429c-4672-454e-90c0-fd951a016461 - 集成测试库
+2026-07-28 23:16:42,759 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 432a4f47-6460-4c37-ae82-ef73c155ae61 -> KB:b026429c-4672-454e-90c0-fd951a016461
+2026-07-28 23:16:42,759 - bestrag.provider.factory - INFO - info:54 - 文档已更新: 432a4f47-6460-4c37-ae82-ef73c155ae61 -> v2
+2026-07-28 23:16:42,759 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=432a4f47-6460-4c37-ae82-ef73c155ae61, chunks=0, 耗时=0.0s
+2026-07-28 23:16:42,759 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=432a4f47-6460-4c37-ae82-ef73c155ae61, 清理 1 条旧记录
+2026-07-28 23:16:42,759 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=432a4f47-6460-4c37-ae82-ef73c155ae61, chunks=0, 耗时=0.0s
+2026-07-28 23:16:42,759 - bestrag.provider.factory - INFO - info:54 - 文档已删除: 432a4f47-6460-4c37-ae82-ef73c155ae61
+2026-07-28 23:16:42,759 - bestrag.provider.factory - INFO - info:54 - 知识库已删除: b026429c-4672-454e-90c0-fd951a016461
+2026-07-28 23:16:42,789 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 671418b0-4204-4001-b432-27af9eea9775 type=TraceType.RETRIEVAL
+2026-07-28 23:16:42,789 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 9ceafa6e-6e68-40c6-bd89-34f0c37a16fe type=TraceType.RETRIEVAL
+2026-07-28 23:16:42,789 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 9ceafa6e-6e68-40c6-bd89-34f0c37a16fe type=TraceType.RETRIEVAL
+2026-07-28 23:16:42,789 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 9ceafa6e-6e68-40c6-bd89-34f0c37a16fe status=TraceStatus.SUCCESS
+2026-07-28 23:16:42,789 - bestrag.provider.factory - INFO - info:54 - Trace 开始: a3651d82-ccae-4a9b-a0f5-e230572eb7e6 type=TraceType.RETRIEVAL
+2026-07-28 23:16:42,789 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: a3651d82-ccae-4a9b-a0f5-e230572eb7e6 type=TraceType.RETRIEVAL
+2026-07-28 23:16:42,789 - bestrag.provider.factory - INFO - info:54 - Trace 结束: a3651d82-ccae-4a9b-a0f5-e230572eb7e6 status=TraceStatus.SUCCESS
+2026-07-28 23:16:42,789 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 5678d376-c3f7-4587-9758-5e3c618b2fc9 type=TraceType.RETRIEVAL
+2026-07-28 23:16:42,789 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 5678d376-c3f7-4587-9758-5e3c618b2fc9 type=TraceType.RETRIEVAL
+2026-07-28 23:16:42,789 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 5678d376-c3f7-4587-9758-5e3c618b2fc9 status=TraceStatus.FAILED
+2026-07-28 23:16:42,789 - bestrag.provider.factory - INFO - info:54 - Trace 开始: a7473732-34d1-4988-a0ca-b614cac8dea0 type=TraceType.INDEX
+2026-07-28 23:16:42,789 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: a7473732-34d1-4988-a0ca-b614cac8dea0 type=TraceType.INDEX
+2026-07-28 23:16:42,794 - bestrag.provider.factory - INFO - info:54 - Trace 结束: a7473732-34d1-4988-a0ca-b614cac8dea0 status=TraceStatus.SUCCESS
+2026-07-28 23:16:42,794 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 2e96fdd4-a80f-4365-8a8a-01051907a2e1 type=TraceType.INDEX
+2026-07-28 23:16:42,794 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 2e96fdd4-a80f-4365-8a8a-01051907a2e1 type=TraceType.INDEX
+2026-07-28 23:16:42,794 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 2e96fdd4-a80f-4365-8a8a-01051907a2e1 status=TraceStatus.SUCCESS
+2026-07-28 23:16:42,794 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 53b4b0c7-71b0-4c78-b67f-8e2a219eff58 type=TraceType.RETRIEVAL
+2026-07-28 23:16:42,794 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 53b4b0c7-71b0-4c78-b67f-8e2a219eff58 type=TraceType.RETRIEVAL
+2026-07-28 23:16:42,794 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 53b4b0c7-71b0-4c78-b67f-8e2a219eff58 status=TraceStatus.SUCCESS
+2026-07-28 23:16:42,794 - bestrag.provider.factory - WARNING - warning:60 - end_trace 调用时无活跃 Trace
+2026-07-28 23:16:42,801 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: d0e25cde-e8a5-4119-b4d1-54a47d0c8429 type=TraceType.RETRIEVAL
+2026-07-28 23:16:42,801 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:16:42,801 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 7a3e9b95-135b-4feb-bcc1-97d57997debb type=TraceType.INDEX
+2026-07-28 23:16:42,801 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 7a3e9b95-135b-4feb-bcc1-97d57997debb type=TraceType.INDEX
+2026-07-28 23:16:42,801 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 7a3e9b95-135b-4feb-bcc1-97d57997debb status=TraceStatus.SUCCESS
+2026-07-28 23:16:42,801 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:16:42,801 - bestrag.provider.factory - INFO - info:54 - Trace 开始: a13e6bea-cf46-4a36-aefb-4bf777357aba type=TraceType.INDEX
+2026-07-28 23:16:42,801 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: a13e6bea-cf46-4a36-aefb-4bf777357aba type=TraceType.INDEX
+2026-07-28 23:16:42,801 - bestrag.provider.factory - INFO - info:54 - Trace 结束: a13e6bea-cf46-4a36-aefb-4bf777357aba status=TraceStatus.SUCCESS
+2026-07-28 23:16:42,801 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=d1
+2026-07-28 23:16:42,801 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:16:42,801 - bestrag.provider.factory - INFO - info:54 - Trace 开始: b614f9ae-a016-4851-8ca7-ca29c4eb1d14 type=TraceType.INDEX
+2026-07-28 23:16:42,801 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: b614f9ae-a016-4851-8ca7-ca29c4eb1d14 type=TraceType.INDEX
+2026-07-28 23:16:42,801 - bestrag.provider.factory - INFO - info:54 - Trace 结束: b614f9ae-a016-4851-8ca7-ca29c4eb1d14 status=TraceStatus.SUCCESS
+2026-07-28 23:16:42,808 - bestrag.provider.factory - INFO - info:54 - 增量索引更新: doc=d1, changed=1
+2026-07-28 23:16:42,808 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 56a076ed-26d8-4a0a-8ecb-ebb06c1e4b21 type=TraceType.INDEX
+2026-07-28 23:16:42,808 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 56a076ed-26d8-4a0a-8ecb-ebb06c1e4b21 type=TraceType.INDEX
+2026-07-28 23:16:42,808 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 56a076ed-26d8-4a0a-8ecb-ebb06c1e4b21 status=TraceStatus.SUCCESS
+2026-07-28 23:16:42,819 - bestrag.provider.factory - INFO - info:54 - Trace 开始: c6b4bf6d-6378-46b9-9ee2-7238f83fcd76 type=TraceType.RETRIEVAL
+2026-07-28 23:16:42,819 - bestrag.provider.factory - ERROR - error:66 - 检索器 'vector' 失败: Service 'embedding' not found
+2026-07-28 23:16:42,819 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: c6b4bf6d-6378-46b9-9ee2-7238f83fcd76 type=TraceType.RETRIEVAL
+2026-07-28 23:16:42,819 - bestrag.provider.factory - INFO - info:54 - Trace 结束: c6b4bf6d-6378-46b9-9ee2-7238f83fcd76 status=TraceStatus.SUCCESS
+2026-07-28 23:16:42,822 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 56177a3d-6a1f-4f11-a7dd-3446e67b1841 type=TraceType.RETRIEVAL
+2026-07-28 23:16:42,822 - bestrag.provider.factory - ERROR - error:66 - 检索器 'vector' 失败: Service 'embedding' not found
+2026-07-28 23:16:42,822 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 56177a3d-6a1f-4f11-a7dd-3446e67b1841 type=TraceType.RETRIEVAL
+2026-07-28 23:16:42,822 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 56177a3d-6a1f-4f11-a7dd-3446e67b1841 status=TraceStatus.SUCCESS
+2026-07-28 23:16:42,822 - bestrag.provider.factory - INFO - info:54 - Trace 开始: ec85c42a-ca51-4ea4-a3ba-eed6d4df7c1e type=TraceType.GENERATION
+2026-07-28 23:16:42,822 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: ec85c42a-ca51-4ea4-a3ba-eed6d4df7c1e type=TraceType.GENERATION
+2026-07-28 23:16:42,822 - bestrag.provider.factory - INFO - info:54 - Trace 结束: ec85c42a-ca51-4ea4-a3ba-eed6d4df7c1e status=TraceStatus.SUCCESS
+2026-07-28 23:16:42,822 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 89f4b1f2-9263-4867-84f7-12a12c0873a6 type=TraceType.EVALUATION
+2026-07-28 23:16:42,822 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 89f4b1f2-9263-4867-84f7-12a12c0873a6 type=TraceType.EVALUATION
+2026-07-28 23:16:42,822 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 89f4b1f2-9263-4867-84f7-12a12c0873a6 status=TraceStatus.SUCCESS
+2026-07-28 23:16:42,822 - bestrag.provider.factory - INFO - info:54 - 评测 Trace 已记录: dataset=test_dataset, strategy=hybrid, metrics=2
+2026-07-28 23:16:42,829 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 206371b8-c810-4372-bb86-c4e4f50459e9 type=TraceType.RETRIEVAL
+2026-07-28 23:16:42,829 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 206371b8-c810-4372-bb86-c4e4f50459e9 type=TraceType.RETRIEVAL
+2026-07-28 23:16:42,829 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 206371b8-c810-4372-bb86-c4e4f50459e9 status=TraceStatus.SUCCESS
+2026-07-28 23:21:05,366 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=simple, retrievers=['vector']
+2026-07-28 23:21:05,374 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=simple, retrievers=['vector']
+2026-07-28 23:21:05,376 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=exact, retrievers=['bm25']
+2026-07-28 23:21:05,377 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=technical, retrievers=['vector', 'bm25']
+2026-07-28 23:21:05,378 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=simple, retrievers=['bm25']
+2026-07-28 23:21:05,386 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=simple, retrievers=['vector']
+2026-07-28 23:21:05,391 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=simple, retrievers=['vector']
+2026-07-28 23:21:05,396 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=simple, retrievers=['vector']
+2026-07-28 23:21:44,602 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=technical, retrievers=['vector', 'bm25']
+2026-07-28 23:21:44,603 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=simple, retrievers=['vector']
+2026-07-28 23:21:44,604 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=exact, retrievers=['bm25']
+2026-07-28 23:21:44,605 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=technical, retrievers=['vector', 'bm25']
+2026-07-28 23:21:44,606 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=simple, retrievers=['bm25']
+2026-07-28 23:21:44,611 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=technical, retrievers=['vector', 'bm25']
+2026-07-28 23:21:44,612 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=simple, retrievers=['vector']
+2026-07-28 23:21:44,616 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=technical, retrievers=['vector', 'bm25']
+2026-07-28 23:21:44,616 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=technical, retrievers=['vector', 'bm25']
+2026-07-28 23:22:06,919 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=technical, retrievers=['vector', 'bm25']
+2026-07-28 23:22:06,920 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=simple, retrievers=['vector']
+2026-07-28 23:22:06,921 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=exact, retrievers=['bm25']
+2026-07-28 23:22:06,921 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=technical, retrievers=['vector', 'bm25']
+2026-07-28 23:22:06,923 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=simple, retrievers=['bm25']
+2026-07-28 23:22:06,929 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=technical, retrievers=['vector', 'bm25']
+2026-07-28 23:22:06,930 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=simple, retrievers=['vector']
+2026-07-28 23:22:06,934 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=technical, retrievers=['vector', 'bm25']
+2026-07-28 23:22:06,934 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=technical, retrievers=['vector', 'bm25']
+2026-07-28 23:22:17,680 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=technical, retrievers=['vector', 'bm25']
+2026-07-28 23:22:17,680 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=simple, retrievers=['vector']
+2026-07-28 23:22:17,680 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=exact, retrievers=['bm25']
+2026-07-28 23:22:17,690 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=technical, retrievers=['vector', 'bm25']
+2026-07-28 23:22:17,690 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=simple, retrievers=['bm25']
+2026-07-28 23:22:17,706 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=technical, retrievers=['vector', 'bm25']
+2026-07-28 23:22:17,708 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=simple, retrievers=['vector']
+2026-07-28 23:22:17,714 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=technical, retrievers=['vector', 'bm25']
+2026-07-28 23:22:17,714 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=technical, retrievers=['vector', 'bm25']
+2026-07-28 23:22:22,071 - bestrag.provider.factory - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-28 23:22:22,071 - bestrag.provider.factory - INFO - info:54 - 应用就绪
+2026-07-28 23:22:22,071 - bestrag.provider.factory - INFO - info:54 - 应用关闭中...
+2026-07-28 23:22:22,071 - bestrag.provider.factory - INFO - info:54 - 应用已关闭
+2026-07-28 23:22:22,097 - bestrag.provider.factory - INFO - info:54 - 数据集创建: test_ds
+2026-07-28 23:22:22,098 - bestrag.provider.factory - INFO - info:54 - 数据集创建: test
+2026-07-28 23:22:22,099 - bestrag.provider.factory - INFO - info:54 - 数据集创建: a
+2026-07-28 23:22:22,099 - bestrag.provider.factory - INFO - info:54 - 数据集创建: b
+2026-07-28 23:22:22,100 - bestrag.provider.factory - INFO - info:54 - 数据集版本创建: tech_qa_v2
+2026-07-28 23:22:22,100 - bestrag.provider.factory - INFO - info:54 - 数据集创建: export_test
+2026-07-28 23:22:22,101 - bestrag.provider.factory - INFO - info:54 - 数据集创建: json_test
+2026-07-28 23:22:22,101 - bestrag.provider.factory - INFO - info:54 - 数据集已导出: C:\Users\viho\AppData\Local\Temp\tmpxxayxqbm.json
+2026-07-28 23:22:22,102 - bestrag.provider.factory - INFO - info:54 - 数据集已导入: C:\Users\viho\AppData\Local\Temp\tmpxxayxqbm.json
+2026-07-28 23:22:22,107 - bestrag.provider.factory - INFO - info:54 - Evaluation Metrics 注册完成
+2026-07-28 23:22:22,107 - bestrag.provider.factory - INFO - info:54 - Trace Analyzer 注册完成
+2026-07-28 23:22:22,107 - bestrag.provider.factory - INFO - info:54 - Retrieval Debugger 注册完成
+2026-07-28 23:22:22,108 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 9765cd5a-b222-49f6-a0dc-924472c64a2e type=TraceType.RETRIEVAL
+2026-07-28 23:22:22,110 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 9765cd5a-b222-49f6-a0dc-924472c64a2e type=TraceType.RETRIEVAL
+2026-07-28 23:22:22,110 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 9765cd5a-b222-49f6-a0dc-924472c64a2e status=TraceStatus.SUCCESS
+2026-07-28 23:22:22,124 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 2aeaa0d2-c5bb-4ff8-9ad2-96447b697cd3 - test
+2026-07-28 23:22:22,126 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 8a61ec39-d7e5-4a8d-b964-b0e46ff9054d - test
+2026-07-28 23:22:22,127 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 68a02ccc-290e-4cc7-9720-d39993b37a16 - test
+2026-07-28 23:22:22,127 - bestrag.provider.factory - INFO - info:54 - 知识库已删除: 68a02ccc-290e-4cc7-9720-d39993b37a16
+2026-07-28 23:22:22,128 - bestrag.provider.factory - WARNING - warning:60 - 知识库不存在: nonexistent
+2026-07-28 23:22:22,128 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 58f8b02a-507d-426d-90d4-a30431c6e6fa - a
+2026-07-28 23:22:22,129 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: b337ef9c-3fc3-40d1-b220-29c4cf45a2d6 - b
+2026-07-28 23:22:22,129 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 7001811b-eb2d-4bad-aaa5-1f909268acfb - test
+2026-07-28 23:22:22,130 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 85a34cb0-62c0-44be-b257-8f186ac38510 -> KB:kb_1
+2026-07-28 23:22:22,131 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: f9ddebb7-8792-45fa-924b-4d92d1272ad2 -> KB:kb_1
+2026-07-28 23:22:22,132 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 8d63be49-4c0a-4fc6-bb7d-0dc7e28c0af5 -> KB:kb_1
+2026-07-28 23:22:22,132 - bestrag.provider.factory - INFO - info:54 - 文档已删除: 8d63be49-4c0a-4fc6-bb7d-0dc7e28c0af5
+2026-07-28 23:22:22,133 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 9d81c021-6afb-49e0-96cb-adae08813538 -> KB:kb_1
+2026-07-28 23:22:22,133 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: a419da83-354f-4ab2-964f-4255d164a9bc -> KB:kb_1
+2026-07-28 23:22:22,133 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 494ab987-7ab3-49cc-80ab-e9cf996a607b -> KB:kb_2
+2026-07-28 23:22:22,134 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 3cfa34e0-f39f-4084-9690-547194fa756f -> KB:kb_1
+2026-07-28 23:22:22,134 - bestrag.provider.factory - INFO - info:54 - 文档已更新: 3cfa34e0-f39f-4084-9690-547194fa756f -> v2
+2026-07-28 23:22:22,134 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: db478421-c4ad-4797-8743-9c5bd76d86ba -> KB:kb_1
+2026-07-28 23:22:22,135 - bestrag.provider.factory - INFO - info:54 - 文档内容无变化: db478421-c4ad-4797-8743-9c5bd76d86ba
+2026-07-28 23:22:22,135 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 7d565099-c4d2-44f6-b923-8cf62b63ad74 -> KB:kb_1
+2026-07-28 23:22:22,135 - bestrag.provider.factory - INFO - info:54 - 文档已更新: 7d565099-c4d2-44f6-b923-8cf62b63ad74 -> v2
+2026-07-28 23:22:22,135 - bestrag.provider.factory - INFO - info:54 - 文档已更新: 7d565099-c4d2-44f6-b923-8cf62b63ad74 -> v3
+2026-07-28 23:22:22,136 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=520744a2-463c-4c2a-a102-2b28c9d86791, chunks=0, 耗时=0.0s
+2026-07-28 23:22:22,137 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=7c530065-a1fe-4833-b6b6-851ee3a7214d, chunks=0, 耗时=0.0s
+2026-07-28 23:22:22,137 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=7c530065-a1fe-4833-b6b6-851ee3a7214d, 清理 1 条旧记录
+2026-07-28 23:22:22,137 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=7c530065-a1fe-4833-b6b6-851ee3a7214d, chunks=0, 耗时=0.0s
+2026-07-28 23:22:22,138 - bestrag.provider.factory - INFO - info:54 - 无旧索引记录，执行全量构建: doc=3cc78924-472c-4ed0-9aa8-10a7b8a74ae9
+2026-07-28 23:22:22,138 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=3cc78924-472c-4ed0-9aa8-10a7b8a74ae9, chunks=0, 耗时=0.0s
+2026-07-28 23:22:22,139 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=4340d795-1b46-4fb7-8a27-bd12c3d64ad7, chunks=0, 耗时=0.0s
+2026-07-28 23:22:22,139 - bestrag.provider.factory - INFO - info:54 - 检测到旧索引，执行重建: doc=4340d795-1b46-4fb7-8a27-bd12c3d64ad7, old_status=IndexStatus.READY
+2026-07-28 23:22:22,139 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=4340d795-1b46-4fb7-8a27-bd12c3d64ad7, 清理 1 条旧记录
+2026-07-28 23:22:22,139 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=4340d795-1b46-4fb7-8a27-bd12c3d64ad7, chunks=0, 耗时=0.0s
+2026-07-28 23:22:22,140 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:22:22,140 - bestrag.provider.factory - INFO - info:54 - Trace 开始: f3de4b4f-19ab-44a7-8bd4-b6196cf2d581 type=TraceType.INDEX
+2026-07-28 23:22:22,140 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: f3de4b4f-19ab-44a7-8bd4-b6196cf2d581 type=TraceType.INDEX
+2026-07-28 23:22:22,140 - bestrag.provider.factory - INFO - info:54 - Trace 结束: f3de4b4f-19ab-44a7-8bd4-b6196cf2d581 status=TraceStatus.SUCCESS
+2026-07-28 23:22:22,141 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:22:22,141 - bestrag.provider.factory - INFO - info:54 - Trace 开始: cb361b07-718f-4bf9-b507-57d8ab610dcd type=TraceType.INDEX
+2026-07-28 23:22:22,141 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: cb361b07-718f-4bf9-b507-57d8ab610dcd type=TraceType.INDEX
+2026-07-28 23:22:22,141 - bestrag.provider.factory - INFO - info:54 - Trace 结束: cb361b07-718f-4bf9-b507-57d8ab610dcd status=TraceStatus.SUCCESS
+2026-07-28 23:22:22,142 - bestrag.provider.factory - INFO - info:54 - 增量索引更新: doc=d1, changed=1
+2026-07-28 23:22:22,142 - bestrag.provider.factory - INFO - info:54 - Trace 开始: c1b0dfbd-04dc-47c1-9960-18c8e975a750 type=TraceType.INDEX
+2026-07-28 23:22:22,142 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: c1b0dfbd-04dc-47c1-9960-18c8e975a750 type=TraceType.INDEX
+2026-07-28 23:22:22,142 - bestrag.provider.factory - INFO - info:54 - Trace 结束: c1b0dfbd-04dc-47c1-9960-18c8e975a750 status=TraceStatus.SUCCESS
+2026-07-28 23:22:22,143 - bestrag.provider.factory - INFO - info:54 - 增量索引更新: doc=d1, changed=0
+2026-07-28 23:22:22,144 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=d1
+2026-07-28 23:22:22,144 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:22:22,144 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 532655e3-8250-47db-8592-0ba3250d89b0 type=TraceType.INDEX
+2026-07-28 23:22:22,144 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 532655e3-8250-47db-8592-0ba3250d89b0 type=TraceType.INDEX
+2026-07-28 23:22:22,144 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 532655e3-8250-47db-8592-0ba3250d89b0 status=TraceStatus.SUCCESS
+2026-07-28 23:22:22,145 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:22:22,145 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 3eb36463-3cb3-4ec7-88a7-b0943a2b1889 type=TraceType.INDEX
+2026-07-28 23:22:22,145 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 3eb36463-3cb3-4ec7-88a7-b0943a2b1889 type=TraceType.INDEX
+2026-07-28 23:22:22,145 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 3eb36463-3cb3-4ec7-88a7-b0943a2b1889 status=TraceStatus.SUCCESS
+2026-07-28 23:22:22,148 - bestrag.provider.factory - INFO - info:54 - Knowledge Model 注册完成
+2026-07-28 23:22:22,148 - bestrag.provider.factory - INFO - info:54 - Knowledge Repository 注册完成
+2026-07-28 23:22:22,148 - bestrag.provider.factory - INFO - info:54 - Knowledge Service 注册完成
+2026-07-28 23:22:22,149 - bestrag.provider.factory - INFO - info:54 - Knowledge Model 注册完成
+2026-07-28 23:22:22,149 - bestrag.provider.factory - INFO - info:54 - Knowledge Repository 注册完成
+2026-07-28 23:22:22,149 - bestrag.provider.factory - INFO - info:54 - Knowledge Service 注册完成
+2026-07-28 23:22:22,150 - bestrag.provider.factory - INFO - info:54 - Knowledge Model 注册完成
+2026-07-28 23:22:22,150 - bestrag.provider.factory - INFO - info:54 - Knowledge Repository 注册完成
+2026-07-28 23:22:22,150 - bestrag.provider.factory - INFO - info:54 - Knowledge Service 注册完成
+2026-07-28 23:22:22,150 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 760a20c0-40e8-4acc-a580-6f9b2fe3174b - registry_test
+2026-07-28 23:22:22,151 - bestrag.provider.factory - INFO - info:54 - Knowledge Model 注册完成
+2026-07-28 23:22:22,151 - bestrag.provider.factory - INFO - info:54 - Knowledge Repository 注册完成
+2026-07-28 23:22:22,151 - bestrag.provider.factory - INFO - info:54 - Knowledge Service 注册完成
+2026-07-28 23:22:22,151 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 987a39a7-9497-4e43-9512-081f14d12cf5 - 集成测试库
+2026-07-28 23:22:22,151 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 1522bcd3-1c7e-40c8-bdb6-73cf890b69ec -> KB:987a39a7-9497-4e43-9512-081f14d12cf5
+2026-07-28 23:22:22,151 - bestrag.provider.factory - INFO - info:54 - 文档已更新: 1522bcd3-1c7e-40c8-bdb6-73cf890b69ec -> v2
+2026-07-28 23:22:22,151 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=1522bcd3-1c7e-40c8-bdb6-73cf890b69ec, chunks=0, 耗时=0.0s
+2026-07-28 23:22:22,152 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=1522bcd3-1c7e-40c8-bdb6-73cf890b69ec, 清理 1 条旧记录
+2026-07-28 23:22:22,152 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=1522bcd3-1c7e-40c8-bdb6-73cf890b69ec, chunks=0, 耗时=0.0s
+2026-07-28 23:22:22,152 - bestrag.provider.factory - INFO - info:54 - 文档已删除: 1522bcd3-1c7e-40c8-bdb6-73cf890b69ec
+2026-07-28 23:22:22,152 - bestrag.provider.factory - INFO - info:54 - 知识库已删除: 987a39a7-9497-4e43-9512-081f14d12cf5
+2026-07-28 23:22:22,160 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=technical, retrievers=['vector', 'bm25']
+2026-07-28 23:22:22,160 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=simple, retrievers=['vector']
+2026-07-28 23:22:22,161 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=exact, retrievers=['bm25']
+2026-07-28 23:22:22,162 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=technical, retrievers=['vector', 'bm25']
+2026-07-28 23:22:22,163 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=simple, retrievers=['bm25']
+2026-07-28 23:22:22,169 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=technical, retrievers=['vector', 'bm25']
+2026-07-28 23:22:22,170 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=simple, retrievers=['vector']
+2026-07-28 23:22:22,173 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=technical, retrievers=['vector', 'bm25']
+2026-07-28 23:22:22,173 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=technical, retrievers=['vector', 'bm25']
+2026-07-28 23:22:22,196 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 7669288a-926d-4b09-a12c-90ced3126fee type=TraceType.RETRIEVAL
+2026-07-28 23:22:22,197 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 38bd529f-e39d-44e2-99c9-5c53c105b14c type=TraceType.RETRIEVAL
+2026-07-28 23:22:22,197 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 38bd529f-e39d-44e2-99c9-5c53c105b14c type=TraceType.RETRIEVAL
+2026-07-28 23:22:22,197 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 38bd529f-e39d-44e2-99c9-5c53c105b14c status=TraceStatus.SUCCESS
+2026-07-28 23:22:22,198 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 3f50a31f-6571-4349-8d4b-66ed9425518e type=TraceType.RETRIEVAL
+2026-07-28 23:22:22,198 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 3f50a31f-6571-4349-8d4b-66ed9425518e type=TraceType.RETRIEVAL
+2026-07-28 23:22:22,198 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 3f50a31f-6571-4349-8d4b-66ed9425518e status=TraceStatus.SUCCESS
+2026-07-28 23:22:22,200 - bestrag.provider.factory - INFO - info:54 - Trace 开始: a98b7d00-7e47-4a03-b6da-0f1604b69315 type=TraceType.RETRIEVAL
+2026-07-28 23:22:22,200 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: a98b7d00-7e47-4a03-b6da-0f1604b69315 type=TraceType.RETRIEVAL
+2026-07-28 23:22:22,200 - bestrag.provider.factory - INFO - info:54 - Trace 结束: a98b7d00-7e47-4a03-b6da-0f1604b69315 status=TraceStatus.FAILED
+2026-07-28 23:22:22,200 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 3b2feba0-ed89-4969-9c42-e074077f9128 type=TraceType.INDEX
+2026-07-28 23:22:22,201 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 3b2feba0-ed89-4969-9c42-e074077f9128 type=TraceType.INDEX
+2026-07-28 23:22:22,201 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 3b2feba0-ed89-4969-9c42-e074077f9128 status=TraceStatus.SUCCESS
+2026-07-28 23:22:22,201 - bestrag.provider.factory - INFO - info:54 - Trace 开始: b9d1f0c2-1495-4139-9724-0441386a37bd type=TraceType.INDEX
+2026-07-28 23:22:22,202 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: b9d1f0c2-1495-4139-9724-0441386a37bd type=TraceType.INDEX
+2026-07-28 23:22:22,202 - bestrag.provider.factory - INFO - info:54 - Trace 结束: b9d1f0c2-1495-4139-9724-0441386a37bd status=TraceStatus.SUCCESS
+2026-07-28 23:22:22,202 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 21ead38d-3bcf-4b2b-bf3e-59a3f8514327 type=TraceType.RETRIEVAL
+2026-07-28 23:22:22,203 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 21ead38d-3bcf-4b2b-bf3e-59a3f8514327 type=TraceType.RETRIEVAL
+2026-07-28 23:22:22,203 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 21ead38d-3bcf-4b2b-bf3e-59a3f8514327 status=TraceStatus.SUCCESS
+2026-07-28 23:22:22,203 - bestrag.provider.factory - WARNING - warning:60 - end_trace 调用时无活跃 Trace
+2026-07-28 23:22:22,208 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 04d36fb9-6aa8-4954-be51-4e9738e4e94f type=TraceType.RETRIEVAL
+2026-07-28 23:22:22,210 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:22:22,211 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 6d4f2669-87a6-4bf7-b6f0-f879bbc3db78 type=TraceType.INDEX
+2026-07-28 23:22:22,211 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 6d4f2669-87a6-4bf7-b6f0-f879bbc3db78 type=TraceType.INDEX
+2026-07-28 23:22:22,211 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 6d4f2669-87a6-4bf7-b6f0-f879bbc3db78 status=TraceStatus.SUCCESS
+2026-07-28 23:22:22,212 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:22:22,212 - bestrag.provider.factory - INFO - info:54 - Trace 开始: f703a7da-6836-45ab-86db-ee3cee32aea4 type=TraceType.INDEX
+2026-07-28 23:22:22,212 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: f703a7da-6836-45ab-86db-ee3cee32aea4 type=TraceType.INDEX
+2026-07-28 23:22:22,212 - bestrag.provider.factory - INFO - info:54 - Trace 结束: f703a7da-6836-45ab-86db-ee3cee32aea4 status=TraceStatus.SUCCESS
+2026-07-28 23:22:22,212 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=d1
+2026-07-28 23:22:22,213 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:22:22,213 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 3b05375a-2051-4e54-874f-1afb5f8f8b1f type=TraceType.INDEX
+2026-07-28 23:22:22,213 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 3b05375a-2051-4e54-874f-1afb5f8f8b1f type=TraceType.INDEX
+2026-07-28 23:22:22,213 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 3b05375a-2051-4e54-874f-1afb5f8f8b1f status=TraceStatus.SUCCESS
+2026-07-28 23:22:22,214 - bestrag.provider.factory - INFO - info:54 - 增量索引更新: doc=d1, changed=1
+2026-07-28 23:22:22,214 - bestrag.provider.factory - INFO - info:54 - Trace 开始: cb0b783d-62bd-44a7-b180-af72b1781489 type=TraceType.INDEX
+2026-07-28 23:22:22,214 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: cb0b783d-62bd-44a7-b180-af72b1781489 type=TraceType.INDEX
+2026-07-28 23:22:22,214 - bestrag.provider.factory - INFO - info:54 - Trace 结束: cb0b783d-62bd-44a7-b180-af72b1781489 status=TraceStatus.SUCCESS
+2026-07-28 23:22:22,221 - bestrag.provider.factory - INFO - info:54 - Trace 开始: e4a3de89-c89c-42fc-8ea8-7d59b04158c1 type=TraceType.RETRIEVAL
+2026-07-28 23:22:22,221 - bestrag.provider.factory - ERROR - error:66 - 检索器 'vector' 失败: Service 'embedding' not found
+2026-07-28 23:22:22,221 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: e4a3de89-c89c-42fc-8ea8-7d59b04158c1 type=TraceType.RETRIEVAL
+2026-07-28 23:22:22,221 - bestrag.provider.factory - INFO - info:54 - Trace 结束: e4a3de89-c89c-42fc-8ea8-7d59b04158c1 status=TraceStatus.SUCCESS
+2026-07-28 23:22:22,222 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 1a83f3eb-55aa-4075-8050-a2fe5556e53b type=TraceType.RETRIEVAL
+2026-07-28 23:22:22,223 - bestrag.provider.factory - ERROR - error:66 - 检索器 'vector' 失败: Service 'embedding' not found
+2026-07-28 23:22:22,223 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 1a83f3eb-55aa-4075-8050-a2fe5556e53b type=TraceType.RETRIEVAL
+2026-07-28 23:22:22,223 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 1a83f3eb-55aa-4075-8050-a2fe5556e53b status=TraceStatus.SUCCESS
+2026-07-28 23:22:22,224 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 409ff0f6-ae59-43db-9a6b-555745dc8c22 type=TraceType.GENERATION
+2026-07-28 23:22:22,224 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 409ff0f6-ae59-43db-9a6b-555745dc8c22 type=TraceType.GENERATION
+2026-07-28 23:22:22,224 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 409ff0f6-ae59-43db-9a6b-555745dc8c22 status=TraceStatus.SUCCESS
+2026-07-28 23:22:22,224 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 958098c3-b08f-408b-9b2d-8a2e7ec0f4a6 type=TraceType.EVALUATION
+2026-07-28 23:22:22,224 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 958098c3-b08f-408b-9b2d-8a2e7ec0f4a6 type=TraceType.EVALUATION
+2026-07-28 23:22:22,224 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 958098c3-b08f-408b-9b2d-8a2e7ec0f4a6 status=TraceStatus.SUCCESS
+2026-07-28 23:22:22,224 - bestrag.provider.factory - INFO - info:54 - 评测 Trace 已记录: dataset=test_dataset, strategy=hybrid, metrics=2
+2026-07-28 23:22:22,230 - bestrag.provider.factory - INFO - info:54 - Trace 开始: c31e0ad0-7c11-4ef2-89bc-2bc6aa7844b2 type=TraceType.RETRIEVAL
+2026-07-28 23:22:22,230 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: c31e0ad0-7c11-4ef2-89bc-2bc6aa7844b2 type=TraceType.RETRIEVAL
+2026-07-28 23:22:22,230 - bestrag.provider.factory - INFO - info:54 - Trace 结束: c31e0ad0-7c11-4ef2-89bc-2bc6aa7844b2 status=TraceStatus.SUCCESS
+2026-07-28 23:27:16,302 - bestrag.provider.factory - INFO - info:54 - QueryCache SET: query=test query...
+2026-07-28 23:27:16,304 - bestrag.provider.factory - INFO - info:54 - QueryCache SET: query=query...
+2026-07-28 23:27:16,305 - bestrag.provider.factory - INFO - info:54 - QueryCache SET: query=q...
+2026-07-28 23:27:16,307 - bestrag.provider.factory - INFO - info:54 - RetrievalCache SET: query=query...
+2026-07-28 23:27:16,308 - bestrag.provider.factory - INFO - info:54 - RetrievalCache SET: query=query...
+2026-07-28 23:27:16,311 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 5323d773-9292-4671-b427-881720b79633 type=TraceType.RETRIEVAL
+2026-07-28 23:27:16,312 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 5323d773-9292-4671-b427-881720b79633 type=TraceType.RETRIEVAL
+2026-07-28 23:27:16,312 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 5323d773-9292-4671-b427-881720b79633 status=TraceStatus.SUCCESS
+2026-07-28 23:27:16,320 - bestrag.provider.factory - INFO - info:54 - QueryCache SET: query=What is RAG?...
+2026-07-28 23:27:16,320 - bestrag.provider.factory - INFO - info:54 - RetrievalCache SET: query=test query...
+2026-07-28 23:27:16,320 - bestrag.provider.factory - INFO - info:54 - RetrievalCache SET: query=test query...
+2026-07-28 23:27:24,988 - bestrag.provider.factory - INFO - info:54 - QueryCache SET: query=test query...
+2026-07-28 23:27:24,990 - bestrag.provider.factory - INFO - info:54 - QueryCache SET: query=query...
+2026-07-28 23:27:24,991 - bestrag.provider.factory - INFO - info:54 - QueryCache SET: query=q...
+2026-07-28 23:27:24,994 - bestrag.provider.factory - INFO - info:54 - RetrievalCache SET: query=query...
+2026-07-28 23:27:24,994 - bestrag.provider.factory - INFO - info:54 - RetrievalCache SET: query=query...
+2026-07-28 23:27:24,998 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 6e396be3-f413-432e-ab2a-bc31d7f7b47a type=TraceType.RETRIEVAL
+2026-07-28 23:27:24,998 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 6e396be3-f413-432e-ab2a-bc31d7f7b47a type=TraceType.RETRIEVAL
+2026-07-28 23:27:24,998 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 6e396be3-f413-432e-ab2a-bc31d7f7b47a status=TraceStatus.SUCCESS
+2026-07-28 23:27:25,006 - bestrag.provider.factory - INFO - info:54 - QueryCache SET: query=What is RAG?...
+2026-07-28 23:27:25,006 - bestrag.provider.factory - INFO - info:54 - RetrievalCache SET: query=test query...
+2026-07-28 23:27:25,006 - bestrag.provider.factory - INFO - info:54 - RetrievalCache SET: query=test query...
+2026-07-28 23:27:29,294 - bestrag.provider.factory - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-28 23:27:29,295 - bestrag.provider.factory - INFO - info:54 - 应用就绪
+2026-07-28 23:27:29,295 - bestrag.provider.factory - INFO - info:54 - 应用关闭中...
+2026-07-28 23:27:29,295 - bestrag.provider.factory - INFO - info:54 - 应用已关闭
+2026-07-28 23:27:30,415 - bestrag.provider.factory - INFO - info:54 - QueryCache SET: query=test query...
+2026-07-28 23:27:30,417 - bestrag.provider.factory - INFO - info:54 - QueryCache SET: query=query...
+2026-07-28 23:27:30,418 - bestrag.provider.factory - INFO - info:54 - QueryCache SET: query=q...
+2026-07-28 23:27:30,420 - bestrag.provider.factory - INFO - info:54 - RetrievalCache SET: query=query...
+2026-07-28 23:27:30,420 - bestrag.provider.factory - INFO - info:54 - RetrievalCache SET: query=query...
+2026-07-28 23:27:30,425 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 4c46e032-4f82-4990-9996-26e8fb59073b type=TraceType.RETRIEVAL
+2026-07-28 23:27:30,425 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 4c46e032-4f82-4990-9996-26e8fb59073b type=TraceType.RETRIEVAL
+2026-07-28 23:27:30,425 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 4c46e032-4f82-4990-9996-26e8fb59073b status=TraceStatus.SUCCESS
+2026-07-28 23:27:30,433 - bestrag.provider.factory - INFO - info:54 - QueryCache SET: query=What is RAG?...
+2026-07-28 23:27:30,433 - bestrag.provider.factory - INFO - info:54 - RetrievalCache SET: query=test query...
+2026-07-28 23:27:30,434 - bestrag.provider.factory - INFO - info:54 - RetrievalCache SET: query=test query...
+2026-07-28 23:27:30,450 - bestrag.provider.factory - INFO - info:54 - 数据集创建: test_ds
+2026-07-28 23:27:30,450 - bestrag.provider.factory - INFO - info:54 - 数据集创建: test
+2026-07-28 23:27:30,450 - bestrag.provider.factory - INFO - info:54 - 数据集创建: a
+2026-07-28 23:27:30,450 - bestrag.provider.factory - INFO - info:54 - 数据集创建: b
+2026-07-28 23:27:30,450 - bestrag.provider.factory - INFO - info:54 - 数据集版本创建: tech_qa_v2
+2026-07-28 23:27:30,450 - bestrag.provider.factory - INFO - info:54 - 数据集创建: export_test
+2026-07-28 23:27:30,454 - bestrag.provider.factory - INFO - info:54 - 数据集创建: json_test
+2026-07-28 23:27:30,454 - bestrag.provider.factory - INFO - info:54 - 数据集已导出: C:\Users\viho\AppData\Local\Temp\tmpuncio_zz.json
+2026-07-28 23:27:30,454 - bestrag.provider.factory - INFO - info:54 - 数据集已导入: C:\Users\viho\AppData\Local\Temp\tmpuncio_zz.json
+2026-07-28 23:27:30,454 - bestrag.provider.factory - INFO - info:54 - Evaluation Metrics 注册完成
+2026-07-28 23:27:30,454 - bestrag.provider.factory - INFO - info:54 - Trace Analyzer 注册完成
+2026-07-28 23:27:30,454 - bestrag.provider.factory - INFO - info:54 - Retrieval Debugger 注册完成
+2026-07-28 23:27:30,454 - bestrag.provider.factory - INFO - info:54 - Trace 开始: ca1c66dc-d5ec-4ca5-a002-8c12f61674fe type=TraceType.RETRIEVAL
+2026-07-28 23:27:30,454 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: ca1c66dc-d5ec-4ca5-a002-8c12f61674fe type=TraceType.RETRIEVAL
+2026-07-28 23:27:30,454 - bestrag.provider.factory - INFO - info:54 - Trace 结束: ca1c66dc-d5ec-4ca5-a002-8c12f61674fe status=TraceStatus.SUCCESS
+2026-07-28 23:27:30,476 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 3f6b7519-f8d0-41f3-9a86-d50678b798c1 - test
+2026-07-28 23:27:30,476 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 7f0fda6f-d043-43f1-8801-599c9b481dbf - test
+2026-07-28 23:27:30,478 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 9bc6dac5-81f2-4757-a45a-aa236dbf7044 - test
+2026-07-28 23:27:30,478 - bestrag.provider.factory - INFO - info:54 - 知识库已删除: 9bc6dac5-81f2-4757-a45a-aa236dbf7044
+2026-07-28 23:27:30,479 - bestrag.provider.factory - WARNING - warning:60 - 知识库不存在: nonexistent
+2026-07-28 23:27:30,479 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 0b608f6a-eae9-4749-90f3-7f6836a6b76c - a
+2026-07-28 23:27:30,480 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 5bd22438-16c8-4aff-b2c6-2f7464dfa3eb - b
+2026-07-28 23:27:30,480 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: 797d485b-cf64-489a-a3b3-9b0542c72c12 - test
+2026-07-28 23:27:30,481 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 1cced429-3326-41c9-bab9-2295b79f5f38 -> KB:kb_1
+2026-07-28 23:27:30,482 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: f052a57c-378e-4153-80a9-4ef1eff976d1 -> KB:kb_1
+2026-07-28 23:27:30,483 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 2404acf6-dfa2-4f49-a3a0-ad8e999e55cd -> KB:kb_1
+2026-07-28 23:27:30,483 - bestrag.provider.factory - INFO - info:54 - 文档已删除: 2404acf6-dfa2-4f49-a3a0-ad8e999e55cd
+2026-07-28 23:27:30,484 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 77e4579e-3dd6-4467-bcef-3df6579a7d7a -> KB:kb_1
+2026-07-28 23:27:30,484 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 4b070231-e66a-477a-a661-afe7f7cf951d -> KB:kb_1
+2026-07-28 23:27:30,484 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 6f77dd2f-9700-4c20-bad3-559c0417579c -> KB:kb_2
+2026-07-28 23:27:30,485 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 62414965-9855-44e1-9da5-cbb0aba417ec -> KB:kb_1
+2026-07-28 23:27:30,485 - bestrag.provider.factory - INFO - info:54 - 文档已更新: 62414965-9855-44e1-9da5-cbb0aba417ec -> v2
+2026-07-28 23:27:30,486 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: 9877c404-3209-4ef2-81c8-8fff559bad32 -> KB:kb_1
+2026-07-28 23:27:30,486 - bestrag.provider.factory - INFO - info:54 - 文档内容无变化: 9877c404-3209-4ef2-81c8-8fff559bad32
+2026-07-28 23:27:30,487 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: bbb8e6c4-ed6e-4170-b9bc-36fb9c3c9c6e -> KB:kb_1
+2026-07-28 23:27:30,487 - bestrag.provider.factory - INFO - info:54 - 文档已更新: bbb8e6c4-ed6e-4170-b9bc-36fb9c3c9c6e -> v2
+2026-07-28 23:27:30,487 - bestrag.provider.factory - INFO - info:54 - 文档已更新: bbb8e6c4-ed6e-4170-b9bc-36fb9c3c9c6e -> v3
+2026-07-28 23:27:30,488 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=3911abfa-337d-4e50-9c04-907eec4c8a59, chunks=0, 耗时=0.0s
+2026-07-28 23:27:30,488 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=1d931c1d-7d5f-4b23-bfb9-b4db413d7183, chunks=0, 耗时=0.0s
+2026-07-28 23:27:30,488 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=1d931c1d-7d5f-4b23-bfb9-b4db413d7183, 清理 1 条旧记录
+2026-07-28 23:27:30,489 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=1d931c1d-7d5f-4b23-bfb9-b4db413d7183, chunks=0, 耗时=0.0s
+2026-07-28 23:27:30,489 - bestrag.provider.factory - INFO - info:54 - 无旧索引记录，执行全量构建: doc=d2741505-0070-45a0-acdc-10843b64549a
+2026-07-28 23:27:30,489 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=d2741505-0070-45a0-acdc-10843b64549a, chunks=0, 耗时=0.0s
+2026-07-28 23:27:30,490 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=867e688d-6784-47c9-8b95-dac6b05e7b50, chunks=0, 耗时=0.0s
+2026-07-28 23:27:30,490 - bestrag.provider.factory - INFO - info:54 - 检测到旧索引，执行重建: doc=867e688d-6784-47c9-8b95-dac6b05e7b50, old_status=IndexStatus.READY
+2026-07-28 23:27:30,490 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=867e688d-6784-47c9-8b95-dac6b05e7b50, 清理 1 条旧记录
+2026-07-28 23:27:30,490 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=867e688d-6784-47c9-8b95-dac6b05e7b50, chunks=0, 耗时=0.0s
+2026-07-28 23:27:30,491 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:27:30,491 - bestrag.provider.factory - INFO - info:54 - Trace 开始: cdbdbc23-3fad-4d80-9081-ad476002c7c2 type=TraceType.INDEX
+2026-07-28 23:27:30,491 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: cdbdbc23-3fad-4d80-9081-ad476002c7c2 type=TraceType.INDEX
+2026-07-28 23:27:30,491 - bestrag.provider.factory - INFO - info:54 - Trace 结束: cdbdbc23-3fad-4d80-9081-ad476002c7c2 status=TraceStatus.SUCCESS
+2026-07-28 23:27:30,492 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:27:30,492 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 6765ad14-7693-466b-9830-57e79fb1da4a type=TraceType.INDEX
+2026-07-28 23:27:30,492 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 6765ad14-7693-466b-9830-57e79fb1da4a type=TraceType.INDEX
+2026-07-28 23:27:30,492 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 6765ad14-7693-466b-9830-57e79fb1da4a status=TraceStatus.SUCCESS
+2026-07-28 23:27:30,493 - bestrag.provider.factory - INFO - info:54 - 增量索引更新: doc=d1, changed=1
+2026-07-28 23:27:30,493 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 555620ff-2fe2-4028-a227-d5f0c031a211 type=TraceType.INDEX
+2026-07-28 23:27:30,493 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 555620ff-2fe2-4028-a227-d5f0c031a211 type=TraceType.INDEX
+2026-07-28 23:27:30,493 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 555620ff-2fe2-4028-a227-d5f0c031a211 status=TraceStatus.SUCCESS
+2026-07-28 23:27:30,495 - bestrag.provider.factory - INFO - info:54 - 增量索引更新: doc=d1, changed=0
+2026-07-28 23:27:30,496 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=d1
+2026-07-28 23:27:30,496 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:27:30,496 - bestrag.provider.factory - INFO - info:54 - Trace 开始: e9910675-21e1-4e86-ad7e-36fd282b52b7 type=TraceType.INDEX
+2026-07-28 23:27:30,496 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: e9910675-21e1-4e86-ad7e-36fd282b52b7 type=TraceType.INDEX
+2026-07-28 23:27:30,496 - bestrag.provider.factory - INFO - info:54 - Trace 结束: e9910675-21e1-4e86-ad7e-36fd282b52b7 status=TraceStatus.SUCCESS
+2026-07-28 23:27:30,497 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:27:30,497 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 4ef22019-4f75-4750-8802-a002f4a103e0 type=TraceType.INDEX
+2026-07-28 23:27:30,497 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 4ef22019-4f75-4750-8802-a002f4a103e0 type=TraceType.INDEX
+2026-07-28 23:27:30,497 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 4ef22019-4f75-4750-8802-a002f4a103e0 status=TraceStatus.SUCCESS
+2026-07-28 23:27:30,499 - bestrag.provider.factory - INFO - info:54 - Knowledge Model 注册完成
+2026-07-28 23:27:30,500 - bestrag.provider.factory - INFO - info:54 - Knowledge Repository 注册完成
+2026-07-28 23:27:30,500 - bestrag.provider.factory - INFO - info:54 - Knowledge Service 注册完成
+2026-07-28 23:27:30,500 - bestrag.provider.factory - INFO - info:54 - Knowledge Model 注册完成
+2026-07-28 23:27:30,500 - bestrag.provider.factory - INFO - info:54 - Knowledge Repository 注册完成
+2026-07-28 23:27:30,500 - bestrag.provider.factory - INFO - info:54 - Knowledge Service 注册完成
+2026-07-28 23:27:30,501 - bestrag.provider.factory - INFO - info:54 - Knowledge Model 注册完成
+2026-07-28 23:27:30,501 - bestrag.provider.factory - INFO - info:54 - Knowledge Repository 注册完成
+2026-07-28 23:27:30,501 - bestrag.provider.factory - INFO - info:54 - Knowledge Service 注册完成
+2026-07-28 23:27:30,501 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: fd7ee33e-ee2a-4bb2-a7bd-ce3f6b3543dd - registry_test
+2026-07-28 23:27:30,502 - bestrag.provider.factory - INFO - info:54 - Knowledge Model 注册完成
+2026-07-28 23:27:30,502 - bestrag.provider.factory - INFO - info:54 - Knowledge Repository 注册完成
+2026-07-28 23:27:30,502 - bestrag.provider.factory - INFO - info:54 - Knowledge Service 注册完成
+2026-07-28 23:27:30,502 - bestrag.provider.factory - INFO - info:54 - 知识库创建成功: db83e58e-a6ca-43ca-8280-cece3d183d5d - 集成测试库
+2026-07-28 23:27:30,502 - bestrag.provider.factory - INFO - info:54 - 文档添加成功: e5b7f8c6-84f1-42b3-92cf-97d26e242b8f -> KB:db83e58e-a6ca-43ca-8280-cece3d183d5d
+2026-07-28 23:27:30,502 - bestrag.provider.factory - INFO - info:54 - 文档已更新: e5b7f8c6-84f1-42b3-92cf-97d26e242b8f -> v2
+2026-07-28 23:27:30,503 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=e5b7f8c6-84f1-42b3-92cf-97d26e242b8f, chunks=0, 耗时=0.0s
+2026-07-28 23:27:30,503 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=e5b7f8c6-84f1-42b3-92cf-97d26e242b8f, 清理 1 条旧记录
+2026-07-28 23:27:30,503 - bestrag.provider.factory - INFO - info:54 - 索引构建完成: doc=e5b7f8c6-84f1-42b3-92cf-97d26e242b8f, chunks=0, 耗时=0.0s
+2026-07-28 23:27:30,503 - bestrag.provider.factory - INFO - info:54 - 文档已删除: e5b7f8c6-84f1-42b3-92cf-97d26e242b8f
+2026-07-28 23:27:30,503 - bestrag.provider.factory - INFO - info:54 - 知识库已删除: db83e58e-a6ca-43ca-8280-cece3d183d5d
+2026-07-28 23:27:30,511 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=technical, retrievers=['vector', 'bm25']
+2026-07-28 23:27:30,512 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=simple, retrievers=['vector']
+2026-07-28 23:27:30,512 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=exact, retrievers=['bm25']
+2026-07-28 23:27:30,514 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=technical, retrievers=['vector', 'bm25']
+2026-07-28 23:27:30,516 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=simple, retrievers=['bm25']
+2026-07-28 23:27:30,522 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=technical, retrievers=['vector', 'bm25']
+2026-07-28 23:27:30,523 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=simple, retrievers=['vector']
+2026-07-28 23:27:30,527 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=technical, retrievers=['vector', 'bm25']
+2026-07-28 23:27:30,527 - bestrag.provider.factory - INFO - info:54 - 自适应选择: type=technical, retrievers=['vector', 'bm25']
+2026-07-28 23:27:30,548 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 7d04be81-f4d3-4a4f-a201-bb3966ea35ce type=TraceType.RETRIEVAL
+2026-07-28 23:27:30,549 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 1cefbf51-8083-4942-bd53-3e1e7815da30 type=TraceType.RETRIEVAL
+2026-07-28 23:27:30,549 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 1cefbf51-8083-4942-bd53-3e1e7815da30 type=TraceType.RETRIEVAL
+2026-07-28 23:27:30,549 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 1cefbf51-8083-4942-bd53-3e1e7815da30 status=TraceStatus.SUCCESS
+2026-07-28 23:27:30,551 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 9e04c2cd-04c6-484e-a0d5-5e08ca410dcb type=TraceType.RETRIEVAL
+2026-07-28 23:27:30,551 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 9e04c2cd-04c6-484e-a0d5-5e08ca410dcb type=TraceType.RETRIEVAL
+2026-07-28 23:27:30,551 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 9e04c2cd-04c6-484e-a0d5-5e08ca410dcb status=TraceStatus.SUCCESS
+2026-07-28 23:27:30,551 - bestrag.provider.factory - INFO - info:54 - Trace 开始: aa6f4748-1415-4bc8-90d2-692babbec062 type=TraceType.RETRIEVAL
+2026-07-28 23:27:30,551 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: aa6f4748-1415-4bc8-90d2-692babbec062 type=TraceType.RETRIEVAL
+2026-07-28 23:27:30,551 - bestrag.provider.factory - INFO - info:54 - Trace 结束: aa6f4748-1415-4bc8-90d2-692babbec062 status=TraceStatus.FAILED
+2026-07-28 23:27:30,553 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 4632b2ae-c5c0-4038-a16c-5221360766d5 type=TraceType.INDEX
+2026-07-28 23:27:30,553 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 4632b2ae-c5c0-4038-a16c-5221360766d5 type=TraceType.INDEX
+2026-07-28 23:27:30,553 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 4632b2ae-c5c0-4038-a16c-5221360766d5 status=TraceStatus.SUCCESS
+2026-07-28 23:27:30,553 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 6bb2ba75-3d02-4623-972d-87974c89bd73 type=TraceType.INDEX
+2026-07-28 23:27:30,553 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 6bb2ba75-3d02-4623-972d-87974c89bd73 type=TraceType.INDEX
+2026-07-28 23:27:30,553 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 6bb2ba75-3d02-4623-972d-87974c89bd73 status=TraceStatus.SUCCESS
+2026-07-28 23:27:30,555 - bestrag.provider.factory - INFO - info:54 - Trace 开始: f43fb0d5-d2a9-45ec-93fd-16d965630e7f type=TraceType.RETRIEVAL
+2026-07-28 23:27:30,555 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: f43fb0d5-d2a9-45ec-93fd-16d965630e7f type=TraceType.RETRIEVAL
+2026-07-28 23:27:30,555 - bestrag.provider.factory - INFO - info:54 - Trace 结束: f43fb0d5-d2a9-45ec-93fd-16d965630e7f status=TraceStatus.SUCCESS
+2026-07-28 23:27:30,556 - bestrag.provider.factory - WARNING - warning:60 - end_trace 调用时无活跃 Trace
+2026-07-28 23:27:30,561 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: d7d3f754-c84a-4232-9769-3a19de69270e type=TraceType.RETRIEVAL
+2026-07-28 23:27:30,562 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:27:30,562 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 97334ac9-cdb1-4933-bcc8-3494634f348c type=TraceType.INDEX
+2026-07-28 23:27:30,562 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 97334ac9-cdb1-4933-bcc8-3494634f348c type=TraceType.INDEX
+2026-07-28 23:27:30,562 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 97334ac9-cdb1-4933-bcc8-3494634f348c status=TraceStatus.SUCCESS
+2026-07-28 23:27:30,564 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:27:30,564 - bestrag.provider.factory - INFO - info:54 - Trace 开始: c7fc62a6-2eb1-4096-a7e4-31a6df67b568 type=TraceType.INDEX
+2026-07-28 23:27:30,564 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: c7fc62a6-2eb1-4096-a7e4-31a6df67b568 type=TraceType.INDEX
+2026-07-28 23:27:30,564 - bestrag.provider.factory - INFO - info:54 - Trace 结束: c7fc62a6-2eb1-4096-a7e4-31a6df67b568 status=TraceStatus.SUCCESS
+2026-07-28 23:27:30,565 - bestrag.provider.factory - INFO - info:54 - 索引重建: doc=d1
+2026-07-28 23:27:30,565 - bestrag.provider.factory - INFO - info:54 - 全量索引构建: doc=d1
+2026-07-28 23:27:30,565 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 5db264dd-4bf7-4f92-98ec-b8bce3e108c4 type=TraceType.INDEX
+2026-07-28 23:27:30,565 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 5db264dd-4bf7-4f92-98ec-b8bce3e108c4 type=TraceType.INDEX
+2026-07-28 23:27:30,565 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 5db264dd-4bf7-4f92-98ec-b8bce3e108c4 status=TraceStatus.SUCCESS
+2026-07-28 23:27:30,566 - bestrag.provider.factory - INFO - info:54 - 增量索引更新: doc=d1, changed=1
+2026-07-28 23:27:30,566 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 5b5324cf-871a-41df-94de-50d71b9501ee type=TraceType.INDEX
+2026-07-28 23:27:30,566 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 5b5324cf-871a-41df-94de-50d71b9501ee type=TraceType.INDEX
+2026-07-28 23:27:30,566 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 5b5324cf-871a-41df-94de-50d71b9501ee status=TraceStatus.SUCCESS
+2026-07-28 23:27:30,572 - bestrag.provider.factory - INFO - info:54 - Trace 开始: f1cb9ff5-4ce5-4414-9be6-90a952f8445c type=TraceType.RETRIEVAL
+2026-07-28 23:27:30,572 - bestrag.provider.factory - ERROR - error:66 - 检索器 'vector' 失败: Service 'embedding' not found
+2026-07-28 23:27:30,572 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: f1cb9ff5-4ce5-4414-9be6-90a952f8445c type=TraceType.RETRIEVAL
+2026-07-28 23:27:30,572 - bestrag.provider.factory - INFO - info:54 - Trace 结束: f1cb9ff5-4ce5-4414-9be6-90a952f8445c status=TraceStatus.SUCCESS
+2026-07-28 23:27:30,573 - bestrag.provider.factory - INFO - info:54 - Trace 开始: d08903e0-6a92-4432-b0bd-cd3c27922145 type=TraceType.RETRIEVAL
+2026-07-28 23:27:30,573 - bestrag.provider.factory - ERROR - error:66 - 检索器 'vector' 失败: Service 'embedding' not found
+2026-07-28 23:27:30,573 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: d08903e0-6a92-4432-b0bd-cd3c27922145 type=TraceType.RETRIEVAL
+2026-07-28 23:27:30,573 - bestrag.provider.factory - INFO - info:54 - Trace 结束: d08903e0-6a92-4432-b0bd-cd3c27922145 status=TraceStatus.SUCCESS
+2026-07-28 23:27:30,576 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 83d076b2-ead9-4562-99f5-416b5585de04 type=TraceType.GENERATION
+2026-07-28 23:27:30,576 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 83d076b2-ead9-4562-99f5-416b5585de04 type=TraceType.GENERATION
+2026-07-28 23:27:30,576 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 83d076b2-ead9-4562-99f5-416b5585de04 status=TraceStatus.SUCCESS
+2026-07-28 23:27:30,577 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 40652170-f666-4e8d-9ea2-434d1bcee100 type=TraceType.EVALUATION
+2026-07-28 23:27:30,577 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 40652170-f666-4e8d-9ea2-434d1bcee100 type=TraceType.EVALUATION
+2026-07-28 23:27:30,577 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 40652170-f666-4e8d-9ea2-434d1bcee100 status=TraceStatus.SUCCESS
+2026-07-28 23:27:30,577 - bestrag.provider.factory - INFO - info:54 - 评测 Trace 已记录: dataset=test_dataset, strategy=hybrid, metrics=2
+2026-07-28 23:27:30,583 - bestrag.provider.factory - INFO - info:54 - Trace 开始: 20899e10-0b8d-428d-8c44-5ab04e376654 type=TraceType.RETRIEVAL
+2026-07-28 23:27:30,583 - bestrag.provider.factory - INFO - info:54 - Trace 已存储: 20899e10-0b8d-428d-8c44-5ab04e376654 type=TraceType.RETRIEVAL
+2026-07-28 23:27:30,583 - bestrag.provider.factory - INFO - info:54 - Trace 结束: 20899e10-0b8d-428d-8c44-5ab04e376654 status=TraceStatus.SUCCESS

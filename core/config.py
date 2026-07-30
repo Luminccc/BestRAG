@@ -2,7 +2,7 @@
 
 PDR 配置层次::
 
-    app / database / model / embedding / vectorstore / retrieval
+    app / database / model / embedding / vectorstore / retrieval / strategy / evaluation
 
 所有模块通过 `get_config()` 获取配置，禁止 os.getenv() / yaml.load() 直接读取。
 
@@ -20,6 +20,28 @@ try:
 except ImportError:
     HAS_YAML = False
     yaml = None  # type: ignore
+
+# v0.2 新增配置模型
+from core.config_models.evaluation import EvaluationConfig
+from core.config_models.retrieval import RetrievalPipelineConfig
+from core.config_models.strategy import StrategyConfig
+
+# v0.3 新增配置模型
+from core.config_models.trace import TraceConfig
+from core.config_models.cache import CacheConfig
+from core.config_models.storage import StorageConfig
+
+# v0.3 Phase 1 新增配置模型
+from core.config_models.knowledge import KnowledgeConfig, IndexConfig
+
+# v0.3 Phase 3 新增配置模型
+from core.config_models.evaluation_v3 import EvaluationConfigV3
+
+# v0.3 Phase 4 新增配置模型
+from core.config_models.retrieval_optimization import RetrievalOptimizationConfig
+
+# v0.3 Phase 5 新增配置模型
+from core.config_models.cache_v3 import CacheConfigV3
 
 
 # ═══════════════════════════════════════════════════
@@ -123,6 +145,29 @@ class CoreConfig:
     indexing: IndexingConfig = field(default_factory=IndexingConfig)
     generation: GenerationConfig = field(default_factory=GenerationConfig)
 
+    # ── v0.2 新增配置 ──
+    strategy: StrategyConfig = field(default_factory=StrategyConfig)
+    retrieval_pipeline: RetrievalPipelineConfig = field(default_factory=RetrievalPipelineConfig)
+    evaluation: EvaluationConfig = field(default_factory=EvaluationConfig)
+
+    # ── v0.3 新增配置 ──
+    trace: TraceConfig = field(default_factory=TraceConfig)
+    cache: CacheConfig = field(default_factory=CacheConfig)
+    storage: StorageConfig = field(default_factory=StorageConfig)
+
+    # ── v0.3 Phase 1 新增配置 ──
+    knowledge: KnowledgeConfig = field(default_factory=KnowledgeConfig)
+    index: IndexConfig = field(default_factory=IndexConfig)
+
+    # ── v0.3 Phase 3 新增配置 ──
+    evaluation_v3: EvaluationConfigV3 = field(default_factory=EvaluationConfigV3)
+
+    # ── v0.3 Phase 4 新增配置 ──
+    retrieval_optimization: RetrievalOptimizationConfig = field(default_factory=RetrievalOptimizationConfig)
+
+    # ── v0.3 Phase 5 新增配置 ──
+    cache_v3: CacheConfigV3 = field(default_factory=CacheConfigV3)
+
 
 # ═══════════════════════════════════════════════════
 # ConfigManager
@@ -170,7 +215,12 @@ class ConfigManager:
             return
 
         # 扁平 + 嵌套两种 YAML 写法兼容
-        for section in ("workspace", "embedding", "vectorstore", "reranker", "retrieval", "indexing", "generation", "app"):
+        for section in ("workspace", "embedding", "vectorstore", "reranker",
+                        "retrieval", "indexing", "generation", "app",
+                        "strategy", "retrieval_pipeline", "evaluation",
+                        "trace", "cache", "storage",
+                        "knowledge", "index", "evaluation_v3",
+                        "retrieval_optimization", "cache_v3"):
             raw = data.get(section, {})
             if isinstance(raw, dict):
                 _apply_fields(getattr(config, section), raw)

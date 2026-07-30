@@ -1,0 +1,388 @@
+2026-07-30 22:02:22,944 - bestrag.provider.factory - INFO - info:54 - Bootstrap 开始...
+2026-07-30 22:02:22,945 - bestrag.provider.factory - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-30 22:02:22,946 - bestrag.provider.factory - INFO - info:54 - RegistryCenter 初始化完成 (Service/Strategy/Provider/Evaluator/Model/Repository)
+2026-07-30 22:02:22,948 - bestrag.provider.factory - INFO - info:54 - Workspace 初始化完成
+2026-07-30 22:02:22,948 - bestrag.provider.factory - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-30 22:02:22,948 - bestrag.provider.factory - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-30 22:02:22,968 - bestrag.provider.factory - INFO - info:54 - Bootstrap 完成
+2026-07-30 22:02:22,968 - bestrag.provider.factory - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-30 22:02:22,968 - bestrag.provider.factory - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: embedding
+2026-07-30 22:02:22,968 - bestrag.provider.factory - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: vector_store
+2026-07-30 22:02:22,968 - bestrag.provider.factory - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: retrieval
+2026-07-30 22:02:22,968 - bestrag.provider.factory - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: rerank
+2026-07-30 22:02:22,968 - bestrag.provider.factory - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: generation
+2026-07-30 22:02:22,968 - bestrag.provider.factory - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: indexing
+2026-07-30 22:02:22,968 - bestrag.provider.factory - INFO - info:54 - 应用就绪
+2026-07-30 22:02:41,050 - bestrag.provider.factory - INFO - info:54 - Embedding single text | {'text': 'test'}
+2026-07-30 22:02:48,714 - bestrag.provider.factory - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-30 22:02:48,766 - bestrag.provider.factory - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-30 22:03:07,768 - bestrag.provider.factory - INFO - info:54 - Bootstrap 开始...
+2026-07-30 22:03:07,768 - bestrag.provider.factory - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-30 22:03:07,768 - bestrag.provider.factory - INFO - info:54 - RegistryCenter 初始化完成 (Service/Strategy/Provider/Evaluator/Model/Repository)
+2026-07-30 22:03:07,769 - bestrag.provider.factory - INFO - info:54 - Workspace 初始化完成
+2026-07-30 22:03:07,769 - bestrag.provider.factory - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-30 22:03:07,769 - bestrag.provider.factory - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-30 22:03:07,769 - bestrag.provider.factory - INFO - info:54 - Bootstrap 完成
+2026-07-30 22:03:07,770 - bestrag.provider.factory - INFO - info:54 - Starting retrieval | {'query': '如何安装 BestRAG？', 'top_k': 5}
+2026-07-30 22:03:07,770 - bestrag.provider.factory - INFO - info:54 - Embedding single text | {'text': '如何安装 BestRAG？'}
+2026-07-30 22:03:08,245 - bestrag.provider.factory - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-30 22:03:08,291 - bestrag.provider.factory - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-30 22:03:09,019 - bestrag.provider.factory - INFO - info:54 - Search completed, found 5 results
+2026-07-30 22:03:09,021 - bestrag.provider.factory - INFO - info:54 - Retrieved 5 results
+2026-07-30 22:03:09,021 - bestrag.provider.factory - INFO - info:54 - 检索完成: 5 results, 1251.6ms
+2026-07-30 22:03:09,021 - bestrag.provider.factory - INFO - info:54 - Reranking documents | {'query': '如何安装 BestRAG？', 'count': 5}
+2026-07-30 22:03:13,184 - bestrag.provider.factory - INFO - info:54 - 重排序完成: 5 results, 4162.52ms
+2026-07-30 22:03:13,185 - bestrag.provider.factory - INFO - info:54 - 生成开始: 如何安装 BestRAG？...
+2026-07-30 22:03:17,234 - bestrag.provider.factory - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=380
+2026-07-30 22:03:17,234 - bestrag.provider.factory - INFO - info:54 - 生成完成: model=deepseek-chat, len=380
+2026-07-30 22:03:17,234 - bestrag.provider.factory - INFO - info:54 - 生成完成: 380 chars, 4049.38ms
+2026-07-30 22:03:17,239 - bestrag.provider.factory - INFO - info:54 - Bootstrap 开始...
+2026-07-30 22:03:17,239 - bestrag.provider.factory - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-30 22:03:17,239 - bestrag.provider.factory - INFO - info:54 - RegistryCenter 初始化完成 (Service/Strategy/Provider/Evaluator/Model/Repository)
+2026-07-30 22:03:17,240 - bestrag.provider.factory - INFO - info:54 - Workspace 初始化完成
+2026-07-30 22:03:17,240 - bestrag.provider.factory - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-30 22:03:17,241 - bestrag.provider.factory - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-30 22:03:17,241 - bestrag.provider.factory - INFO - info:54 - Bootstrap 完成
+2026-07-30 22:03:19,780 - bestrag.provider.factory - INFO - info:54 - 文档解析完成: fececdbd-b162-490b-85a4-933a96c76806, 716 chars
+2026-07-30 22:03:19,780 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:fixed
+2026-07-30 22:03:19,781 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:recursive
+2026-07-30 22:03:19,781 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:heading
+2026-07-30 22:03:19,781 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:semantic
+2026-07-30 22:03:19,781 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:hierarchical
+2026-07-30 22:03:19,781 - bestrag.provider.factory - INFO - info:54 - 文档处理完成: 2 chunks
+2026-07-30 22:03:19,781 - bestrag.provider.factory - INFO - info:54 - 开始索引: doc=fececdbd-b162-490b-85a4-933a96c76806
+2026-07-30 22:03:19,781 - bestrag.provider.factory - INFO - info:54 - 索引阶段: metadata_enrich
+2026-07-30 22:03:19,781 - bestrag.provider.factory - INFO - info:54 - 索引阶段: embedding
+2026-07-30 22:03:19,781 - bestrag.provider.factory - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-30 22:03:19,781 - bestrag.provider.factory - INFO - info:54 - Embedding documents | {'count': 2}
+2026-07-30 22:03:21,902 - bestrag.provider.factory - INFO - info:54 - 索引阶段: writer
+2026-07-30 22:03:21,960 - bestrag.provider.factory - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-30 22:03:22,008 - bestrag.provider.factory - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-30 22:03:25,472 - bestrag.provider.factory - INFO - info:54 - Inserted 2 vectors into collection bestrag_bestrag_chunks
+2026-07-30 22:03:33,515 - bestrag.provider.factory - INFO - info:54 - Inserted 2 vectors into collection bestrag_bestrag_chunks
+2026-07-30 22:03:33,515 - bestrag.provider.factory - INFO - info:54 - VectorWriter 写入 2 条向量
+2026-07-30 22:03:33,516 - bestrag.provider.factory - INFO - info:54 - 索引完成: doc=fececdbd-b162-490b-85a4-933a96c76806, chunks=2
+2026-07-30 22:03:33,516 - bestrag.provider.factory - INFO - info:54 - 索引完成: 2 vectors
+2026-07-30 22:03:33,516 - bestrag.provider.factory - INFO - info:54 - Starting retrieval | {'query': 'BestRAG 的系统要求是什么？', 'top_k': 5}
+2026-07-30 22:03:33,516 - bestrag.provider.factory - INFO - info:54 - Embedding single text | {'text': 'BestRAG 的系统要求是什么？'}
+2026-07-30 22:03:33,915 - bestrag.provider.factory - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-30 22:03:33,920 - bestrag.provider.factory - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-30 22:03:33,979 - bestrag.provider.factory - INFO - info:54 - Search completed, found 5 results
+2026-07-30 22:03:33,979 - bestrag.provider.factory - INFO - info:54 - Retrieved 5 results
+2026-07-30 22:03:33,980 - bestrag.provider.factory - INFO - info:54 - 检索完成: 5 results, 463.55ms
+2026-07-30 22:03:33,980 - bestrag.provider.factory - INFO - info:54 - Reranking documents | {'query': 'BestRAG 的系统要求是什么？', 'count': 5}
+2026-07-30 22:03:35,281 - bestrag.provider.factory - INFO - info:54 - 重排序完成: 5 results, 1300.82ms
+2026-07-30 22:03:35,281 - bestrag.provider.factory - INFO - info:54 - 生成开始: BestRAG 的系统要求是什么？...
+2026-07-30 22:03:36,582 - bestrag.provider.factory - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=83
+2026-07-30 22:03:36,582 - bestrag.provider.factory - INFO - info:54 - 生成完成: model=deepseek-chat, len=83
+2026-07-30 22:03:36,582 - bestrag.provider.factory - INFO - info:54 - 生成完成: 83 chars, 1301.45ms
+2026-07-30 22:03:36,631 - bestrag.provider.factory - INFO - info:54 - Bootstrap 开始...
+2026-07-30 22:03:36,631 - bestrag.provider.factory - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-30 22:03:36,631 - bestrag.provider.factory - INFO - info:54 - RegistryCenter 初始化完成 (Service/Strategy/Provider/Evaluator/Model/Repository)
+2026-07-30 22:03:36,633 - bestrag.provider.factory - INFO - info:54 - Workspace 初始化完成
+2026-07-30 22:03:36,633 - bestrag.provider.factory - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-30 22:03:36,633 - bestrag.provider.factory - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-30 22:03:36,633 - bestrag.provider.factory - INFO - info:54 - Bootstrap 完成
+2026-07-30 22:03:36,634 - bestrag.provider.factory - INFO - info:54 - Starting retrieval | {'query': '如何安装 BestRAG？', 'top_k': 5}
+2026-07-30 22:03:36,634 - bestrag.provider.factory - INFO - info:54 - Embedding single text | {'text': '如何安装 BestRAG？'}
+2026-07-30 22:03:37,751 - bestrag.provider.factory - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-30 22:03:37,758 - bestrag.provider.factory - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-30 22:03:37,777 - bestrag.provider.factory - INFO - info:54 - Search completed, found 5 results
+2026-07-30 22:03:37,778 - bestrag.provider.factory - INFO - info:54 - Retrieved 5 results
+2026-07-30 22:03:37,778 - bestrag.provider.factory - INFO - info:54 - 检索完成: 5 results, 1145.39ms
+2026-07-30 22:03:37,778 - bestrag.provider.factory - INFO - info:54 - Reranking documents | {'query': '如何安装 BestRAG？', 'count': 5}
+2026-07-30 22:03:39,673 - bestrag.provider.factory - INFO - info:54 - 重排序完成: 5 results, 1894.38ms
+2026-07-30 22:03:39,673 - bestrag.provider.factory - INFO - info:54 - 生成开始: 如何安装 BestRAG？...
+2026-07-30 22:03:41,489 - bestrag.provider.factory - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=380
+2026-07-30 22:03:41,489 - bestrag.provider.factory - INFO - info:54 - 生成完成: model=deepseek-chat, len=380
+2026-07-30 22:03:41,489 - bestrag.provider.factory - INFO - info:54 - 生成完成: 380 chars, 1815.99ms
+2026-07-30 22:03:45,456 - bestrag.provider.factory - INFO - info:54 - Bootstrap 开始...
+2026-07-30 22:03:45,456 - bestrag.provider.factory - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-30 22:03:45,456 - bestrag.provider.factory - INFO - info:54 - RegistryCenter 初始化完成 (Service/Strategy/Provider/Evaluator/Model/Repository)
+2026-07-30 22:03:45,458 - bestrag.provider.factory - INFO - info:54 - Workspace 初始化完成
+2026-07-30 22:03:45,458 - bestrag.provider.factory - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-30 22:03:45,458 - bestrag.provider.factory - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-30 22:03:45,458 - bestrag.provider.factory - INFO - info:54 - Bootstrap 完成
+2026-07-30 22:03:45,458 - bestrag.provider.factory - INFO - info:54 - Starting retrieval | {'query': '如何安装 BestRAG？', 'top_k': 5}
+2026-07-30 22:03:45,458 - bestrag.provider.factory - INFO - info:54 - Embedding single text | {'text': '如何安装 BestRAG？'}
+2026-07-30 22:03:46,451 - bestrag.provider.factory - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-30 22:03:46,456 - bestrag.provider.factory - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-30 22:03:46,476 - bestrag.provider.factory - INFO - info:54 - Search completed, found 5 results
+2026-07-30 22:03:46,476 - bestrag.provider.factory - INFO - info:54 - Retrieved 5 results
+2026-07-30 22:03:46,476 - bestrag.provider.factory - INFO - info:54 - 检索完成: 5 results, 1017.44ms
+2026-07-30 22:03:46,476 - bestrag.provider.factory - INFO - info:54 - Reranking documents | {'query': '如何安装 BestRAG？', 'count': 5}
+2026-07-30 22:03:49,014 - bestrag.provider.factory - INFO - info:54 - 重排序完成: 5 results, 2538.77ms
+2026-07-30 22:03:49,016 - bestrag.provider.factory - INFO - info:54 - 生成开始: 如何安装 BestRAG？...
+2026-07-30 22:03:51,185 - bestrag.provider.factory - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=380
+2026-07-30 22:03:51,185 - bestrag.provider.factory - INFO - info:54 - 生成完成: model=deepseek-chat, len=380
+2026-07-30 22:03:51,185 - bestrag.provider.factory - INFO - info:54 - 生成完成: 380 chars, 2169.57ms
+2026-07-30 22:06:55,269 - bestrag.provider.factory - ERROR - error:66 - 知识库摄入失败: ParserError: OpenDataLoader 解析失败: E:\ForeStudy\BestRAG\workspace\upload\3深入MCP通信方式.pdf
+2026-07-30 22:07:02,048 - bestrag.provider.factory - ERROR - error:66 - 知识库摄入失败: ParserError: OpenDataLoader 解析失败: E:\ForeStudy\BestRAG\workspace\upload\3深入MCP通信方式.pdf
+2026-07-30 22:16:49,123 - bestrag.provider.factory - INFO - info:54 - Bootstrap 开始...
+2026-07-30 22:16:49,125 - bestrag.provider.factory - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-30 22:16:49,125 - bestrag.provider.factory - INFO - info:54 - RegistryCenter 初始化完成 (Service/Strategy/Provider/Evaluator/Model/Repository)
+2026-07-30 22:16:49,126 - bestrag.provider.factory - INFO - info:54 - Workspace 初始化完成
+2026-07-30 22:16:49,126 - bestrag.provider.factory - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-30 22:16:49,126 - bestrag.provider.factory - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-30 22:16:49,137 - bestrag.provider.factory - INFO - info:54 - Bootstrap 完成
+2026-07-30 22:16:49,137 - bestrag.provider.factory - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-30 22:16:49,137 - bestrag.provider.factory - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: embedding
+2026-07-30 22:16:49,137 - bestrag.provider.factory - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: vector_store
+2026-07-30 22:16:49,137 - bestrag.provider.factory - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: retrieval
+2026-07-30 22:16:49,137 - bestrag.provider.factory - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: rerank
+2026-07-30 22:16:49,137 - bestrag.provider.factory - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: generation
+2026-07-30 22:16:49,137 - bestrag.provider.factory - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: indexing
+2026-07-30 22:16:49,137 - bestrag.provider.factory - INFO - info:54 - 应用就绪
+2026-07-30 22:16:58,703 - bestrag.provider.factory - INFO - info:54 - Embedding single text | {'text': 'test'}
+2026-07-30 22:17:04,554 - bestrag.provider.factory - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-30 22:17:04,564 - bestrag.provider.factory - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-30 22:17:48,170 - bestrag.provider.factory - ERROR - error:66 - 知识库摄入失败: ParserError: OpenDataLoader 解析失败: E:\ForeStudy\BestRAG\workspace\upload\3深入MCP通信方式.pdf
+2026-07-30 22:17:52,027 - bestrag.provider.factory - ERROR - error:66 - 知识库摄入失败: ParserError: OpenDataLoader 解析失败: E:\ForeStudy\BestRAG\workspace\upload\3深入MCP通信方式.pdf
+2026-07-30 22:20:02,221 - bestrag.provider.factory - INFO - info:54 - Bootstrap 开始...
+2026-07-30 22:20:02,222 - bestrag.provider.factory - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-30 22:20:02,222 - bestrag.provider.factory - INFO - info:54 - RegistryCenter 初始化完成 (Service/Strategy/Provider/Evaluator/Model/Repository)
+2026-07-30 22:20:02,224 - bestrag.provider.factory - INFO - info:54 - Workspace 初始化完成
+2026-07-30 22:20:02,224 - bestrag.provider.factory - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-30 22:20:02,224 - bestrag.provider.factory - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-30 22:20:02,236 - bestrag.provider.factory - INFO - info:54 - Bootstrap 完成
+2026-07-30 22:20:02,237 - bestrag.provider.factory - INFO - info:54 - BestRAG v0.1.0 启动中...
+2026-07-30 22:20:02,237 - bestrag.provider.factory - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: embedding
+2026-07-30 22:20:02,237 - bestrag.provider.factory - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: vector_store
+2026-07-30 22:20:02,237 - bestrag.provider.factory - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: retrieval
+2026-07-30 22:20:02,237 - bestrag.provider.factory - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: rerank
+2026-07-30 22:20:02,237 - bestrag.provider.factory - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: generation
+2026-07-30 22:20:02,237 - bestrag.provider.factory - INFO - info:54 - 延迟资源注册（将在首次 get 时初始化）: indexing
+2026-07-30 22:20:02,237 - bestrag.provider.factory - INFO - info:54 - 应用就绪
+2026-07-30 22:20:06,098 - bestrag.provider.factory - INFO - info:54 - Embedding single text | {'text': 'test'}
+2026-07-30 22:20:07,276 - bestrag.provider.factory - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-30 22:20:07,325 - bestrag.provider.factory - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-30 22:20:33,821 - bestrag.provider.factory - INFO - info:54 - 文档解析完成: 7f03eb29-0865-442f-bc25-369073739edc, 6468 chars
+2026-07-30 22:20:33,822 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:fixed
+2026-07-30 22:20:33,822 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:recursive
+2026-07-30 22:20:33,823 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:heading
+2026-07-30 22:20:33,823 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:semantic
+2026-07-30 22:20:33,823 - bestrag.provider.factory - INFO - info:54 - 注册 Chunk 策略: chunk:hierarchical
+2026-07-30 22:20:33,825 - bestrag.provider.factory - INFO - info:54 - 文档处理完成: 16 chunks
+2026-07-30 22:20:33,825 - bestrag.provider.factory - INFO - info:54 - 开始索引: doc=7f03eb29-0865-442f-bc25-369073739edc
+2026-07-30 22:20:33,825 - bestrag.provider.factory - INFO - info:54 - 索引阶段: metadata_enrich
+2026-07-30 22:20:33,825 - bestrag.provider.factory - INFO - info:54 - 索引阶段: embedding
+2026-07-30 22:20:33,825 - bestrag.provider.factory - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-30 22:20:33,826 - bestrag.provider.factory - INFO - info:54 - Embedding documents | {'count': 16}
+2026-07-30 22:20:35,510 - bestrag.provider.factory - INFO - info:54 - 索引阶段: writer
+2026-07-30 22:20:35,572 - bestrag.provider.factory - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-30 22:20:35,578 - bestrag.provider.factory - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-30 22:20:38,943 - bestrag.provider.factory - INFO - info:54 - Inserted 16 vectors into collection bestrag_bestrag_chunks
+2026-07-30 22:20:47,042 - bestrag.provider.factory - INFO - info:54 - Inserted 16 vectors into collection bestrag_bestrag_chunks
+2026-07-30 22:20:47,042 - bestrag.provider.factory - INFO - info:54 - VectorWriter 写入 16 条向量
+2026-07-30 22:20:47,042 - bestrag.provider.factory - INFO - info:54 - 索引完成: doc=7f03eb29-0865-442f-bc25-369073739edc, chunks=16
+2026-07-30 22:20:47,043 - bestrag.provider.factory - INFO - info:54 - 索引完成: 16 vectors
+2026-07-30 22:21:28,956 - bestrag.provider.factory - INFO - info:54 - Starting retrieval | {'query': 'Streamable HTTP 的使用场景是什么', 'top_k': 5}
+2026-07-30 22:21:28,956 - bestrag.provider.factory - INFO - info:54 - Embedding single text | {'text': 'Streamable HTTP 的使用场景是什么'}
+2026-07-30 22:21:29,355 - bestrag.provider.factory - INFO - info:54 - Search completed, found 5 results
+2026-07-30 22:21:29,355 - bestrag.provider.factory - INFO - info:54 - Retrieved 5 results
+2026-07-30 22:21:29,356 - bestrag.provider.factory - INFO - info:54 - 检索完成: 5 results, 399.61ms
+2026-07-30 22:21:29,356 - bestrag.provider.factory - INFO - info:54 - Reranking documents | {'query': 'Streamable HTTP 的使用场景是什么', 'count': 5}
+2026-07-30 22:21:32,634 - bestrag.provider.factory - INFO - info:54 - 重排序完成: 5 results, 3278.37ms
+2026-07-30 22:21:32,635 - bestrag.provider.factory - INFO - info:54 - 生成开始: Streamable HTTP 的使用场景是什么...
+2026-07-30 22:21:36,214 - bestrag.provider.factory - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=183
+2026-07-30 22:21:36,214 - bestrag.provider.factory - INFO - info:54 - 生成完成: model=deepseek-chat, len=183
+2026-07-30 22:21:36,214 - bestrag.provider.factory - INFO - info:54 - 生成完成: 183 chars, 3578.6ms
+2026-07-30 22:23:02,643 - bestrag.provider.factory - INFO - info:54 - Starting retrieval | {'query': 'studio工作原理', 'top_k': 10}
+2026-07-30 22:23:02,643 - bestrag.provider.factory - INFO - info:54 - Embedding single text | {'text': 'studio工作原理'}
+2026-07-30 22:23:05,131 - bestrag.provider.factory - INFO - info:54 - Search completed, found 9 results
+2026-07-30 22:23:05,132 - bestrag.provider.factory - INFO - info:54 - Retrieved 9 results
+2026-07-30 22:23:05,132 - bestrag.provider.factory - INFO - info:54 - Reranking documents | {'query': 'studio工作原理', 'count': 9}
+2026-07-30 22:23:38,477 - bestrag.provider.factory - INFO - info:54 - Starting retrieval | {'query': 'studio工作原理', 'top_k': 5}
+2026-07-30 22:23:38,477 - bestrag.provider.factory - INFO - info:54 - Embedding single text | {'text': 'studio工作原理'}
+2026-07-30 22:23:39,682 - bestrag.provider.factory - INFO - info:54 - Search completed, found 5 results
+2026-07-30 22:23:39,682 - bestrag.provider.factory - INFO - info:54 - Retrieved 5 results
+2026-07-30 22:23:39,683 - bestrag.provider.factory - INFO - info:54 - Reranking documents | {'query': 'studio工作原理', 'count': 5}
+2026-07-30 22:23:41,376 - bestrag.provider.factory - INFO - info:54 - 生成开始: studio工作原理...
+2026-07-30 22:23:42,778 - bestrag.provider.factory - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=28
+2026-07-30 22:23:42,779 - bestrag.provider.factory - INFO - info:54 - 生成完成: model=deepseek-chat, len=28
+2026-07-30 22:24:45,798 - bestrag.provider.factory - INFO - info:54 - Starting retrieval | {'query': 'stdio工作原理', 'top_k': 5}
+2026-07-30 22:24:45,798 - bestrag.provider.factory - INFO - info:54 - Embedding single text | {'text': 'stdio工作原理'}
+2026-07-30 22:24:47,215 - bestrag.provider.factory - INFO - info:54 - Search completed, found 3 results
+2026-07-30 22:24:47,216 - bestrag.provider.factory - INFO - info:54 - Retrieved 3 results
+2026-07-30 22:24:47,216 - bestrag.provider.factory - INFO - info:54 - Reranking documents | {'query': 'stdio工作原理', 'count': 3}
+2026-07-30 22:24:49,489 - bestrag.provider.factory - INFO - info:54 - 生成开始: stdio工作原理...
+2026-07-30 22:24:53,148 - bestrag.provider.factory - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=751
+2026-07-30 22:24:53,148 - bestrag.provider.factory - INFO - info:54 - 生成完成: model=deepseek-chat, len=751
+2026-07-30 22:25:01,859 - bestrag.provider.factory - INFO - info:54 - Bootstrap 开始...
+2026-07-30 22:25:01,859 - bestrag.provider.factory - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-30 22:25:01,859 - bestrag.provider.factory - INFO - info:54 - RegistryCenter 初始化完成 (Service/Strategy/Provider/Evaluator/Model/Repository)
+2026-07-30 22:25:01,862 - bestrag.provider.factory - INFO - info:54 - Workspace 初始化完成
+2026-07-30 22:25:01,862 - bestrag.provider.factory - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-30 22:25:01,863 - bestrag.provider.factory - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-30 22:25:01,863 - bestrag.provider.factory - INFO - info:54 - Bootstrap 完成
+2026-07-30 22:25:03,522 - bestrag.provider.factory - INFO - info:54 - 文档解析完成: decb2bda-5261-49d5-959e-e96f752da83f, 219 chars
+2026-07-30 22:25:03,522 - bestrag.provider.factory - INFO - info:54 - 文档处理完成: 1 chunks
+2026-07-30 22:25:03,522 - bestrag.provider.factory - INFO - info:54 - 开始索引: doc=decb2bda-5261-49d5-959e-e96f752da83f
+2026-07-30 22:25:03,522 - bestrag.provider.factory - INFO - info:54 - 索引阶段: metadata_enrich
+2026-07-30 22:25:03,522 - bestrag.provider.factory - INFO - info:54 - 索引阶段: embedding
+2026-07-30 22:25:03,522 - bestrag.provider.factory - INFO - info:54 - Embedding documents | {'count': 1}
+2026-07-30 22:25:04,704 - bestrag.provider.factory - INFO - info:54 - 索引阶段: writer
+2026-07-30 22:25:06,762 - bestrag.provider.factory - INFO - info:54 - Inserted 1 vectors into collection bestrag_bestrag_chunks
+2026-07-30 22:25:17,801 - bestrag.provider.factory - INFO - info:54 - Inserted 1 vectors into collection bestrag_bestrag_chunks
+2026-07-30 22:25:17,802 - bestrag.provider.factory - INFO - info:54 - VectorWriter 写入 1 条向量
+2026-07-30 22:25:17,802 - bestrag.provider.factory - INFO - info:54 - 索引完成: doc=decb2bda-5261-49d5-959e-e96f752da83f, chunks=1
+2026-07-30 22:25:17,802 - bestrag.provider.factory - INFO - info:54 - 索引完成: 1 vectors
+2026-07-30 22:25:24,865 - bestrag.provider.factory - INFO - info:54 - Bootstrap 开始...
+2026-07-30 22:25:24,865 - bestrag.provider.factory - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-30 22:25:24,865 - bestrag.provider.factory - INFO - info:54 - RegistryCenter 初始化完成 (Service/Strategy/Provider/Evaluator/Model/Repository)
+2026-07-30 22:25:24,866 - bestrag.provider.factory - INFO - info:54 - Workspace 初始化完成
+2026-07-30 22:25:24,866 - bestrag.provider.factory - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-30 22:25:24,867 - bestrag.provider.factory - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-30 22:25:24,867 - bestrag.provider.factory - INFO - info:54 - Bootstrap 完成
+2026-07-30 22:25:24,867 - bestrag.provider.factory - INFO - info:54 - Starting retrieval | {'query': '如何安装 BestRAG？', 'top_k': 5}
+2026-07-30 22:25:24,867 - bestrag.provider.factory - INFO - info:54 - Embedding single text | {'text': '如何安装 BestRAG？'}
+2026-07-30 22:25:25,270 - bestrag.provider.factory - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-30 22:25:25,276 - bestrag.provider.factory - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-30 22:25:25,295 - bestrag.provider.factory - INFO - info:54 - Search completed, found 5 results
+2026-07-30 22:25:25,296 - bestrag.provider.factory - INFO - info:54 - Retrieved 5 results
+2026-07-30 22:25:25,296 - bestrag.provider.factory - INFO - info:54 - 检索完成: 5 results, 429.14ms
+2026-07-30 22:25:25,296 - bestrag.provider.factory - INFO - info:54 - Reranking documents | {'query': '如何安装 BestRAG？', 'count': 5}
+2026-07-30 22:25:26,638 - bestrag.provider.factory - INFO - info:54 - 重排序完成: 5 results, 1341.44ms
+2026-07-30 22:25:26,638 - bestrag.provider.factory - INFO - info:54 - 生成开始: 如何安装 BestRAG？...
+2026-07-30 22:25:28,783 - bestrag.provider.factory - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=380
+2026-07-30 22:25:28,783 - bestrag.provider.factory - INFO - info:54 - 生成完成: model=deepseek-chat, len=380
+2026-07-30 22:25:28,783 - bestrag.provider.factory - INFO - info:54 - 生成完成: 380 chars, 2145.55ms
+2026-07-30 22:25:34,332 - bestrag.provider.factory - INFO - info:54 - Bootstrap 开始...
+2026-07-30 22:25:34,332 - bestrag.provider.factory - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-30 22:25:34,332 - bestrag.provider.factory - INFO - info:54 - RegistryCenter 初始化完成 (Service/Strategy/Provider/Evaluator/Model/Repository)
+2026-07-30 22:25:34,333 - bestrag.provider.factory - INFO - info:54 - Workspace 初始化完成
+2026-07-30 22:25:34,334 - bestrag.provider.factory - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-30 22:25:34,334 - bestrag.provider.factory - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-30 22:25:34,334 - bestrag.provider.factory - INFO - info:54 - Bootstrap 完成
+2026-07-30 22:25:34,379 - bestrag.provider.factory - INFO - info:54 - 文档解析完成: e96c9474-dd8b-4cf5-81d3-3ca554f2b260, 716 chars
+2026-07-30 22:25:34,380 - bestrag.provider.factory - INFO - info:54 - 文档处理完成: 2 chunks
+2026-07-30 22:25:34,380 - bestrag.provider.factory - INFO - info:54 - 开始索引: doc=e96c9474-dd8b-4cf5-81d3-3ca554f2b260
+2026-07-30 22:25:34,380 - bestrag.provider.factory - INFO - info:54 - 索引阶段: metadata_enrich
+2026-07-30 22:25:34,380 - bestrag.provider.factory - INFO - info:54 - 索引阶段: embedding
+2026-07-30 22:25:34,381 - bestrag.provider.factory - INFO - info:54 - Embedding documents | {'count': 2}
+2026-07-30 22:25:35,518 - bestrag.provider.factory - INFO - info:54 - 索引阶段: writer
+2026-07-30 22:25:39,068 - bestrag.provider.factory - INFO - info:54 - Inserted 2 vectors into collection bestrag_bestrag_chunks
+2026-07-30 22:25:47,102 - bestrag.provider.factory - INFO - info:54 - Inserted 2 vectors into collection bestrag_bestrag_chunks
+2026-07-30 22:25:47,102 - bestrag.provider.factory - INFO - info:54 - VectorWriter 写入 2 条向量
+2026-07-30 22:25:47,102 - bestrag.provider.factory - INFO - info:54 - 索引完成: doc=e96c9474-dd8b-4cf5-81d3-3ca554f2b260, chunks=2
+2026-07-30 22:25:47,102 - bestrag.provider.factory - INFO - info:54 - 索引完成: 2 vectors
+2026-07-30 22:25:47,102 - bestrag.provider.factory - INFO - info:54 - Starting retrieval | {'query': 'BestRAG 的系统要求是什么？', 'top_k': 5}
+2026-07-30 22:25:47,102 - bestrag.provider.factory - INFO - info:54 - Embedding single text | {'text': 'BestRAG 的系统要求是什么？'}
+2026-07-30 22:25:47,494 - bestrag.provider.factory - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-30 22:25:47,545 - bestrag.provider.factory - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-30 22:25:47,556 - bestrag.provider.factory - INFO - info:54 - Search completed, found 5 results
+2026-07-30 22:25:47,556 - bestrag.provider.factory - INFO - info:54 - Retrieved 5 results
+2026-07-30 22:25:47,557 - bestrag.provider.factory - INFO - info:54 - 检索完成: 5 results, 455.27ms
+2026-07-30 22:25:47,557 - bestrag.provider.factory - INFO - info:54 - Reranking documents | {'query': 'BestRAG 的系统要求是什么？', 'count': 5}
+2026-07-30 22:25:48,745 - bestrag.provider.factory - INFO - info:54 - 重排序完成: 5 results, 1187.91ms
+2026-07-30 22:25:48,745 - bestrag.provider.factory - INFO - info:54 - 生成开始: BestRAG 的系统要求是什么？...
+2026-07-30 22:25:50,250 - bestrag.provider.factory - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=81
+2026-07-30 22:25:50,250 - bestrag.provider.factory - INFO - info:54 - 生成完成: model=deepseek-chat, len=81
+2026-07-30 22:25:50,250 - bestrag.provider.factory - INFO - info:54 - 生成完成: 81 chars, 1505.01ms
+2026-07-30 22:26:15,542 - bestrag.provider.factory - INFO - info:54 - Bootstrap 开始...
+2026-07-30 22:26:15,542 - bestrag.provider.factory - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-30 22:26:15,543 - bestrag.provider.factory - INFO - info:54 - RegistryCenter 初始化完成 (Service/Strategy/Provider/Evaluator/Model/Repository)
+2026-07-30 22:26:15,544 - bestrag.provider.factory - INFO - info:54 - Workspace 初始化完成
+2026-07-30 22:26:15,544 - bestrag.provider.factory - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-30 22:26:15,544 - bestrag.provider.factory - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-30 22:26:15,544 - bestrag.provider.factory - INFO - info:54 - Bootstrap 完成
+2026-07-30 22:26:15,592 - bestrag.provider.factory - INFO - info:54 - 文档解析完成: 633a9794-1084-474a-b949-5b753bb23b61, 716 chars
+2026-07-30 22:26:15,592 - bestrag.provider.factory - INFO - info:54 - 文档处理完成: 2 chunks
+2026-07-30 22:26:15,592 - bestrag.provider.factory - INFO - info:54 - 开始索引: doc=633a9794-1084-474a-b949-5b753bb23b61
+2026-07-30 22:26:15,592 - bestrag.provider.factory - INFO - info:54 - 索引阶段: metadata_enrich
+2026-07-30 22:26:15,592 - bestrag.provider.factory - INFO - info:54 - 索引阶段: embedding
+2026-07-30 22:26:15,593 - bestrag.provider.factory - INFO - info:54 - Embedding documents | {'count': 2}
+2026-07-30 22:26:16,725 - bestrag.provider.factory - INFO - info:54 - 索引阶段: writer
+2026-07-30 22:26:19,767 - bestrag.provider.factory - INFO - info:54 - Inserted 2 vectors into collection bestrag_bestrag_chunks
+2026-07-30 22:26:27,802 - bestrag.provider.factory - INFO - info:54 - Inserted 2 vectors into collection bestrag_bestrag_chunks
+2026-07-30 22:26:27,802 - bestrag.provider.factory - INFO - info:54 - VectorWriter 写入 2 条向量
+2026-07-30 22:26:27,802 - bestrag.provider.factory - INFO - info:54 - 索引完成: doc=633a9794-1084-474a-b949-5b753bb23b61, chunks=2
+2026-07-30 22:26:27,802 - bestrag.provider.factory - INFO - info:54 - 索引完成: 2 vectors
+2026-07-30 22:26:27,802 - bestrag.provider.factory - INFO - info:54 - Starting retrieval | {'query': 'BestRAG 的系统要求是什么？', 'top_k': 5}
+2026-07-30 22:26:27,802 - bestrag.provider.factory - INFO - info:54 - Embedding single text | {'text': 'BestRAG 的系统要求是什么？'}
+2026-07-30 22:26:28,202 - bestrag.provider.factory - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-30 22:26:28,208 - bestrag.provider.factory - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-30 22:26:28,219 - bestrag.provider.factory - INFO - info:54 - Search completed, found 5 results
+2026-07-30 22:26:28,219 - bestrag.provider.factory - INFO - info:54 - Retrieved 5 results
+2026-07-30 22:26:28,220 - bestrag.provider.factory - INFO - info:54 - 检索完成: 5 results, 416.4ms
+2026-07-30 22:26:28,220 - bestrag.provider.factory - INFO - info:54 - Reranking documents | {'query': 'BestRAG 的系统要求是什么？', 'count': 5}
+2026-07-30 22:26:29,374 - bestrag.provider.factory - INFO - info:54 - 重排序完成: 5 results, 1154.75ms
+2026-07-30 22:26:29,375 - bestrag.provider.factory - INFO - info:54 - 生成开始: BestRAG 的系统要求是什么？...
+2026-07-30 22:26:30,983 - bestrag.provider.factory - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=67
+2026-07-30 22:26:30,983 - bestrag.provider.factory - INFO - info:54 - 生成完成: model=deepseek-chat, len=67
+2026-07-30 22:26:30,983 - bestrag.provider.factory - INFO - info:54 - 生成完成: 67 chars, 1607.91ms
+2026-07-30 22:28:56,006 - bestrag.provider.factory - INFO - info:54 - Bootstrap 开始...
+2026-07-30 22:28:56,006 - bestrag.provider.factory - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-30 22:28:56,006 - bestrag.provider.factory - INFO - info:54 - RegistryCenter 初始化完成 (Service/Strategy/Provider/Evaluator/Model/Repository)
+2026-07-30 22:28:56,007 - bestrag.provider.factory - INFO - info:54 - Workspace 初始化完成
+2026-07-30 22:28:56,008 - bestrag.provider.factory - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-30 22:28:56,008 - bestrag.provider.factory - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-30 22:28:56,008 - bestrag.provider.factory - INFO - info:54 - Bootstrap 完成
+2026-07-30 22:28:56,050 - bestrag.provider.factory - INFO - info:54 - 文档解析完成: 12674c08-9873-4f92-8532-907d7dabc4a5, 716 chars
+2026-07-30 22:28:56,050 - bestrag.provider.factory - INFO - info:54 - 文档处理完成: 2 chunks
+2026-07-30 22:28:56,051 - bestrag.provider.factory - INFO - info:54 - 开始索引: doc=12674c08-9873-4f92-8532-907d7dabc4a5
+2026-07-30 22:28:56,051 - bestrag.provider.factory - INFO - info:54 - 索引阶段: metadata_enrich
+2026-07-30 22:28:56,051 - bestrag.provider.factory - INFO - info:54 - 索引阶段: embedding
+2026-07-30 22:28:56,051 - bestrag.provider.factory - INFO - info:54 - Embedding documents | {'count': 2}
+2026-07-30 22:28:57,724 - bestrag.provider.factory - INFO - info:54 - 索引阶段: writer
+2026-07-30 22:29:00,766 - bestrag.provider.factory - INFO - info:54 - Inserted 2 vectors into collection bestrag_bestrag_chunks
+2026-07-30 22:29:08,808 - bestrag.provider.factory - INFO - info:54 - Inserted 2 vectors into collection bestrag_bestrag_chunks
+2026-07-30 22:29:08,808 - bestrag.provider.factory - INFO - info:54 - VectorWriter 写入 2 条向量
+2026-07-30 22:29:08,809 - bestrag.provider.factory - INFO - info:54 - 索引完成: doc=12674c08-9873-4f92-8532-907d7dabc4a5, chunks=2
+2026-07-30 22:29:08,809 - bestrag.provider.factory - INFO - info:54 - 索引完成: 2 vectors
+2026-07-30 22:29:08,809 - bestrag.provider.factory - INFO - info:54 - Starting retrieval | {'query': 'BestRAG 的系统要求是什么？', 'top_k': 5}
+2026-07-30 22:29:08,809 - bestrag.provider.factory - INFO - info:54 - Embedding single text | {'text': 'BestRAG 的系统要求是什么？'}
+2026-07-30 22:29:09,216 - bestrag.provider.factory - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-30 22:29:09,222 - bestrag.provider.factory - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-30 22:29:09,239 - bestrag.provider.factory - INFO - info:54 - Search completed, found 5 results
+2026-07-30 22:29:09,239 - bestrag.provider.factory - INFO - info:54 - Retrieved 5 results
+2026-07-30 22:29:09,239 - bestrag.provider.factory - INFO - info:54 - 检索完成: 5 results, 430.33ms
+2026-07-30 22:29:09,239 - bestrag.provider.factory - INFO - info:54 - Reranking documents | {'query': 'BestRAG 的系统要求是什么？', 'count': 5}
+2026-07-30 22:29:10,327 - bestrag.provider.factory - INFO - info:54 - 重排序完成: 5 results, 1087.72ms
+2026-07-30 22:29:10,329 - bestrag.provider.factory - INFO - info:54 - 生成开始: BestRAG 的系统要求是什么？...
+2026-07-30 22:29:11,805 - bestrag.provider.factory - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=66
+2026-07-30 22:29:11,805 - bestrag.provider.factory - INFO - info:54 - 生成完成: model=deepseek-chat, len=66
+2026-07-30 22:29:11,805 - bestrag.provider.factory - INFO - info:54 - 生成完成: 66 chars, 1476.53ms
+2026-07-30 22:29:26,064 - bestrag.provider.factory - INFO - info:54 - Bootstrap 开始...
+2026-07-30 22:29:26,064 - bestrag.provider.factory - INFO - info:54 - 配置加载完成: BestRAG v0.1.0
+2026-07-30 22:29:26,064 - bestrag.provider.factory - INFO - info:54 - RegistryCenter 初始化完成 (Service/Strategy/Provider/Evaluator/Model/Repository)
+2026-07-30 22:29:26,066 - bestrag.provider.factory - INFO - info:54 - Workspace 初始化完成
+2026-07-30 22:29:26,066 - bestrag.provider.factory - INFO - info:54 - BGE-M3 API Embedding 已配置: http://127.0.0.1:8001/embed
+2026-07-30 22:29:26,066 - bestrag.provider.factory - INFO - info:54 - BGE-Rerank API 已配置: http://127.0.0.1:8002/rerank
+2026-07-30 22:29:26,067 - bestrag.provider.factory - INFO - info:54 - Bootstrap 完成
+2026-07-30 22:29:26,119 - bestrag.provider.factory - INFO - info:54 - 文档解析完成: 7ca6fd1f-9d5c-46cc-95b3-2af22ff532d5, 716 chars
+2026-07-30 22:29:26,119 - bestrag.provider.factory - INFO - info:54 - 文档处理完成: 2 chunks
+2026-07-30 22:29:26,119 - bestrag.provider.factory - INFO - info:54 - 开始索引: doc=7ca6fd1f-9d5c-46cc-95b3-2af22ff532d5
+2026-07-30 22:29:26,120 - bestrag.provider.factory - INFO - info:54 - 索引阶段: metadata_enrich
+2026-07-30 22:29:26,120 - bestrag.provider.factory - INFO - info:54 - 索引阶段: embedding
+2026-07-30 22:29:26,120 - bestrag.provider.factory - INFO - info:54 - Embedding documents | {'count': 2}
+2026-07-30 22:29:27,252 - bestrag.provider.factory - INFO - info:54 - 索引阶段: writer
+2026-07-30 22:29:30,292 - bestrag.provider.factory - INFO - info:54 - Inserted 2 vectors into collection bestrag_bestrag_chunks
+2026-07-30 22:29:38,327 - bestrag.provider.factory - INFO - info:54 - Inserted 2 vectors into collection bestrag_bestrag_chunks
+2026-07-30 22:29:38,327 - bestrag.provider.factory - INFO - info:54 - VectorWriter 写入 2 条向量
+2026-07-30 22:29:38,327 - bestrag.provider.factory - INFO - info:54 - 索引完成: doc=7ca6fd1f-9d5c-46cc-95b3-2af22ff532d5, chunks=2
+2026-07-30 22:29:38,327 - bestrag.provider.factory - INFO - info:54 - 索引完成: 2 vectors
+2026-07-30 22:29:38,327 - bestrag.provider.factory - INFO - info:54 - Starting retrieval | {'query': 'BestRAG 的系统要求是什么？', 'top_k': 5}
+2026-07-30 22:29:38,327 - bestrag.provider.factory - INFO - info:54 - Embedding single text | {'text': 'BestRAG 的系统要求是什么？'}
+2026-07-30 22:29:38,719 - bestrag.provider.factory - INFO - info:54 - Connected to Milvus: 127.0.0.1:19530
+2026-07-30 22:29:38,728 - bestrag.provider.factory - INFO - info:54 - Using existing collection: bestrag_bestrag_chunks
+2026-07-30 22:29:38,741 - bestrag.provider.factory - INFO - info:54 - Search completed, found 5 results
+2026-07-30 22:29:38,741 - bestrag.provider.factory - INFO - info:54 - Retrieved 5 results
+2026-07-30 22:29:38,741 - bestrag.provider.factory - INFO - info:54 - 检索完成: 5 results, 413.84ms
+2026-07-30 22:29:38,741 - bestrag.provider.factory - INFO - info:54 - Reranking documents | {'query': 'BestRAG 的系统要求是什么？', 'count': 5}
+2026-07-30 22:29:39,853 - bestrag.provider.factory - INFO - info:54 - 重排序完成: 5 results, 1111.86ms
+2026-07-30 22:29:39,853 - bestrag.provider.factory - INFO - info:54 - 生成开始: BestRAG 的系统要求是什么？...
+2026-07-30 22:29:41,415 - bestrag.provider.factory - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=66
+2026-07-30 22:29:41,415 - bestrag.provider.factory - INFO - info:54 - 生成完成: model=deepseek-chat, len=66
+2026-07-30 22:29:41,415 - bestrag.provider.factory - INFO - info:54 - 生成完成: 66 chars, 1562.07ms
+2026-07-30 22:31:10,741 - bestrag.provider.factory - INFO - info:54 - Starting retrieval | {'query': 'BestRAG 的系统要求是什么？', 'top_k': 5}
+2026-07-30 22:31:10,741 - bestrag.provider.factory - INFO - info:54 - Embedding single text | {'text': 'BestRAG 的系统要求是什么？'}
+2026-07-30 22:31:11,934 - bestrag.provider.factory - INFO - info:54 - Search completed, found 5 results
+2026-07-30 22:31:11,934 - bestrag.provider.factory - INFO - info:54 - Retrieved 5 results
+2026-07-30 22:31:11,935 - bestrag.provider.factory - INFO - info:54 - 检索完成: 5 results, 1194.48ms
+2026-07-30 22:31:11,935 - bestrag.provider.factory - INFO - info:54 - Reranking documents | {'query': 'BestRAG 的系统要求是什么？', 'count': 5}
+2026-07-30 22:31:13,727 - bestrag.provider.factory - INFO - info:54 - 重排序完成: 5 results, 1792.07ms
+2026-07-30 22:31:13,727 - bestrag.provider.factory - INFO - info:54 - 生成开始: BestRAG 的系统要求是什么？...
+2026-07-30 22:31:15,230 - bestrag.provider.factory - INFO - info:54 - LLM 生成完成: model=deepseek-chat, len=66
+2026-07-30 22:31:15,231 - bestrag.provider.factory - INFO - info:54 - 生成完成: model=deepseek-chat, len=66
+2026-07-30 22:31:15,231 - bestrag.provider.factory - INFO - info:54 - 生成完成: 66 chars, 1503.65ms

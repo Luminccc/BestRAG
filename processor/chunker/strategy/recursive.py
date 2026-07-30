@@ -26,6 +26,8 @@ class RecursiveChunkStrategy(BaseChunkStrategy):
         chunks = strategy.split(text, document_id="xxx")
     """
 
+    name: str = "recursive"
+
     def __init__(self, chunk_size: int = _DEFAULT_CHUNK_SIZE, overlap: int = _DEFAULT_OVERLAP):
         if chunk_size <= 0:
             raise ValueError(f"chunk_size 必须 > 0，当前值: {chunk_size}")

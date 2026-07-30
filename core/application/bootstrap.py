@@ -16,7 +16,7 @@
 from core.application.context import ApplicationContext
 from core.config import get_config
 from core.logger import get_logger
-from core.registry import ServiceRegistry
+from core.registry.center import RegistryCenter
 from core.resource_manager import ResourceManager
 from core.workspace_manager import WorkspaceManager
 
@@ -52,39 +52,48 @@ def bootstrap() -> "Application":
     config = get_config()
     logger.info(f"配置加载完成: {config.app.name} v{config.app.version}")
 
-    # ── Step 2: 创建 Context ──
+    # ── Step 2: 创建 RegistryCenter（后续 Provider/Service/Strategy 在此注册）──
+    registry_center = RegistryCenter()
+    logger.info("RegistryCenter 初始化完成 (Service/Strategy/Provider/Evaluator/Model/Repository)")
+
+    # ── Step 3: 创建 Context ──
     ctx = ApplicationContext()
     ctx.config = config
-    ctx.registry = ServiceRegistry()
+    ctx.registry = registry_center
 
-    # ── Step 3: Workspace ──
+    # ── Step 4: Workspace ──
     wm = WorkspaceManager()
     wm.init_all()
     ctx.workspace_manager = wm
     logger.info("Workspace 初始化完成")
 
-    # ── Step 4: ResourceManager ──
+    # ── Step 5: ResourceManager ──
     rm = ResourceManager()
     ctx.resource_manager = rm
 
-    # ── Step 5: IngressService ──
+    # ── Step 6: IngressService ──
     ingress_service = IngressService(wm)
     ctx.services["ingress"] = ingress_service
+    registry_center.service.register("ingress", ingress_service)
 
-    # ── Step 6: DocumentService ──
+    # ── Step 7: DocumentService ──
     document_dispatcher = DocumentDispatcher()
     document_service = DocumentService(document_dispatcher)
     ctx.services["document"] = document_service
+    registry_center.service.register("document", document_service)
 
-    # ── Step 7: Processor Services ──
+    # ── Step 8: Processor Services ──
     processor_service = ProcessorService()
     chunk_service = ChunkService()
     transformer_service = TransformerService()
     ctx.services["processor"] = processor_service
     ctx.services["chunker"] = chunk_service
     ctx.services["transformer"] = transformer_service
+    registry_center.service.register("processor", processor_service)
+    registry_center.service.register("chunker", chunk_service)
+    registry_center.service.register("transformer", transformer_service)
 
-    # ── Step 8: Retrieval Services ──
+    # ── Step 9: Retrieval Services ──
     embedding_service = EmbeddingService()
     vector_store_service = VectorStoreService()
     retrieval_service = RetrievalService(
@@ -96,12 +105,17 @@ def bootstrap() -> "Application":
     ctx.services["vectorstore"] = vector_store_service
     ctx.services["retrieval"] = retrieval_service
     ctx.services["reranker"] = rerank_service
+    registry_center.service.register("embedding", embedding_service)
+    registry_center.service.register("vectorstore", vector_store_service)
+    registry_center.service.register("retrieval", retrieval_service)
+    registry_center.service.register("reranker", rerank_service)
 
-    # ── Step 9: GenerationService ──
+    # ── Step 10: GenerationService ──
     generation_service = GenerationService()
     ctx.services["generation"] = generation_service
+    registry_center.service.register("generation", generation_service)
 
-    # ── Step 10: ValidationService ──
+    # ── Step 11: ValidationService ──
     validation_service = ValidationService(
         document_service=document_service,
         processor_service=processor_service,
@@ -114,14 +128,16 @@ def bootstrap() -> "Application":
         generation_service=generation_service,
     )
     ctx.services["validation"] = validation_service
+    registry_center.service.register("validation", validation_service)
 
-    # ── Step 11: Feature Services ──
+    # ── Step 12: Feature Services ──
     from indexing.service import IndexingService
     from features.knowledge_base import KnowledgeBaseService
     from features.qa import QAService
 
     indexing_service = IndexingService()
     ctx.services["indexing"] = indexing_service
+    registry_center.service.register("indexing", indexing_service)
 
     kb_service = KnowledgeBaseService(
         ingress_service=ingress_service,
@@ -130,6 +146,7 @@ def bootstrap() -> "Application":
         indexing_service=indexing_service,
     )
     ctx.services["knowledge_base"] = kb_service
+    registry_center.service.register("knowledge_base", kb_service)
 
     qa_service = QAService(
         retrieval_service=retrieval_service,
@@ -137,8 +154,9 @@ def bootstrap() -> "Application":
         rerank_service=rerank_service,
     )
     ctx.services["qa"] = qa_service
+    registry_center.service.register("qa", qa_service)
 
-    # ── Step 12: 组装 Application ──
+    # ── Step 13: 组装 Application ──
     from core.application.application import Application
     app = Application(ctx)
     logger.info("Bootstrap 完成")

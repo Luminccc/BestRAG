@@ -13,7 +13,7 @@ from typing import Any, Dict, List
 from core.exception import ResourceError
 from core.logger import get_logger
 from core.provider import BaseProvider
-from core.registry import _registry as registry
+from core.registry import get_registry
 
 logger = get_logger("bestrag.resource")
 
@@ -32,9 +32,11 @@ class ResourceManager:
 
     def init_all(self) -> None:
         """初始化所有已注册的 Provider 资源。"""
-        services = list(registry._services.keys())
+        rc = get_registry()
+        svc_registry = rc.service
+        services = list(svc_registry._services.keys())
         for name in services:
-            svc = registry._services.get(name)
+            svc = svc_registry._services.get(name)
             if isinstance(svc, BaseProvider):
                 try:
                     logger.info(f"初始化资源: {name}")
@@ -42,15 +44,19 @@ class ResourceManager:
                 except Exception as e:
                     raise ResourceError(f"初始化资源 '{name}' 失败: {e}") from e
 
-        factories = list(registry._factories.keys())
+        # factories 信息日志（仅提示）
+        factories = list(svc_registry._factories.keys())
         for name in factories:
             logger.info(f"延迟资源注册（将在首次 get 时初始化）: {name}")
 
     def close_all(self) -> None:
         """关闭所有已注册的 Provider 资源。"""
+        rc = get_registry()
+        svc_registry = rc.service
+
         # 先收集后关闭，避免遍历时修改 dict
         providers: List[tuple] = []
-        for name, svc in registry._services.items():
+        for name, svc in svc_registry._services.items():
             if isinstance(svc, BaseProvider):
                 providers.append((name, svc))
 
@@ -61,4 +67,4 @@ class ResourceManager:
             except Exception as e:
                 logger.error(f"关闭资源 '{name}' 时出错: {e}")
 
-        registry.clear()
+        rc.clear_all()

@@ -6,9 +6,12 @@
 from .document import Document
 from .enums import DocumentType
 from .metadata import DocumentMetadata
+from .parsed_document import ParsedDocument, TextBlock
 
 __all__ = [
     "Document",
     "DocumentType",
     "DocumentMetadata",
+    "ParsedDocument",
+    "TextBlock",
 ]

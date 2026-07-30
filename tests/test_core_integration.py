@@ -8,6 +8,7 @@
 import pytest
 
 from core.app import Application
+from core.application.context import ApplicationContext
 from core.config import CoreConfig, get_config, ConfigManager
 from core.exception import ServiceNotFoundError
 from core.provider import BaseProvider
@@ -18,6 +19,7 @@ from core.registry import (
     get_service,
     unregister_service,
 )
+from core.registry.center import RegistryCenter, reset_registry
 
 
 # ═══════════════════════════════════════════════════
@@ -35,10 +37,9 @@ def _reset_config():
 @pytest.fixture(autouse=True)
 def _reset_registry():
     """每个测试前清空注册中心。"""
-    registry = ServiceRegistry()
-    registry.clear()
+    reset_registry()
     yield
-    registry.clear()
+    reset_registry()
 
 
 # ═══════════════════════════════════════════════════
@@ -47,7 +48,10 @@ def _reset_registry():
 
 def test_application_lifecycle():
     """Application.start() → is_running → Application.stop() 无异常。"""
-    app = Application()
+    ctx = ApplicationContext()
+    ctx.config = CoreConfig()
+    ctx.registry = RegistryCenter()
+    app = Application(ctx)
 
     assert not app.is_running, "启动前 is_running 应为 False"
 

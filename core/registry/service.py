@@ -1,29 +1,25 @@
-"""服务注册中心 — 统一服务注册和发现。
+"""ServiceRegistry — 运行时服务注册表。
 
-支持：
-- 普通服务注册/获取
+负责管理 Domain Service 实例，支持：
+- 实例注册
 - 工厂函数延迟创建（首次 get 时懒加载并缓存）
-- 移除/清空
+- 兼容 v0.1 API
 """
 
-from typing import Any, Dict, Optional, Type, TypeVar
+from typing import Any, Dict, Type, TypeVar
 
 from core.exception import ServiceNotFoundError
+from core.registry.base import BaseRegistry
 
 T = TypeVar("T")
 
 
-class ServiceRegistry:
-    """服务注册中心（单例）。"""
+class ServiceRegistry(BaseRegistry):
+    """服务注册表（非单例 — 由 RegistryCenter 统一管理）。"""
 
-    _instance: Optional["ServiceRegistry"] = None
-    _services: Dict[str, Any] = {}
-    _factories: Dict[str, callable] = {}  # type: ignore
-
-    def __new__(cls) -> "ServiceRegistry":
-        if cls._instance is None:
-            cls._instance = super().__new__(cls)
-        return cls._instance
+    def __init__(self):
+        self._services: Dict[str, Any] = {}
+        self._factories: Dict[str, callable] = {}  # type: ignore
 
     # ── 注册 ──────────────────────────────────────
 
@@ -59,46 +55,24 @@ class ServiceRegistry:
         """检查服务是否已注册（含工厂）。"""
         return name in self._services or name in self._factories
 
-    # ── 移除 ──────────────────────────────────────
+    # ── 移除（BaseRegistry 接口） ────────────────
 
-    def unregister(self, name: str) -> None:
-        """注销服务。"""
+    def remove(self, name: str) -> None:
+        """移除指定服务（BaseRegistry 接口）。"""
         self._services.pop(name, None)
         self._factories.pop(name, None)
+
+    def unregister(self, name: str) -> None:
+        """注销服务（v0.1 兼容名称）。"""
+        self.remove(name)
+
+    # ── 清空 ──────────────────────────────────────
 
     def clear(self) -> None:
         """清空所有注册（主要用于 shutdown）。"""
         self._services.clear()
         self._factories.clear()
 
-
-# ═══════════════════════════════════════════════════
-# 全局入口
-# ═══════════════════════════════════════════════════
-
-_registry = ServiceRegistry()
-
-
-def register_service(name: str, service: Any) -> None:
-    """注册服务实例。"""
-    _registry.register(name, service)
-
-
-def register_service_factory(name: str, factory: callable) -> None:
-    """注册服务工厂。"""
-    _registry.register_factory(name, factory)
-
-
-def get_service(name: str, service_type: Type[T] = Any) -> T:
-    """获取服务实例。"""
-    return _registry.get(name, service_type)
-
-
-def unregister_service(name: str) -> None:
-    """注销服务。"""
-    _registry.unregister(name)
-
-
-def clear_services() -> None:
-    """清空所有服务注册。"""
-    _registry.clear()
+    def list(self) -> list[str]:
+        """列出所有已注册的服务名。"""
+        return list(self._services.keys()) + list(self._factories.keys())
